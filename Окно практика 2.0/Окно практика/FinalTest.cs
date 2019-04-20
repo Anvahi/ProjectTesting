@@ -16,6 +16,9 @@ namespace Окно_практика
         int[] generation = new int[40];
         int kaunt;
         int flag_3 = 1;
+        int tru;
+        int anser;
+        int summ_tru;
 
         public FinalTest()
         {
@@ -24,9 +27,13 @@ namespace Окно_практика
 
         private void BackToMenu_Click(object sender, EventArgs e)
         {
-            Hide();
-            Меню_для_студента newForm = new Меню_для_студента();
-            newForm.Show();
+            while(flag_3==1)
+            {
+                Hide();
+                Меню_для_студента newForm = new Меню_для_студента();
+                newForm.Show();
+                flag_3 = 0;
+            }           
         }
 
         private void FinalTest_Load(object sender, EventArgs e)
@@ -43,8 +50,9 @@ namespace Окно_практика
         {
             while(flag_3==1)
             {
+                Rate.Text = "0";
+                CountMistake.Text = "0";
 
-            
             int[] rrand = new int[10];
             int flag_1 = 0;
             int j, k;
@@ -544,6 +552,15 @@ namespace Окно_практика
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Answer1.Checked)
+                anser = 1;
+            if (Answer2.Checked)
+                anser = 2;
+            if (Answer3.Checked)
+                anser = 3;
+            if (Answer4.Checked)
+                anser = 4;
+
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load("testing.xml");
             XmlElement xRoot = xDoc.DocumentElement;
@@ -574,7 +591,15 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
-                                            }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }                                                   
+                                                }
+                                            }                                           
                                         }
                                     }
                                 }
@@ -606,6 +631,14 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
                                                 }
                                             }
                                         }
@@ -639,6 +672,14 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -670,6 +711,14 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
                                                 }
                                             }
                                         }
@@ -703,6 +752,14 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -734,6 +791,14 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
                                                 }
                                             }
                                         }
@@ -767,6 +832,14 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -799,6 +872,14 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "true")
+                                                {
+                                                    tru = Convert.ToInt32(childquestion.InnerText);
+                                                    if (anser == tru)
+                                                    {
+                                                        summ_tru += 1;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -812,7 +893,44 @@ namespace Окно_практика
             else if (kaunt==40)
             {
                 flag_3 = 1;
+                Rate_Click(sender, e);
+                CountMistake_Click(sender, e);
+                Question1_Click(sender, e);
             }
+        }
+
+        private void Rate_Click(object sender, EventArgs e)
+        {
+            if ((summ_tru >= 1) && (summ_tru <=8 ))
+            {
+                Rate.Text = "1";
+            }
+            else if ((summ_tru >= 9) && (summ_tru <= 16))
+            {
+                Rate.Text = "2";
+            }
+            else if ((summ_tru >= 17) && (summ_tru <= 24))
+            {
+                Rate.Text = "3";
+            }
+            else if ((summ_tru >= 25) && (summ_tru <= 32))
+            {
+                Rate.Text = "4";
+            }
+            else if ((summ_tru >= 33) && (summ_tru <= 40))
+            {
+                Rate.Text = "5";
+            }
+        }
+
+        private void CountMistake_Click(object sender, EventArgs e)
+        {
+            CountMistake.Text = Convert.ToString(40 - summ_tru);
+        }
+
+        private void Question1_Click(object sender, EventArgs e)
+        {
+            Question1.Text = "Вы прошли тест";
         }
     }
 }

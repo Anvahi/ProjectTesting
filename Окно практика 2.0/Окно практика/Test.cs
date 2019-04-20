@@ -29,10 +29,13 @@ namespace Окно_практика
 
         private void BackToMenu_Click(object sender, EventArgs e)
         {
-            Hide();
-            Меню_для_студента newForm = new Меню_для_студента();
-            newForm.Show();
-            flag_3 = 1;
+            if (flag_3 == 1)
+            {
+                Hide();
+                Меню_для_студента newForm = new Меню_для_студента();
+                newForm.Show();
+                flag_3 = 1;
+            }
         }
 
         private void Numbers_Click(object sender, EventArgs e)
@@ -877,96 +880,57 @@ namespace Окно_практика
 
         private void AnswerIt_Click(object sender, EventArgs e)
         {
-            if (Answer1.Checked)
-                anser = 1;
-            if (Answer2.Checked)
-                anser = 2;
-            if (Answer3.Checked)
-                anser = 3;
-            if (Answer4.Checked)
-                anser = 4;
-           
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("testing.xml");
-            XmlElement xRoot = xDoc.DocumentElement;
-            
-            if(p<11)
+            if ((Answer1.Checked == true) || (Answer2.Checked == true) || (Answer3.Checked == true) || (Answer4.Checked == true))
             {
-                switch (choice)
+                if (Answer1.Checked)
+                    anser = 1;
+                if (Answer2.Checked)
+                    anser = 2;
+                if (Answer3.Checked)
+                    anser = 3;
+                if (Answer4.Checked)
+                    anser = 4;
+
+                XmlDocument xDoc = new XmlDocument();
+                xDoc.Load("testing.xml");
+                XmlElement xRoot = xDoc.DocumentElement;
+
+                if (p < 11)
                 {
-                    case 1:
-                        {
-							foreach (XmlNode xnode in xRoot)
+                    switch (choice)
+                    {
+                        case 1:
                             {
-							if (xnode.Name == "cycles")
-								{
-                                    foreach (XmlNode childcycles in xnode.ChildNodes)
-                                    {
-                                        if (childcycles.Attributes.Count > 0)
-                                        {
-                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
-                                            {
-                                                if (childcycles.Name == "question")
-                                                {
-                                                    foreach (XmlNode childquestion in childcycles.ChildNodes)
-                                                    {
-                                                        if (childquestion.Name == "true")
-                                                        {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
-                                                            {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        break;
-                    case 2:
-                        {
-                            foreach (XmlNode xnode in xRoot)
-                            {
-                                if (xnode.Name == "arrays")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childarrays in xnode.ChildNodes)
+                                    if (xnode.Name == "cycles")
                                     {
-                                        if (childarrays.Attributes.Count > 0)
+                                        foreach (XmlNode childcycles in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childarrays.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childcycles.Attributes.Count > 0)
                                             {
-                                                if (childarrays.Name == "question")
+                                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childarrays.ChildNodes)
+                                                    if (childcycles.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childcycles.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -976,39 +940,39 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
-                    case 3:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            break;
+                        case 2:
                             {
-                                if (xnode.Name == "lines")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childlines in xnode.ChildNodes)
+                                    if (xnode.Name == "arrays")
                                     {
-                                        if (childlines.Attributes.Count > 0)
+                                        foreach (XmlNode childarrays in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childlines.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childarrays.Attributes.Count > 0)
                                             {
-                                                if (childlines.Name == "question")
+                                                XmlNode attr = childarrays.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childlines.ChildNodes)
+                                                    if (childarrays.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childarrays.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -1018,39 +982,39 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
-                    case 4:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            break;
+                        case 3:
                             {
-                                if (xnode.Name == "recursion")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childrecursion in xnode.ChildNodes)
+                                    if (xnode.Name == "lines")
                                     {
-                                        if (childrecursion.Attributes.Count > 0)
+                                        foreach (XmlNode childlines in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childrecursion.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childlines.Attributes.Count > 0)
                                             {
-                                                if (childrecursion.Name == "question")
+                                                XmlNode attr = childlines.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childrecursion.ChildNodes)
+                                                    if (childlines.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childlines.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -1060,39 +1024,39 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
-                    case 5:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            break;
+                        case 4:
                             {
-                                if (xnode.Name == "struct")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childstruct in xnode.ChildNodes)
+                                    if (xnode.Name == "recursion")
                                     {
-                                        if (childstruct.Attributes.Count > 0)
+                                        foreach (XmlNode childrecursion in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childstruct.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childrecursion.Attributes.Count > 0)
                                             {
-                                                if (childstruct.Name == "question")
+                                                XmlNode attr = childrecursion.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childstruct.ChildNodes)
+                                                    if (childrecursion.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childrecursion.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -1102,39 +1066,39 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
-                    case 6:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            break;
+                        case 5:
                             {
-                                if (xnode.Name == "file")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childfile in xnode.ChildNodes)
+                                    if (xnode.Name == "struct")
                                     {
-                                        if (childfile.Attributes.Count > 0)
+                                        foreach (XmlNode childstruct in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childfile.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childstruct.Attributes.Count > 0)
                                             {
-                                                if (childfile.Name == "question")
+                                                XmlNode attr = childstruct.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childfile.ChildNodes)
+                                                    if (childstruct.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childstruct.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -1144,39 +1108,39 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
-                    case 7:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            break;
+                        case 6:
                             {
-                                if (xnode.Name == "addresses_and_pointers")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childaddresses_and_pointers in xnode.ChildNodes)
+                                    if (xnode.Name == "file")
                                     {
-                                        if (childaddresses_and_pointers.Attributes.Count > 0)
+                                        foreach (XmlNode childfile in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childaddresses_and_pointers.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childfile.Attributes.Count > 0)
                                             {
-                                                if (childaddresses_and_pointers.Name == "question")
+                                                XmlNode attr = childfile.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childaddresses_and_pointers.ChildNodes)
+                                                    if (childfile.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childfile.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -1186,39 +1150,39 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
-                    case 8:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            break;
+                        case 7:
                             {
-                                if (xnode.Name == "dynamic_memory")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childdynamic_memory in xnode.ChildNodes)
+                                    if (xnode.Name == "addresses_and_pointers")
                                     {
-                                        if (childdynamic_memory.Attributes.Count > 0)
+                                        foreach (XmlNode childaddresses_and_pointers in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childdynamic_memory.Attributes.GetNamedItem("id");
-
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p - 1])
+                                            if (childaddresses_and_pointers.Attributes.Count > 0)
                                             {
-                                                if (childdynamic_memory.Name == "question")
+                                                XmlNode attr = childaddresses_and_pointers.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
                                                 {
-                                                    foreach (XmlNode childquestion in childdynamic_memory.ChildNodes)
+                                                    if (childaddresses_and_pointers.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "true")
+                                                        foreach (XmlNode childquestion in childaddresses_and_pointers.ChildNodes)
                                                         {
-                                                            tru = Convert.ToInt32(childquestion.InnerText);
-                                                            if (anser == tru)
+                                                            if (childquestion.Name == "true")
                                                             {
-                                                                summ_tru += 1;
-                                                            }
-                                                            else
-                                                            {
-                                                                summ_false[p - 1] = p;
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -1228,145 +1192,154 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        break;
+                            break;
+                        case 8:
+                            {
+                                foreach (XmlNode xnode in xRoot)
+                                {
+                                    if (xnode.Name == "dynamic_memory")
+                                    {
+                                        foreach (XmlNode childdynamic_memory in xnode.ChildNodes)
+                                        {
+                                            if (childdynamic_memory.Attributes.Count > 0)
+                                            {
+                                                XmlNode attr = childdynamic_memory.Attributes.GetNamedItem("id");
+
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p - 1])
+                                                {
+                                                    if (childdynamic_memory.Name == "question")
+                                                    {
+                                                        foreach (XmlNode childquestion in childdynamic_memory.ChildNodes)
+                                                        {
+                                                            if (childquestion.Name == "true")
+                                                            {
+                                                                tru = Convert.ToInt32(childquestion.InnerText);
+                                                                if (anser == tru)
+                                                                {
+                                                                    summ_tru += 1;
+                                                                }
+                                                                else
+                                                                {
+                                                                    summ_false[p - 1] = p;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                    }
                 }
-            }
-           
 
-            if (p < 10)
-            {
-                switch (choice)
+
+                if (p < 10)
                 {
-                    case 1:
-                        {
-
-                            foreach (XmlNode xnode in xRoot)
+                    switch (choice)
+                    {
+                        case 1:
                             {
-                                if (xnode.Name == "cycles")
-                                {
-                                    foreach (XmlNode childcycles in xnode.ChildNodes)
-                                    {
-                                        if (childcycles.Attributes.Count > 0)
-                                        {
-                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
 
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                foreach (XmlNode xnode in xRoot)
+                                {
+                                    if (xnode.Name == "cycles")
+                                    {
+                                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                                        {
+                                            if (childcycles.Attributes.Count > 0)
                                             {
-                                                if (childcycles.Name == "question")
+                                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childcycles.ChildNodes)
+                                                    if (childcycles.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childcycles.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
+
+
+
                                             }
-
-
-
                                         }
                                     }
                                 }
+
                             }
-
-                        }
-                        p += 1;
-                        break;
-                    case 2:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            p += 1;
+                            break;
+                        case 2:
                             {
-                                if (xnode.Name == "arrays")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childarrays in xnode.ChildNodes)
+                                    if (xnode.Name == "arrays")
                                     {
-                                        if (childarrays.Attributes.Count > 0)
+                                        foreach (XmlNode childarrays in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childarrays.Attributes.GetNamedItem("id");
-
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                            if (childarrays.Attributes.Count > 0)
                                             {
-                                                if (childarrays.Name == "question")
+                                                XmlNode attr = childarrays.Attributes.GetNamedItem("id");
+
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childarrays.ChildNodes)
+                                                    if (childarrays.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childarrays.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
-                                            }
 
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        p += 1;
-                        break;
-                    case 3:
-                        {
-                            foreach (XmlNode xnode in xRoot)
-                            {
-                                if (xnode.Name == "lines")
-                                {
-                                    foreach (XmlNode childlines in xnode.ChildNodes)
-                                    {
-                                        if (childlines.Attributes.Count > 0)
-                                        {
-                                            XmlNode attr = childlines.Attributes.GetNamedItem("id");
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
-                                            {
-                                                if (childlines.Name == "question")
-                                                {
-                                                    foreach (XmlNode childquestion in childlines.ChildNodes)
-                                                    {
-                                                        if (childquestion.Name == "quest")
-                                                        {
-                                                            Question.Text = childquestion.InnerText;
-                                                        }
-                                                    }
-                                                }
                                             }
                                         }
                                     }
                                 }
                             }
-                        }
-                        p += 1;
-                        break;
-                    case 4:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            p += 1;
+                            break;
+                        case 3:
                             {
-                                if (xnode.Name == "recursion")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childrecursion in xnode.ChildNodes)
+                                    if (xnode.Name == "lines")
                                     {
-                                        if (childrecursion.Attributes.Count > 0)
+                                        foreach (XmlNode childlines in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childrecursion.Attributes.GetNamedItem("id");
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                            if (childlines.Attributes.Count > 0)
                                             {
-                                                if (childrecursion.Name == "question")
+                                                XmlNode attr = childlines.Attributes.GetNamedItem("id");
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childrecursion.ChildNodes)
+                                                    if (childlines.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childlines.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1375,31 +1348,31 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        p += 1;
-                        break;
-                    case 5:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            p += 1;
+                            break;
+                        case 4:
                             {
-                                if (xnode.Name == "struct")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childstruct in xnode.ChildNodes)
+                                    if (xnode.Name == "recursion")
                                     {
-                                        if (childstruct.Attributes.Count > 0)
+                                        foreach (XmlNode childrecursion in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childstruct.Attributes.GetNamedItem("id");
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                            if (childrecursion.Attributes.Count > 0)
                                             {
-                                                if (childstruct.Name == "question")
+                                                XmlNode attr = childrecursion.Attributes.GetNamedItem("id");
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childstruct.ChildNodes)
+                                                    if (childrecursion.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childrecursion.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1408,31 +1381,31 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        p += 1;
-                        break;
-                    case 6:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            p += 1;
+                            break;
+                        case 5:
                             {
-                                if (xnode.Name == "file")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childfile in xnode.ChildNodes)
+                                    if (xnode.Name == "struct")
                                     {
-                                        if (childfile.Attributes.Count > 0)
+                                        foreach (XmlNode childstruct in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childfile.Attributes.GetNamedItem("id");
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                            if (childstruct.Attributes.Count > 0)
                                             {
-                                                if (childfile.Name == "question")
+                                                XmlNode attr = childstruct.Attributes.GetNamedItem("id");
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childfile.ChildNodes)
+                                                    if (childstruct.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childstruct.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1441,31 +1414,31 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        p += 1;
-                        break;
-                    case 7:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            p += 1;
+                            break;
+                        case 6:
                             {
-                                if (xnode.Name == "addresses_and_pointers")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childaddresses_and_pointers in xnode.ChildNodes)
+                                    if (xnode.Name == "file")
                                     {
-                                        if (childaddresses_and_pointers.Attributes.Count > 0)
+                                        foreach (XmlNode childfile in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childaddresses_and_pointers.Attributes.GetNamedItem("id");
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                            if (childfile.Attributes.Count > 0)
                                             {
-                                                if (childaddresses_and_pointers.Name == "question")
+                                                XmlNode attr = childfile.Attributes.GetNamedItem("id");
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childaddresses_and_pointers.ChildNodes)
+                                                    if (childfile.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childfile.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1474,31 +1447,31 @@ namespace Окно_практика
                                     }
                                 }
                             }
-                        }
-                        p += 1;
-                        break;
-                    case 8:
-                        {
-                            foreach (XmlNode xnode in xRoot)
+                            p += 1;
+                            break;
+                        case 7:
                             {
-                                if (xnode.Name == "dynamic_memory")
+                                foreach (XmlNode xnode in xRoot)
                                 {
-                                    foreach (XmlNode childdynamic_memory in xnode.ChildNodes)
+                                    if (xnode.Name == "addresses_and_pointers")
                                     {
-                                        if (childdynamic_memory.Attributes.Count > 0)
+                                        foreach (XmlNode childaddresses_and_pointers in xnode.ChildNodes)
                                         {
-                                            XmlNode attr = childdynamic_memory.Attributes.GetNamedItem("id");
-                                            int atrib;
-                                            atrib = Convert.ToInt32(attr.Value);
-                                            if (atrib == rrand[p])
+                                            if (childaddresses_and_pointers.Attributes.Count > 0)
                                             {
-                                                if (childdynamic_memory.Name == "question")
+                                                XmlNode attr = childaddresses_and_pointers.Attributes.GetNamedItem("id");
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
                                                 {
-                                                    foreach (XmlNode childquestion in childdynamic_memory.ChildNodes)
+                                                    if (childaddresses_and_pointers.Name == "question")
                                                     {
-                                                        if (childquestion.Name == "quest")
+                                                        foreach (XmlNode childquestion in childaddresses_and_pointers.ChildNodes)
                                                         {
-                                                            Question.Text = childquestion.InnerText;
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1507,19 +1480,52 @@ namespace Окно_практика
                                     }
                                 }
                             }
+                            p += 1;
+                            break;
+                        case 8:
+                            {
+                                foreach (XmlNode xnode in xRoot)
+                                {
+                                    if (xnode.Name == "dynamic_memory")
+                                    {
+                                        foreach (XmlNode childdynamic_memory in xnode.ChildNodes)
+                                        {
+                                            if (childdynamic_memory.Attributes.Count > 0)
+                                            {
+                                                XmlNode attr = childdynamic_memory.Attributes.GetNamedItem("id");
+                                                int atrib;
+                                                atrib = Convert.ToInt32(attr.Value);
+                                                if (atrib == rrand[p])
+                                                {
+                                                    if (childdynamic_memory.Name == "question")
+                                                    {
+                                                        foreach (XmlNode childquestion in childdynamic_memory.ChildNodes)
+                                                        {
+                                                            if (childquestion.Name == "quest")
+                                                            {
+                                                                Question.Text = childquestion.InnerText;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
 
-                        }
-                        p += 1;
-                        break;
+                            }
+                            p += 1;
+                            break;
+                    }
                 }
-            }
-            else if (p == 10)
-            {
-                Rate_Click(sender, e);
-                CountMistake_Click(sender, e);
-                Numbers_Click(sender, e);
-                p += 1;
-                flag_3 = 1;
+                else if (p == 10)
+                {
+                    Rate_Click(sender, e);
+                    CountMistake_Click(sender, e);
+                    Numbers_Click(sender, e);
+                    p += 1;
+                    flag_3 = 1;
+                }
             }
         }
 
