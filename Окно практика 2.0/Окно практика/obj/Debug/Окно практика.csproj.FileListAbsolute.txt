@@ -1,0 +1,136 @@
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\Алексей\Desktop\Окно практика\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\Алексей\Desktop\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\Вячеслав\Desktop\Repository_ST\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\Алексей\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\anvahi\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+D:\Projects\Visual Studio\testing\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\Марина\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
