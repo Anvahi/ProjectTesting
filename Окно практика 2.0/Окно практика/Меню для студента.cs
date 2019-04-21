@@ -49,8 +49,10 @@ namespace Окно_практика
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            Hide();
+		{
+			MainForm.isOpenWindow_Form = false;
+
+			Hide();
             MainForm newMainForm = new MainForm();
             newMainForm.Show();
         }

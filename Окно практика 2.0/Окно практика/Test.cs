@@ -30,8 +30,8 @@ namespace Окно_практика
         private void BackToMenu_Click(object sender, EventArgs e)
         {
             if (flag_3 == 1)
-            {
-                Hide();
+			{
+				Hide();
                 Меню_для_студента newForm = new Меню_для_студента();
                 newForm.Show();
                 flag_3 = 1;
@@ -1534,6 +1534,101 @@ namespace Окно_практика
             CountMistake.Text = Convert.ToString(10-summ_tru);
         }
 
+		private void UploadMarkFromTest(string mark)
+		{
+			XmlDocument doc = new XmlDocument();
+			doc.Load("users.xml");
+
+			XmlElement root = doc.DocumentElement;
+			foreach (XmlNode nodes in root)
+			{
+				foreach (XmlNode childstudents in nodes.ChildNodes)
+				{
+					foreach (XmlNode accountData in childstudents.ChildNodes)
+					{						
+						if (accountData.Name == "login" &&
+							accountData.InnerText == MainForm.account_login)
+						{
+							string childName = "";
+							switch (choice)
+							{
+								case 1:
+									childName = "cycles";
+									break;
+								case 2:
+									childName = "arrays";
+									break;
+								case 3:
+									childName = "strings";
+									break;
+								case 4:
+									childName = "recursion";
+									break;
+								case 5:
+									childName = "structures";
+									break;
+								case 6:
+									childName = "files";
+									break;
+								case 7:
+									childName = "pointers";
+									break;
+								case 8:
+									childName = "dynamic";
+									break;
+
+								default:
+									return;
+							}
+
+							int idx = 0;
+							int idx_grade = 0;
+
+							int test_grade = 0;
+
+							foreach (XmlNode accountData_test in childstudents.ChildNodes)
+							{
+								if (accountData_test.Name == "test")
+								{
+									foreach (XmlNode testData in accountData_test)
+									{
+										test_grade += testData.Value[0] - '0';// Convert.ToInt32(testData.Value)
+
+										if (testData.Name == childName)
+										{
+											accountData_test.RemoveChild(testData);
+
+											XmlNode newData = doc.CreateElement(childName);
+											newData.InnerText = mark;
+
+											accountData_test.AppendChild(newData);
+											doc.Save("users.xml");
+										}
+									}
+								}
+								else if (accountData_test.Name == "grade")
+								{
+									idx_grade = idx;
+								}
+
+								idx++;
+							}
+
+							accountData.RemoveChild(accountData.ChildNodes[idx_grade]);
+
+
+
+							XmlNode newData_grade = doc.CreateElement("grade");
+							newData_grade.InnerText = mark;
+
+							accountData.AppendChild(newData_grade);
+							doc.Save("users.xml");
+						}
+					}
+				}				
+			}
+		}
+
         private void Rate_Click(object sender, EventArgs e)
         {
             if((summ_tru==1)||(summ_tru==0)||(summ_tru==2))
@@ -1556,7 +1651,10 @@ namespace Окно_практика
             {
                 Rate.Text = "5";
             }
-        }
+
+			UploadMarkFromTest(Rate.Text);
+
+		}
 
         private void label1_Click(object sender, EventArgs e)
         {

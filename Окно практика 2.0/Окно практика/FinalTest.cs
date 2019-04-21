@@ -29,7 +29,7 @@ namespace Окно_практика
         {
             while(flag_3==1)
             {
-                Hide();
+				Hide();
                 Меню_для_студента newForm = new Меню_для_студента();
                 newForm.Show();
                 flag_3 = 0;

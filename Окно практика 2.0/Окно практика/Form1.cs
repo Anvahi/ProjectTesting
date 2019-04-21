@@ -13,7 +13,10 @@ namespace Окно_практика
 {
     public partial class MainForm : Form
     {
-        bool log = false, pass = false;
+		public static string account_login;
+		public static bool isOpenWindow_Form = false;
+
+		bool log = false, pass = false;
         public MainForm()
         {
             InitializeComponent();
@@ -46,9 +49,11 @@ namespace Окно_практика
                                 log = true;
                             else if (childlogpass.Name == "password" && childlogpass.InnerText == Parol.Text)
                                 pass = true;
-                            if (log && pass)
-                            {
-                                Hide();
+                            if (log && pass && !isOpenWindow_Form)
+							{
+								isOpenWindow_Form = true;
+
+								Hide();
                                 TeacherMenu newTeacherMenu = new TeacherMenu();
                                 newTeacherMenu.Show();
                             }
@@ -63,15 +68,17 @@ namespace Окно_практика
                         pass = false;
 
                         foreach (XmlNode childlogpass in childstudents.ChildNodes)
-                        {
-
-                            if (childlogpass.Name == "login" && childlogpass.InnerText == Login.Text)
+						{
+							if (childlogpass.Name == "login" && childlogpass.InnerText == Login.Text)
                                 log = true;
                             else if (childlogpass.Name == "password" && childlogpass.InnerText == Parol.Text)
                                 pass = true;
-                            if (log && pass)
+                            if (log && pass && !isOpenWindow_Form)
                             {
-                                Hide();
+								isOpenWindow_Form = true;
+								account_login = Login.Text;
+
+								Hide();
                                 Меню_для_студента newForm = new Меню_для_студента();
                                 newForm.Show();
                             }

@@ -134,3 +134,20 @@ C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно прак�
 C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
 C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
 C:\Users\anvahi\Desktop\Testing\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
