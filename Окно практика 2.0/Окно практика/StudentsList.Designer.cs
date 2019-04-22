@@ -148,7 +148,7 @@
             this.Registration.Name = "Registration";
             this.Registration.Size = new System.Drawing.Size(203, 82);
             this.Registration.TabIndex = 9;
-            this.Registration.Text = "Регистрация";
+            this.Registration.Text = "Добавить студента";
             this.Registration.UseVisualStyleBackColor = false;
             this.Registration.Click += new System.EventHandler(this.Registration_Click);
             // 
