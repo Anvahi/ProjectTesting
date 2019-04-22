@@ -151,3 +151,20 @@ D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно
 D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
 D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
 D:\Projects\Visual Studio\ProjectTesting2\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb

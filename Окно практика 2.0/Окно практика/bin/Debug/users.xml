@@ -15,405 +15,430 @@
     </user>
   </teachers>
   <students>
-    <user>
-      <login>Lyadov</login>
-      <password>1234</password>
-      <test>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <pointers>0</pointers>
-        <dynamic>1</dynamic>
-        <cycles>2</cycles>
-        <arrays>2</arrays>
-        <files>1</files>
-      </test>
-      <total>0</total>
-      <grade>0</grade>
-    </user>
-    <user>
-      <login>Zharkov</login>
-      <password>4321</password>
-      <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
-      </test>
-      <total>0</total>
-      <grade>0</grade>
-    </user>
-    <user>
-      <login>Pavlov</login>
-      <password>forever</password>
-      <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
-      </test>
-      <total>0</total>
-      <grade>0</grade>
-    </user>
-    <user>
+    <user id ="1">
       <login>Berkut</login>
       <password>bva18RhP</password>
+      <name>Беркут Вадим</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "2">
       <login>Goncharik</login>
       <password>gon18inWq</password>
+      <name>Гончарик Илья</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "3">
       <login>Griminov</login>
       <password>avgrimpri18Ju</password>
+      <name>Гриминов Александр</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "4">
       <login>Dudlin</login>
       <password>dudanddPri18Se</password>
+      <name>Дудлин Андрей</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "5">
+      <login>Zharkov</login>
+      <password>4321</password>
+      <name>Жарков Егор</name>
+      <test>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
+      </test>
+      <total>нет</total>
+      <grade>нет</grade>
+    </user>
+    <user id = "6">
       <login>Zhukov</login>
       <password>pri18WsfZhD</password>
+      <name>Жуков Дмитрий</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "7">
       <login>Kapcherina</login>
       <password>kap18PRIAA</password>
+      <name>Капчерина Алина</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id= "8">
       <login>Korzh</login>
       <password>baK18priLk</password>
+      <name>Корж Богдан</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "9">
       <login>Krylova</login>
       <password>KmAhsE18</password>
+      <name>Крылова Мария</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "10">
       <login>Kurguz</login>
       <password>kur18keQPrS</password>
+      <name>Кургуз Михаил</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "11">
       <login>Lebedev</login>
       <password>pri18LebVVTyi</password>
+      <name>Лебедев Валерий</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "12">
+      <login>Lyadov</login>
+      <password>1234</password>
+      <name>Лядов Вячеслав</name>
+      <test>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
+      </test>
+      <total>нет</total>
+      <grade>нет</grade>
+    </user>
+    <user id = "13">
       <login>Nikonov</login>
       <password>nK18AndMax</password>
+      <name>Никонов Максим</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "14">
+      <login>Pavlov</login>
+      <password>forever</password>
+      <name>Павлов Денис</name>
+      <test>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
+      </test>
+      <total>нет</total>
+      <grade>нет</grade>
+    </user>
+    <user id = "15">
       <login>Pavlovskiy</login>
       <password>PaEvSew189</password>
+      <name>Павловский Антон</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "16">
       <login>Peskova</login>
       <password>pm18QueenSe</password>
+      <name>Пескова Марина</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "17">
       <login>Podgornyak</login>
       <password>podAASe18qw</password>
+      <name>Подгорняк Артём</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "18">
       <login>Rakitin</login>
       <password>prIsE18RAeJ</password>
+      <name>Ракитин Алексей</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "19">
       <login>Semenov</login>
       <password>siAprI18hF</password>
+      <name>Семёнов Иван</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
-      <login>Trusov</login>
-      <password>ovTSwE18pri</password>
-      <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
-      </test>
-      <total>0</total>
-      <grade>0</grade>
-    </user>
-    <user>
+    <user id = "20">
       <login>Khomenkova</login>
       <password>kH18PriPi</password>
+      <name>Хоменкова Полина</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "21">
       <login>Tsarukyan</login>
       <password>paroldolzhenbyt</password>
+      <name>Царукян Андрей</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "22">
       <login>Shatrov</login>
       <password>isShaPri18Ak</password>
+      <name>Шатров Илья</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "23">
       <login>Shirokov</login>
       <password>ivSh18erYIG</password>
+      <name>Широков Иван</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
-    <user>
+    <user id = "24">
       <login>Yaroslavtseva</login>
       <password>priSe18YaEAl</password>
+      <name>Ярославцева Евгения</name>
       <test>
-        <cycles>0</cycles>
-        <arrays>0</arrays>
-        <strings>0</strings>
-        <recursion>0</recursion>
-        <structures>0</structures>
-        <files>0</files>
-        <pointers>0</pointers>
-        <dynamic>0</dynamic>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
       </test>
-      <total>0</total>
-      <grade>0</grade>
+      <total>нет</total>
+      <grade>нет</grade>
+    </user>
+    <user id = "25">
+      <login>Trusov</login>
+      <password>ovTSwE18pri</password>
+      <name>Трусов Олег</name>
+      <test>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
+      </test>
+      <total>нет</total>
+      <grade>нет</grade>
     </user>
   </students>
 </users>
