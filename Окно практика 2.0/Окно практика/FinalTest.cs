@@ -58,7 +58,8 @@ namespace Окно_практика
             int j, k;
             int prov;
             kaunt = 0;
-            
+                summ_tru = 0;
+
 
             Random rnd = new Random();
             int arra_1;
