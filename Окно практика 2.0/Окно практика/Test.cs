@@ -13,7 +13,7 @@ namespace Окно_практика
 {
     public partial class Test : Form
     {
-        int choice;
+        public static int choice;
         int anser;
         int tru;
         int summ_tru;
@@ -1534,99 +1534,101 @@ namespace Окно_практика
             CountMistake.Text = Convert.ToString(10-summ_tru);
         }
 
-		private void UploadMarkFromTest(string mark)
+		public static void UploadMarkFromTest(string mark, bool isUploadTotal)
 		{
-			//XmlDocument doc = new XmlDocument();
-			//doc.Load("users.xml");
+			XmlDocument doc = new XmlDocument();
+			doc.Load("users.xml");
 
-			//XmlElement root = doc.DocumentElement;
-			//foreach (XmlNode nodes in root)
-			//{
-			//	foreach (XmlNode childstudents in nodes.ChildNodes)
-			//	{
-			//		foreach (XmlNode accountData in childstudents.ChildNodes)
-			//		{						
-			//			if (accountData.Name == "login" &&
-			//				accountData.InnerText == MainForm.account_login)
-			//			{
-			//				string childName = "";
-			//				switch (choice)
-			//				{
-			//					case 1:
-			//						childName = "cycles";
-			//						break;
-			//					case 2:
-			//						childName = "arrays";
-			//						break;
-			//					case 3:
-			//						childName = "strings";
-			//						break;
-			//					case 4:
-			//						childName = "recursion";
-			//						break;
-			//					case 5:
-			//						childName = "structures";
-			//						break;
-			//					case 6:
-			//						childName = "files";
-			//						break;
-			//					case 7:
-			//						childName = "pointers";
-			//						break;
-			//					case 8:
-			//						childName = "dynamic";
-			//						break;
+			XmlElement root = doc.DocumentElement;
+			foreach (XmlNode nodes in root)
+			{
+				foreach (XmlNode childstudents in nodes.ChildNodes)
+				{
+					foreach (XmlNode accountData in childstudents.ChildNodes)
+					{
+						if (accountData.Name == "login" &&
+							accountData.InnerText == MainForm.account_login)
+						{
+							string childName = "";
+							switch (choice)
+							{
+								case 1:
+									childName = "cycles";
+									break;
+								case 2:
+									childName = "arrays";
+									break;
+								case 3:
+									childName = "strings";
+									break;
+								case 4:
+									childName = "recursion";
+									break;
+								case 5:
+									childName = "structures";
+									break;
+								case 6:
+									childName = "files";
+									break;
+								case 7:
+									childName = "pointers";
+									break;
+								case 8:
+									childName = "dynamic";
+									break;
+							}
 
-			//					default:
-			//						return;
-			//				}
+							int idx = 0;
+							int idx_grade = 0;
 
-			//				int idx = 0;
-			//				int idx_grade = 0;
+							int test_grade = 0;
+							int total_mark = 0;
 
-			//				int test_grade = 0;
+							foreach (XmlNode accountData_test in childstudents.ChildNodes)
+							{
+								if (!isUploadTotal && accountData_test.Name == "test")
+								{
+									foreach (XmlNode testData in accountData_test)
+									{
+										if (testData.InnerText != "нет")
+										{
+											test_grade += testData.InnerText[0] - '0';// Convert.ToInt32(testData.Value)
+										}
 
-			//				foreach (XmlNode accountData_test in childstudents.ChildNodes)
-			//				{
-			//					if (accountData_test.Name == "test")
-			//					{
-			//						foreach (XmlNode testData in accountData_test)
-			//						{
-			//							test_grade += testData.Value[0] - '0';// Convert.ToInt32(testData.Value)
+										if (testData.Name == childName)
+										{
+											testData.InnerText = mark;
+										}
+									}
+								}
+								else if (accountData_test.Name == "grade")
+								{
+									idx_grade = idx;
+								}
+								else if (accountData_test.Name == "total")
+								{
+									if (isUploadTotal)
+									{
+										total_mark = mark[0];
+										accountData_test.InnerText = mark;
+									}
+									else if (accountData_test.InnerText != "нет")
+									{
+										total_mark = accountData_test.InnerText[0];
+									}
+								}
 
-			//							if (testData.Name == childName)
-			//							{
-			//								accountData_test.RemoveChild(testData);
+								idx++;
+							}
 
-			//								XmlNode newData = doc.CreateElement(childName);
-			//								newData.InnerText = mark;
+							childstudents.ChildNodes[idx_grade].InnerText = 
+								Convert.ToString( (int) ( (test_grade + total_mark) / 9 + 0.5) );
 
-			//								accountData_test.AppendChild(newData);
-			//								doc.Save("users.xml");
-			//							}
-			//						}
-			//					}
-			//					else if (accountData_test.Name == "grade")
-			//					{
-			//						idx_grade = idx;
-			//					}
-
-			//					idx++;
-			//				}
-
-							//accountData.RemoveChild(accountData.ChildNodes[idx_grade]);
-
-
-
-							//XmlNode newData_grade = doc.CreateElement("grade");
-							//newData_grade.InnerText = mark;
-
-							//accountData.AppendChild(newData_grade);
-			//				//doc.Save("users.xml");
-			//			}
-			//		}
-			//	}				
-			//}
+							doc.Save("users.xml");
+						}
+					}
+				}
+			}
 		}
 
         private void Rate_Click(object sender, EventArgs e)
@@ -1652,8 +1654,7 @@ namespace Окно_практика
                 Rate.Text = "5";
             }
 
-			UploadMarkFromTest(Rate.Text);
-
+			UploadMarkFromTest(Rate.Text, false);
 		}
 
         private void label1_Click(object sender, EventArgs e)
