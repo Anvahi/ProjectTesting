@@ -921,7 +921,9 @@ namespace Окно_практика
             {
                 Rate.Text = "5";
             }
-        }
+			
+			Test.UploadMarkFromTest(Rate.Text, true);			
+		}
 
         private void CountMistake_Click(object sender, EventArgs e)
         {
