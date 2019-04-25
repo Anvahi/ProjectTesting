@@ -15,7 +15,24 @@
     </user>
   </teachers>
   <students>
-    <user id ="1">
+    <user id="0">
+      <login>1</login>
+      <password>1</password>
+      <name>Тестовый тест</name>
+      <test>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>2</strings>
+        <recursion>2</recursion>
+        <structures>3</structures>
+        <dynamic>нет</dynamic>
+        <files>1</files>
+        <pointers>5</pointers>
+      </test>
+      <total>0</total>
+      <grade>5</grade>
+    </user>
+    <user id="1">
       <login>Berkut</login>
       <password>bva18RhP</password>
       <name>Беркут Вадим</name>
@@ -32,7 +49,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "2">
+    <user id="2">
       <login>Goncharik</login>
       <password>gon18inWq</password>
       <name>Гончарик Илья</name>
@@ -49,7 +66,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "3">
+    <user id="3">
       <login>Griminov</login>
       <password>avgrimpri18Ju</password>
       <name>Гриминов Александр</name>
@@ -66,7 +83,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "4">
+    <user id="4">
       <login>Dudlin</login>
       <password>dudanddPri18Se</password>
       <name>Дудлин Андрей</name>
@@ -83,7 +100,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "5">
+    <user id="5">
       <login>Zharkov</login>
       <password>4321</password>
       <name>Жарков Егор</name>
@@ -100,7 +117,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "6">
+    <user id="6">
       <login>Zhukov</login>
       <password>pri18WsfZhD</password>
       <name>Жуков Дмитрий</name>
@@ -117,7 +134,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "7">
+    <user id="7">
       <login>Kapcherina</login>
       <password>kap18PRIAA</password>
       <name>Капчерина Алина</name>
@@ -134,7 +151,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id= "8">
+    <user id="8">
       <login>Korzh</login>
       <password>baK18priLk</password>
       <name>Корж Богдан</name>
@@ -151,7 +168,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "9">
+    <user id="9">
       <login>Krylova</login>
       <password>KmAhsE18</password>
       <name>Крылова Мария</name>
@@ -168,7 +185,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "10">
+    <user id="10">
       <login>Kurguz</login>
       <password>kur18keQPrS</password>
       <name>Кургуз Михаил</name>
@@ -185,7 +202,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "11">
+    <user id="11">
       <login>Lebedev</login>
       <password>pri18LebVVTyi</password>
       <name>Лебедев Валерий</name>
@@ -202,7 +219,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "12">
+    <user id="12">
       <login>Lyadov</login>
       <password>1234</password>
       <name>Лядов Вячеслав</name>
@@ -219,7 +236,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "13">
+    <user id="13">
       <login>Nikonov</login>
       <password>nK18AndMax</password>
       <name>Никонов Максим</name>
@@ -236,7 +253,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "14">
+    <user id="14">
       <login>Pavlov</login>
       <password>forever</password>
       <name>Павлов Денис</name>
@@ -253,7 +270,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "15">
+    <user id="15">
       <login>Pavlovskiy</login>
       <password>PaEvSew189</password>
       <name>Павловский Антон</name>
@@ -270,7 +287,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "16">
+    <user id="16">
       <login>Peskova</login>
       <password>pm18QueenSe</password>
       <name>Пескова Марина</name>
@@ -287,7 +304,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "17">
+    <user id="17">
       <login>Podgornyak</login>
       <password>podAASe18qw</password>
       <name>Подгорняк Артём</name>
@@ -304,7 +321,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "18">
+    <user id="18">
       <login>Rakitin</login>
       <password>prIsE18RAeJ</password>
       <name>Ракитин Алексей</name>
@@ -321,7 +338,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "19">
+    <user id="19">
       <login>Semenov</login>
       <password>siAprI18hF</password>
       <name>Семёнов Иван</name>
@@ -338,7 +355,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "20">
+    <user id="20">
       <login>Khomenkova</login>
       <password>kH18PriPi</password>
       <name>Хоменкова Полина</name>
@@ -355,7 +372,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "21">
+    <user id="21">
       <login>Tsarukyan</login>
       <password>paroldolzhenbyt</password>
       <name>Царукян Андрей</name>
@@ -372,7 +389,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "22">
+    <user id="22">
       <login>Shatrov</login>
       <password>isShaPri18Ak</password>
       <name>Шатров Илья</name>
@@ -389,7 +406,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "23">
+    <user id="23">
       <login>Shirokov</login>
       <password>ivSh18erYIG</password>
       <name>Широков Иван</name>
@@ -406,7 +423,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "24">
+    <user id="24">
       <login>Yaroslavtseva</login>
       <password>priSe18YaEAl</password>
       <name>Ярославцева Евгения</name>
@@ -423,7 +440,7 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
-    <user id = "25">
+    <user id="25">
       <login>Trusov</login>
       <password>ovTSwE18pri</password>
       <name>Трусов Олег</name>
