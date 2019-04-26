@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
+//using System.Collections.Generic;
+//using System.ComponentModel;
+//using System.Data;
+//using System.Drawing;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -18,12 +18,10 @@ namespace Окно_практика
 			InitializeComponent();
 		}
 
-		const int MAX_QUESTIONS = 240;
-		const int MAX_THEMES = 8;
-		const int MAX_THEME_QUESTIONS = 30;
+		public const int MAX_QUESTIONS_TRAIN = 10;
 
-		private static int amount = 0;
-		private static readonly bool[] isNotOpened = new bool[MAX_QUESTIONS];
+		public static int amount = 0;
+		public static int[] isOpened = new int[MAX_QUESTIONS_TRAIN];
 
 		private static int cur_theme = 0;
 		private static string cur_answer;
@@ -34,78 +32,60 @@ namespace Окно_практика
 		// get (Number of theme - 1)
 		// return Number of question
 		// or -1 if question list is empty
-		private static int GetAnswerNumber(int theme)
+		private static void GetQuestion(int theme)
 		{
+			if (theme == -1)
+			{
+				return;
+			}
 
 			if (amount == 0)
 			{
-				for (int i = 0; i < MAX_QUESTIONS; i++)
+				for (int i = 0; i < MAX_QUESTIONS_TRAIN; i++)
 				{
-					isNotOpened[i] = true;
+					isOpened[i] = -1;
 				}
 			}
 
-			if (theme == -1)
-			{
-				return -1;
-			}
-
-			if (amount == MAX_QUESTIONS)
-			{
-				Console.WriteLine("No questions\n");
-				return -1;
-			}
-
-			Random rnd = new Random();
-			int question = theme * MAX_THEME_QUESTIONS + rnd.Next() % MAX_THEME_QUESTIONS;
-			while (!isNotOpened[question])
-			{
-				question = theme * MAX_THEME_QUESTIONS + rnd.Next() % MAX_THEME_QUESTIONS;
-			}
-
-			amount++;
-			isNotOpened[question] = false;
-
-			return question;
-		}
-		private static void UploadQuestionData(int question)
-		{
 			XmlDocument doc = new XmlDocument();
 			doc.Load("testing.xml");
+			XmlNode root = doc.DocumentElement;
 
-			XmlElement root = doc.DocumentElement;
-			foreach (XmlNode nodes in root)
+			Random rnd = new Random();
+			int question = rnd.Next() % root.ChildNodes[theme].ChildNodes.Count; // вне безопасного программирования
+
+			bool exit = false;
+			while (!exit)
 			{
-				foreach (XmlNode questNode in nodes)
+				int i;
+				for (i = 0; i < amount; i++)
 				{
-					if (questNode.Attributes.Count > 0)
+					if (isOpened[i] == question)
 					{
-						XmlNode attr = questNode.Attributes.GetNamedItem("id");
-						if (attr.Value == question.ToString())
-						{
-							foreach (XmlNode quest in questNode.ChildNodes)
-							{
-								if (quest.Name == "quest")
-								{
-									cur_question = quest.InnerText;
-								}
-								if (quest.Name == "true")
-								{
-									cur_answer = quest.InnerText;
-								}
-							}
-						}
+						question = rnd.Next() % root.ChildNodes[theme].ChildNodes.Count; // вне безопасного программирования
+						break;
 					}
 				}
+
+				if (i == amount)
+				{
+					exit = true;
+				}
 			}
+
+			isOpened[amount] = question;
+			amount++;
+
+			cur_question = root.ChildNodes[theme].ChildNodes[question].ChildNodes[0].InnerText; // вне безопасного программирования
+			cur_answer = root.ChildNodes[theme].ChildNodes[question].ChildNodes[1].InnerText; // вне безопасного программирования
 		}
 
 		private static void ClearRecord()
 		{
 			amount = 0;
-			for (int i = 0; i < MAX_QUESTIONS; i++)
+			for (int i = 0; i < MAX_QUESTIONS_TRAIN; i++)
 			{
-				isNotOpened[i] = false;
+				isOpened[i] = -1;
 			}
 
 			cur_theme = 0;
@@ -127,7 +107,7 @@ namespace Окно_практика
 
 			answered++;
 
-			UploadQuestionData(GetAnswerNumber(cur_theme - 1));
+			GetQuestion(cur_theme - 1);
 			if (cur_theme != 0 && (cur_question != null && cur_isAnswered == true))
 			{
 				Question.Text = cur_question;
@@ -144,31 +124,31 @@ namespace Окно_практика
 			{
 				cur_theme = 1;
 			}
-			if (Arrays.Checked == true)
+			else if (Arrays.Checked == true)
 			{
 				cur_theme = 2;
 			}
-			if (Strings.Checked == true)
+			else if (Strings.Checked == true)
 			{
 				cur_theme = 3;
 			}
-			if (Recursion.Checked == true)
+			else if (Recursion.Checked == true)
 			{
 				cur_theme = 4;
 			}
-			if (Structs.Checked == true)
+			else if (Structs.Checked == true)
 			{
 				cur_theme = 5;
 			}
-			if (Files.Checked == true)
+			else if (Files.Checked == true)
 			{
 				cur_theme = 6;
 			}
-			if (Pointers.Checked == true)
+			else if (Pointers.Checked == true)
 			{
 				cur_theme = 7;
 			}
-			if (Dynamic.Checked == true)
+			else if (Dynamic.Checked == true)
 			{
 				cur_theme = 8;
 			}
@@ -200,27 +180,27 @@ namespace Окно_практика
 				return;
 			}
 
-			switch (cur_answer[0])
+			switch (Convert.ToInt32(cur_answer))
 			{
-				case '1':
+				case 1:
 					if (Answer1.Checked == true)
 					{
 						cur_isAnswered = true;
 					}
 					break;
-				case '2':
+				case 2:
 					if (Answer2.Checked == true)
 					{
 						cur_isAnswered = true;
 					}
 					break;
-				case '3':
+				case 3:
 					if (Answer3.Checked == true)
 					{
 						cur_isAnswered = true;
 					}
 					break;
-				case '4':
+				case 4:
 					if (Answer4.Checked == true)
 					{
 						cur_isAnswered = true;

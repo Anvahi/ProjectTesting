@@ -20,9 +20,9 @@
       <password>1</password>
       <name>Тестовый тест</name>
       <test>
-        <cycles>нет</cycles>
+        <cycles>3</cycles>
         <arrays>нет</arrays>
-        <strings>2</strings>
+        <strings>1</strings>
         <recursion>2</recursion>
         <structures>3</structures>
         <dynamic>нет</dynamic>
@@ -30,7 +30,7 @@
         <pointers>5</pointers>
       </test>
       <total>0</total>
-      <grade>5</grade>
+      <grade>7</grade>
     </user>
     <user id="1">
       <login>Berkut</login>
@@ -360,17 +360,17 @@
       <password>kH18PriPi</password>
       <name>Хоменкова Полина</name>
       <test>
-        <cycles>нет</cycles>
+        <cycles>1</cycles>
         <arrays>нет</arrays>
-        <strings>нет</strings>
+        <strings>1</strings>
         <recursion>нет</recursion>
         <structures>нет</structures>
         <files>нет</files>
-        <pointers>нет</pointers>
+        <pointers>1</pointers>
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
+      <grade>0</grade>
     </user>
     <user id="21">
       <login>Tsarukyan</login>

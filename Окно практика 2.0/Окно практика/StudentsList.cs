@@ -108,15 +108,15 @@ namespace Окно_практика
 
         private void DisplayList_Click(object sender, EventArgs e)
         {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load("users.xml");
+            XmlElement xRoot = xDoc.DocumentElement;
+            string student_marks = "";
             if (radioButton1.Checked == true || radioButton2.Checked == true || radioButton3.Checked == true || radioButton4.Checked == true)
             {
                 if (radioButton1.Checked == true)
                 {
                     listBox1.Items.Clear();
-                    XmlDocument xDoc = new XmlDocument();
-                    xDoc.Load("users.xml");
-                    XmlElement xRoot = xDoc.DocumentElement;
-                    string student_marks = "";
                     foreach (XmlNode xnode in xRoot)
                     {
                         if (xnode.Name == "students")
@@ -143,6 +143,77 @@ namespace Окно_практика
                                                 else
                                                 {
                                                     student_marks += childtest.InnerText/* +" (" + childtest.Name + ")"*/ + ", ";
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (radioButton2.Checked == true && comboBox1.Items[0].ToString() == "По теме циклы")
+                    {
+                        //if ()
+                        //{
+                            listBox1.Items.Clear();
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "students")
+                                {
+                                    foreach (XmlNode childstudents in xnode.ChildNodes)
+                                    {
+                                        if (childstudents.Name == "user")
+                                        {
+                                            foreach (XmlNode childuser in childstudents.ChildNodes)
+                                            {
+                                                if (childuser.Name == "name")
+                                                {
+                                                    student_marks = childuser.InnerText + ": ";
+                                                }
+                                                if (childuser.Name == "test")
+                                                {
+                                                    foreach (XmlNode childtest in childuser.ChildNodes)
+                                                    {
+                                                        if (childtest.Name == "cycles")
+                                                        {
+                                                            student_marks += childtest.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
+                                                            listBox1.Items.Add(student_marks);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        //}
+                        if (comboBox1.SelectedItem.ToString() == "По теме массивы")
+                        {
+                            listBox1.Items.Clear();
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "students")
+                                {
+                                    foreach (XmlNode childstudents in xnode.ChildNodes)
+                                    {
+                                        if (childstudents.Name == "user")
+                                        {
+                                            foreach (XmlNode childuser in childstudents.ChildNodes)
+                                            {
+                                                if (childuser.Name == "name")
+                                                {
+                                                    student_marks = childuser.InnerText + ": ";
+                                                }
+                                                if (childuser.Name == "test")
+                                                {
+                                                    foreach (XmlNode childtest in childuser.ChildNodes)
+                                                    {
+                                                        if (childtest.Name == "arrays")
+                                                        {
+                                                            student_marks += childtest.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
+                                                            listBox1.Items.Add(student_marks);
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }

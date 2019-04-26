@@ -440,5 +440,9 @@
       <total>нет</total>
       <grade>нет</grade>
     </user>
+    <user id = "26">
+      <login>1</login>
+      <password>1</password>
+    </user>
   </students>
 </users>

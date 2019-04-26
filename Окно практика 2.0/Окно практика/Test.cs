@@ -45,7 +45,7 @@ namespace Окно_практика
             {
                 if (summ_false[i]>0)
                 {
-                    Numbers.Text = Numbers.Text + "," + Convert.ToString(summ_false[i]);
+                    Numbers.Text = Numbers.Text + " " + Convert.ToString(summ_false[i]);
                 }
             }           
         }
@@ -98,7 +98,7 @@ namespace Окно_практика
         private void button2_Click(object sender, EventArgs e)
         {
             while (flag_3 == 1)
-            {            
+            {           
                 if (Cycles.Checked)
                     choice = 1;
                 if (Arrays.Checked)
@@ -115,8 +115,14 @@ namespace Окно_практика
                     choice = 7;
                 if (Dynamic.Checked)
                     choice = 8;
-            
-            if (choice > 0)
+
+                Answer1.Visible = true;
+                Answer2.Visible = true;
+                Answer3.Visible = true;
+                Answer4.Visible = true;
+                AnswerIt.Visible = true;                
+
+                if (choice > 0)
                 {
                     int flag_1 = 0;
                     int j, k;
@@ -259,29 +265,9 @@ namespace Окно_практика
                                 {
                                     foreach (XmlNode childcycles in xnode.ChildNodes)
                                     {
-                                        if (childcycles.Attributes.Count > 0)
-                                        {
-                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
-                                            for (int i = 0; i < 1; i++)
-                                            {
-                                                int atrib;
-                                                atrib = Convert.ToInt32(attr.Value);
-                                                if (atrib == rrand[0])
-                                                {
-                                                    if (childcycles.Name == "question")
-                                                    {
-                                                        foreach (XmlNode childquestion in childcycles.ChildNodes)
-                                                        {
-                                                            if (childquestion.Name == "quest")
-                                                            {
-                                                                Question.Text = childquestion.InnerText;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                                        XmlNodeList elemList = childcycles.SelectNodes("quest");
+                                        Question.Text = elemList[rrand[0]].InnerXml;
+                                    }                                    
                                 }
                             }
                             break;
@@ -1520,11 +1506,18 @@ namespace Окно_практика
                 }
                 else if (p == 10)
                 {
+                    label2.Visible = true;
+                    label1.Visible = true;
+                    label5.Visible = true;
+                    Rate.Visible = true;
+                    CountMistake.Visible = true;
+                    Numbers.Visible = true;
                     Rate_Click(sender, e);
                     CountMistake_Click(sender, e);
                     Numbers_Click(sender, e);
                     p += 1;
                     flag_3 = 1;
+                    Cycles.Checked = true;
                 }
             }
         }
@@ -1665,6 +1658,11 @@ namespace Окно_практика
         private void Answer1_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

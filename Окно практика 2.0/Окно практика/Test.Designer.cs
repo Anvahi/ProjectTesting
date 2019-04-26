@@ -62,6 +62,7 @@
             this.Question.Name = "Question";
             this.Question.Size = new System.Drawing.Size(1216, 600);
             this.Question.TabIndex = 0;
+            this.Question.Text = "Выберите тему";
             this.Question.Click += new System.EventHandler(this.Question_Click);
             // 
             // Answer1
@@ -76,6 +77,7 @@
             this.Answer1.TabIndex = 1;
             this.Answer1.Text = "Ответ 1";
             this.Answer1.UseVisualStyleBackColor = false;
+            this.Answer1.Visible = false;
             this.Answer1.CheckedChanged += new System.EventHandler(this.Answer1_CheckedChanged);
             // 
             // Answer2
@@ -90,6 +92,7 @@
             this.Answer2.TabIndex = 2;
             this.Answer2.Text = "Ответ 2";
             this.Answer2.UseVisualStyleBackColor = false;
+            this.Answer2.Visible = false;
             // 
             // Answer3
             // 
@@ -103,6 +106,7 @@
             this.Answer3.TabIndex = 3;
             this.Answer3.Text = "Ответ 3";
             this.Answer3.UseVisualStyleBackColor = false;
+            this.Answer3.Visible = false;
             // 
             // Answer4
             // 
@@ -116,6 +120,7 @@
             this.Answer4.TabIndex = 4;
             this.Answer4.Text = "Ответ 4";
             this.Answer4.UseVisualStyleBackColor = false;
+            this.Answer4.Visible = false;
             // 
             // AnswerIt
             // 
@@ -128,6 +133,7 @@
             this.AnswerIt.TabIndex = 5;
             this.AnswerIt.Text = "Подтвердить ответ";
             this.AnswerIt.UseVisualStyleBackColor = false;
+            this.AnswerIt.Visible = false;
             this.AnswerIt.Click += new System.EventHandler(this.AnswerIt_Click);
             // 
             // label2
@@ -141,6 +147,7 @@
             this.label2.Size = new System.Drawing.Size(174, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Оценка за тест - ";
+            this.label2.Visible = false;
             // 
             // Rate
             // 
@@ -153,6 +160,7 @@
             this.Rate.Size = new System.Drawing.Size(23, 25);
             this.Rate.TabIndex = 7;
             this.Rate.Text = "0";
+            this.Rate.Visible = false;
             this.Rate.Click += new System.EventHandler(this.Rate_Click);
             // 
             // label1
@@ -166,6 +174,7 @@
             this.label1.Size = new System.Drawing.Size(215, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "Количество ошибок - ";
+            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // CountMistake
@@ -179,6 +188,7 @@
             this.CountMistake.Size = new System.Drawing.Size(23, 25);
             this.CountMistake.TabIndex = 9;
             this.CountMistake.Text = "0";
+            this.CountMistake.Visible = false;
             this.CountMistake.Click += new System.EventHandler(this.CountMistake_Click);
             // 
             // label5
@@ -192,6 +202,7 @@
             this.label5.Size = new System.Drawing.Size(422, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Номера неправильно отвеченных вопросов:\r\n";
+            this.label5.Visible = false;
             // 
             // Numbers
             // 
@@ -205,6 +216,7 @@
             this.Numbers.Size = new System.Drawing.Size(290, 25);
             this.Numbers.TabIndex = 11;
             this.Numbers.Text = "0";
+            this.Numbers.Visible = false;
             this.Numbers.Click += new System.EventHandler(this.Numbers_Click);
             // 
             // BackToMenu
@@ -355,8 +367,9 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(232, 49);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Выберите тему";
+            this.label3.Text = "Темы:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Test
             // 
