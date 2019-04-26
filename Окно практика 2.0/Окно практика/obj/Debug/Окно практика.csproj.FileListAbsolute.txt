@@ -185,3 +185,20 @@ D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно 
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
+C:\Users\Вячеслав\Desktop\git\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
