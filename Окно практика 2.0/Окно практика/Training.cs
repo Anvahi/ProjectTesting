@@ -16,6 +16,15 @@ namespace Окно_практика
 		public Training()
 		{
 			InitializeComponent();
+
+			Answer1.Hide();
+			Answer2.Hide();
+			Answer3.Hide();
+			Answer4.Hide();
+
+			button2.Hide();
+
+			Question.Text = "";
 		}
 
 		public const int MAX_QUESTIONS_TRAIN = 10;
@@ -126,24 +135,30 @@ namespace Окно_практика
 							{
 								case 1:
 
-									Answer1.Text = "Ответ 1:\n" + questionNode.InnerText;
+									Answer1.Show();
+									Answer1.Text = questionNode.InnerText;
 									break;
 
 								case 2:
 
-									Answer2.Text = "Ответ 2:\n" + questionNode.InnerText;
+									Answer2.Show();
+									Answer2.Text = questionNode.InnerText;
 									break;
 
 								case 3:
 
-									Answer3.Text = "Ответ 3:\n" + questionNode.InnerText;
+									Answer3.Show();
+									Answer3.Text = questionNode.InnerText;
 									break;
 
 								case 4:
 
-									Answer4.Text = "Ответ 4:\n" + questionNode.InnerText;
+									Answer4.Show();
+									Answer4.Text = questionNode.InnerText;
 									break;
 							}
+
+							button2.Show();
 						}
 					}
 				}
@@ -172,10 +187,17 @@ namespace Окно_практика
 			if (answered >= 10 - 1)
 			{
 				Question.Text = "Вы справились с темой!";
-				Answer1.Text = "Ответ 1";
+				/*Answer1.Text = "Ответ 1";
 				Answer2.Text = "Ответ 2";
 				Answer3.Text = "Ответ 3";
-				Answer4.Text = "Ответ 4";
+				Answer4.Text = "Ответ 4";*/
+
+				Answer1.Hide();
+				Answer2.Hide();
+				Answer3.Hide();
+				Answer4.Hide();
+
+				button2.Hide();
 
 				ClearRecord();
 
@@ -294,6 +316,11 @@ namespace Окно_практика
 		private void Answer1_CheckedChanged(object sender, EventArgs e)
 		{
 			
+		}
+
+		private void Answer1_CheckedChanged_1(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
