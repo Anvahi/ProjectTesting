@@ -11,10 +11,10 @@
             printf(“%d”,i);
           }        
       </quest>
-      <answer id = "1">ни разу</answer>
-      <answer id = "2">4 раза</answer>
-      <answer id = "3">бесконечное кол-во раз</answer>
-      <answer id = "4">5 раз</answer>
+      <answer1>ни разу</answer1>
+      <answer2>4 раза</answer2>
+      <answer3>бесконечное кол-во раз</answer3>
+      <answer4>5 раз</answer4>
     <true>2</true>
     </question>
     <question id = "2">
@@ -27,10 +27,10 @@
             printf(“%d”,i);
           }
       </quest>
-      <answer id = "1">1234</answer>
-      <answer id = "2">4</answer>
-      <answer id = "3">5</answer>
-      <answer id = "4">12345</answer>
+      <answer1>1234</answer1>
+      <answer2>4</answer2>
+      <answer3>5</answer3>
+      <answer4>12345</answer4>
     <true>1</true>
     </question>
     <question id = "3">
@@ -43,20 +43,20 @@
             printf(“%d”,i);
           }
       </quest>
-      <answer id = "1">бесконечное кол-во раз</answer>
-      <answer id = "2">1 раз(void)</answer>
-      <answer id = "3">ни разу</answer>
-      <answer id = "4">2 раза</answer>
+      <answer1>бесконечное кол-во раз</answer1>
+      <answer2>1 раз(void)</answer2>
+      <answer3>ни разу</answer3>
+      <answer4>2 раза</answer4>
       <true>3</true>
     </question>
     <question id = "4">
       <quest>
         Какой служебный знак ставится после оператора case?
       </quest>
-      <answer id = "1">:</answer>
-      <answer id = "2">-</answer>
-      <answer id = "3">;</answer>
-      <answer id = "4">.</answer>
+      <answer1>:</answer1>
+      <answer2>-</answer2>
+      <answer3>;</answer3>
+      <answer4>.</answer4>
     <true>1</true>
     </question>
     <question id = "5">
@@ -69,60 +69,60 @@
             printf(“%d”,i);
           }
       </quest>
-      <answer id = "1">0</answer>
-      <answer id = "2">-1</answer> 
-      <answer id = "3">1</answer> 
-      <answer id = "4">ничего</answer>
+      <answer1>0</answer1>
+      <answer2>-1</answer2> 
+      <answer3>1</answer3> 
+      <answer4>ничего</answer4>
     <true>4</true>
     </question>
     <question id = "6">
       <quest>
         Какая из этих функция является циклом с предусловием?
       </quest>
-      <answer id = "1">do while</answer>
-      <answer id = "2">while</answer>
-      <answer id = "3">for</answer>
-      <answer id = "4">switch</answer>
+      <answer1>do while</answer1>
+      <answer2>while</answer2>
+      <answer3>for</answer3>
+      <answer4>switch</answer4>
     <true>2</true>
     </question>
     <question id = "7">
       <quest>
         Какая из этих функция является циклом с постусловием?
       </quest>
-      <answer id = "1">do while</answer>
-      <answer id = "2">while</answer>
-      <answer id = "3">for</answer>
-      <answer id = "4">switch</answer>
+      <answer1>do while</answer1>
+      <answer2>while</answer2>
+      <answer3>for</answer3>
+      <answer4>switch</answer4>
     <true>1</true>
     </question>
     <question id = "8">
       <quest>
         Какой из ниже перечисленных операторов, не является циклом в С++?
       </quest>
-      <answer id = "1">do while</answer>
-      <answer id = "2">for</answer>
-      <answer id = "3">repeat until</answer>
-      <answer id = "4">while</answer>
+      <answer1>do while</answer1>
+      <answer2>for</answer2>
+      <answer3>repeat until</answer3>
+      <answer4>while</answer4>
     <true>3</true>
     </question>
     <question id = "9">
       <quest>
         До каких пор будут выполняться операторы в теле цикла while (x &lt; 100)?
       </quest>
-      <answer id = "1">Пока х строго меньше ста</answer>
-      <answer id = "2">Пока х равен стам</answer>
-      <answer id = "3">Пока х больше ста</answer>
-      <answer id = "4">Пока х меньше или равен стам</answer>
+      <answer1>Пока х строго меньше ста</answer1>
+      <answer2>Пока х равен стам</answer2>
+      <answer3>Пока х больше ста</answer3>
+      <answer4>Пока х меньше или равен стам</answer4>
     <true>1</true>
     </question>
     <question id = "10">
       <quest>
         Тело любого цикла выполняется до тех пор, пока его условие ...
       </quest>
-      <answer id = "1">истинно</answer>
-      <answer id = "2">ложно</answer>
-      <answer id = "3">у цикла нет условия</answer>
-      <answer id = "4">не истинно</answer>
+      <answer1>истинно</answer1>
+      <answer2>ложно</answer2>
+      <answer3>у цикла нет условия</answer3>
+      <answer4>не истинно</answer4>
     <true>1</true>
     </question>
     <question id = "11">
@@ -135,20 +135,20 @@
             printf(“%d”,i);
           }
       </quest>
-      <answer id = "1">бесконечное кол-во раз</answer>
-      <answer id = "2">1 раз</answer>
-      <answer id = "3">ни разу</answer>
-      <answer id = "4">100 раз</answer>
+      <answer1>бесконечное кол-во раз</answer1>
+      <answer2>1 раз</answer2>
+      <answer3>ни разу</answer3>
+      <answer4>100 раз</answer4>
     <true>1</true>
     </question>
     <question id = "12">
       <quest>
         Цикл For называется циклом …
       </quest>
-      <answer id = "1">с заданным количеством шагов</answer>
-      <answer id = "2">с предусловием</answer>
-      <answer id = "3">с постусловием</answer>
-      <answer id = "4">не является циклом </answer>
+      <answer1>с заданным количеством шагов</answer1>
+      <answer2>с предусловием</answer2>
+      <answer3>с постусловием</answer3>
+      <answer4>не является циклом </answer4>
     <true>1</true>
     </question>
     <question id = "13">
@@ -161,30 +161,30 @@
             printf(“%d”,i);
           }
       </quest>
-      <answer id = "1">ничего</answer>
-      <answer id = "2">123456</answer>
-      <answer id = "3">12345678...</answer>
-      <answer id = "4">true</answer>
+      <answer1>ничего</answer1>
+      <answer2>123456</answer2>
+      <answer3>12345678...</answer3>
+      <answer4>true</answer4>
     <true>3</true>
     </question>
     <question id = "14">
       <quest>
         Может ли счетчик цикла For изменяться с шагом -1?
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет</answer>
-      <answer id = "3">зависит от условия задачи</answer>
-      <answer id = "4">не знаю</answer>
+      <answer1>да</answer1>
+      <answer2>нет</answer2>
+      <answer3>зависит от условия задачи</answer3>
+      <answer4>не знаю</answer4>
     <true>1</true>
     </question>
     <question id = "15">
       <quest>
         Цикл - это...
       </quest>
-      <answer id = "1">многократно повторяющийся фрагмент программы</answer>
-      <answer id = "2">однократно повторяющийся фрагмент программы</answer>
-      <answer id = "3">не 1), не 2)</answer>
-      <answer id = "4">нет четкого определения этого термина</answer>
+      <answer1>многократно повторяющийся фрагмент программы</answer1>
+      <answer2>однократно повторяющийся фрагмент программы</answer2>
+      <answer3>не 1), не 2)</answer3>
+      <answer4>нет четкого определения этого термина</answer4>
     <true>1</true>
     </question>
     <question id = "16">
@@ -197,10 +197,10 @@
             i++;
           } while(i &lt; 5);
       </quest>
-      <answer id = "1">1</answer>
-      <answer id = "2">5</answer>
-      <answer id = "3">15</answer>
-      <answer id = "4">1234</answer>
+      <answer1>1</answer1>
+      <answer2>5</answer2>
+      <answer3>15</answer3>
+      <answer4>1234</answer4>
     <true>4</true>
     </question>
     <question id = "17">
@@ -213,20 +213,20 @@
             printf("%d  ",i);
           } while(i &lt; 5);
       </quest>
-      <answer id = "1">1234</answer>
-      <answer id = "2">0</answer>
-      <answer id = "3">5</answer>
-      <answer id = "4">01234</answer>
+      <answer1>1234</answer1>
+      <answer2>0</answer2>
+      <answer3>5</answer3>
+      <answer4>01234</answer4>
     <true>4</true>
     </question>
     <question id = "18">
       <quest>
         Может ли счетчик цикла While изменяться с шагом 0,3?
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет</answer>
-      <answer id = "3">зависит от условия задачи</answer>
-      <answer id = "4">не знаю</answer>
+      <answer1>да</answer1>
+      <answer2>нет</answer2>
+      <answer3>зависит от условия задачи</answer3>
+      <answer4>не знаю</answer4>
     <true>1</true>
     </question>
     <question id = "19">
@@ -239,56 +239,57 @@
             printf("%d  ",i);
           } while(i &lt; 5);
       </quest>
-      <answer id = "1">5</answer>
-      <answer id = "2">ничего</answer>
-      <answer id = "3">6</answer>
-      <answer id = "4">56</answer>
+      <answer1>5</answer1>
+      <answer2>ничего</answer2>
+      <answer3>6</answer3>
+      <answer4>56</answer4>
     <true>3</true>
     </question>
     <question id = "20">
       <quest>
         Выберите правильную форму общей записи цикла for:
       </quest>
-      <answer id = "1">
+      <answer1>
           for (инициализация параметра; проверка условия окончания; коррекция параметра)
           {
             блок операций;
-          }</answer>
-      <answer id = "2">
+          }</answer1>
+      <answer2>
           for (проверка условия окончания; инициализация параметра; коррекция параметра)
           {
             блок операций;
-           }</answer>
-      <answer id = "3">
+           }</answer2>
+      <answer3>
           {
             блок операций;
           }
-          for (проверка условия окончания; инициализация параметра; коррекция параметра)</answer>
-      <answer id = "4">
+          for (проверка условия окончания; инициализация параметра; коррекция параметра)</answer3>
+      <answer4>
           {
             блок операций;
           }
-          for (инициализация параметра; проверка условия окончания; коррекция параметра)</answer>
+          for (инициализация параметра; проверка условия окончания; коррекция параметра)</answer4>
     <true>1</true>
     </question>
     <question id = "21">
       <quest>
         Сторожевое условие цикла это:
       </quest>
-      <answer id = "1"> Общее название для условий продолжения и завершения циклов</answer>
-      <answer id = "2">Условие продолжения цикла</answer>
-      <answer id = "3">Условие завершения цикла</answer>
-      <answer id = "4">Нет верного ответа из предложенных</answer>
+      <answer1> Общее название для условий продолжения и завершения циклов</answer1>
+      <answer2>Условие продолжения цикла</answer2>
+      <answer3>Условие завершения цикла</answer3>
+      <answer4>Нет верного ответа из предложенных</answer4>
     <true>3</true>
     </question>
     <question id = "22">
       <quest>
-        Сколько раз будет выполнено тело следуюшего оператора цикла? for (int x=0, step = 1; x &lt; 100; x += step, step++) { ... }
+        Сколько раз будет выполнено тело следуюшего оператора цикла? for (int x=0, step = 1; x &lt; 100; 
+        x += step, step++) { ... }
       </quest>
-      <answer id = "1">14</answer>
-      <answer id = "2">100</answer>
-      <answer id = "3">50</answer>
-      <answer id = "4">0</answer>
+      <answer1>14</answer1>
+      <answer2>100</answer2>
+      <answer3>50</answer3>
+      <answer4>0</answer4>
     <true>1</true>
     </question>
     <question id = "23">
@@ -297,30 +298,32 @@
           int i;
           for (i=0; i &lt; = 18; i++) {...}	
       </quest>
-      <answer id = "1">ничему, поскольку переменная i объявлена в блоке цикла for, и за его пределами не видна</answer>
-      <answer id = "2">19, поскольку последнее допустимое значение переменной i равно 18, а первое недопустимое при шаге в 1 равно именно 19</answer>
-      <answer id = "3">оба ответа верны</answer>
-      <answer id = "4">ни одного верного ответа</answer>
+      <answer1>ничему, поскольку переменная i объявлена в блоке цикла for, и за его пределами не видна</answer1>
+      <answer2>19, поскольку последнее допустимое значение переменной i равно 18, а первое недопустимое 
+      при шаге в 1 равно именно 19</answer2>
+      <answer3>оба ответа верны</answer3>
+      <answer4>ни одного верного ответа</answer4>
     <true>2</true>
     </question>
     <question id = "24">
       <quest>
         Сколько раз может исполнится тело цикла с постусловием do-while?
       </quest>
-      <answer id = "1">1 или более раз</answer>
-      <answer id = "2">0 или более раз</answer>
-      <answer id = "3">1 раз</answer>
-      <answer id = "4">нет верного ответа</answer>
+      <answer1>1 или более раз</answer1>
+      <answer2>0 или более раз</answer2>
+      <answer3>1 раз</answer3>
+      <answer4>нет верного ответа</answer4>
     <true>1</true>
     </question>
     <question id = "25">
       <quest>
-        Если условие продолжения цикла не определено на момент начала цикла, какой тип циклов предпочтительно использовать?	
+        Если условие продолжения цикла не определено на момент начала цикла, какой тип циклов предпочтительно 
+        использовать?	
       </quest>
-      <answer id = "1">Цикл с параметром for</answer>
-      <answer id = "2">Цикл с предусловием while</answer>
-      <answer id = "3">Цикл с постусловием do-while</answer>
-      <answer id = "4">Нет верного ответа</answer>
+      <answer1>Цикл с параметром for</answer1>
+      <answer2>Цикл с предусловием while</answer2>
+      <answer3>Цикл с постусловием do-while</answer3>
+      <answer4>Нет верного ответа</answer4>
     <true>1</true>
     </question>
     <question id = "26">
@@ -328,10 +331,10 @@
         Сколько раз будет выполнено тело следуюшего оператора цикла?
           for (int i=0; i &lt; 15; i+=2) {...}	
       </quest>
-      <answer id = "1">16 раз</answer>
-      <answer id = "2">15 раз</answer>
-      <answer id = "3">1 раз</answer>
-      <answer id = "4">бесконечное кол-во раз</answer>
+      <answer1>16 раз</answer1>
+      <answer2>15 раз</answer2>
+      <answer3>1 раз</answer3>
+      <answer4>бесконечное кол-во раз</answer4>
     <true>1</true>
     </question>
     <question id = "27">
@@ -339,10 +342,10 @@
         Чему равен шаг цикла в следующем примере:
           for (int i=14; i &gt; =0; i--) {...}
       </quest>
-      <answer id = "1">-1</answer>
-      <answer id = "2">1</answer>
-      <answer id = "3">0</answer>
-      <answer id = "4">2</answer>
+      <answer1>-1</answer1>
+      <answer2>1</answer2>
+      <answer3>0</answer3>
+      <answer4>2</answer4>
     <true>1</true>
     </question>
     <question id = "28">
@@ -354,10 +357,10 @@
               x += 0.5;
             }
       </quest>
-      <answer id = "1">5</answer>
-      <answer id = "2">7</answer>
-      <answer id = "3">0</answer>
-      <answer id = "4">6</answer>
+      <answer1>5</answer1>
+      <answer2>7</answer2>
+      <answer3>0</answer3>
+      <answer4>6</answer4>
     <true>2</true>
     </question>
     <question id = "29">
@@ -365,20 +368,20 @@
         Чему равен шаг цикла в следующем примере:
           for (int i=0; i &lt; 15; i++) {...}	
       </quest>
-      <answer id = "1">15</answer>
-      <answer id = "2">0</answer>
-      <answer id = "3">1</answer>
-      <answer id = "4">16</answer>
+      <answer1>15</answer1>
+      <answer2>0</answer2>
+      <answer3>1</answer3>
+      <answer4>16</answer4>
     <true>1</true>
     </question>
     <question id = "30">
       <quest>
         Совместно с каким оператором обычно используются операторы break и continue в теле цикла?
       </quest>
-      <answer id = "1">Совместно с оператором while</answer>
-      <answer id = "2">Совместно с оператором if-else</answer>
-      <answer id = "3">Совместно с оператором switch-case</answer>
-      <answer id = "4">Ни одного верного ответа</answer>
+      <answer1>Совместно с оператором while</answer1>
+      <answer2>Совместно с оператором if-else</answer2>
+      <answer3>Совместно с оператором switch-case</answer3>
+      <answer4>Ни одного верного ответа</answer4>
     <true>2</true>
     </question>
   </cycles>
@@ -387,119 +390,117 @@
       <quest>
         Что называется массивом?
       </quest>
-      <answer id = "1">Под массивом понимается совокупность конечного числа данных различных типов</answer>
-      <answer id = "2">Под массивом понимается совокупность конечного числа данных одного типа</answer>
-      <answer id = "3">Под массивом понимается совокупность бесконечного числа данных различных типов</answer>
-      <answer id = "4">Под массивом понимается совокупность конечного числа данных одного типа</answer>
+      <answer1>Под массивом понимается совокупность конечного числа данных различных типов</answer1>
+      <answer2>Под массивом понимается совокупность конечного числа данных одного типа</answer2>
+      <answer3>Под массивом понимается совокупность бесконечного числа данных различных типов</answer3>
+      <answer4>Под массивом понимается совокупность конечного числа данных одного типа</answer4>
     <true>2</true>
     </question>
     <question id = "32">
       <quest>
         Что выведет данная программа?
           int main()
-          {
-            int a=1, b=2;
-            int *p1=&amp;a;
-            int *p2=p1;
-            p1=&amp;b;
-            print ("%d %d",(*p1),(*p2));
+          {int a=1, b=2; int *p1=&amp;a; int *p2=p1;
+            p1=&amp;b; print ("%d %d",(*p1),(*p2));
             return 0;
           }
       </quest>
-      <answer id = "1">12</answer>
-      <answer id = "2">Адреса переменных a и b</answer>
-      <answer id = "3">22</answer>
-      <answer id = "4">21</answer>
+      <answer1>12</answer1>
+      <answer2>Адреса переменных a и b</answer2>
+      <answer3>22</answer3>
+      <answer4>21</answer4>
     <true>1</true>
     </question>
     <question id = "33">
       <quest>
         Элемент массива (значение элемента массива) -
       </quest>
-      <answer id = "1">значение, хранящееся в определенной ячейке памяти, расположенной в пределах массива, а также адрес этой ячейки памяти</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">количество байт, занимаемых одним элементом массива</answer>
+      <answer1>значение, хранящееся в определенной ячейке памяти, расположенной в пределах массива, а также 
+      адрес этой ячейки памяти</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>количество байт, занимаемых одним элементом массива</answer4>
     <true>1</true>
     </question>
     <question id = "34">
       <quest>
         Адрес элемента - это...
       </quest>
-      <answer id = "1">значение, хранящееся в определенной ячейке памяти, расположенной в пределах массива, а также адрес этой ячейки памяти</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">количество байт, занимаемых одним элементом массива</answer>
+      <answer1>значение, хранящееся в определенной ячейке памяти, расположенной в пределах массива, а также 
+      адрес этой ячейки памяти</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>количество байт, занимаемых одним элементом массива</answer4>
     <true>2</true>
     </question>
     <question id = "35">
       <quest>
         Индекс элемента - это...
       </quest>
-      <answer id = "1">порядковый номер элемента в массиве</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">количество байт, занимаемых одним элементом массива</answer>
+      <answer1>порядковый номер элемента в массиве</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>количество байт, занимаемых одним элементом массива</answer4>
     <true>1</true>
     </question>
     <question id = "36">
       <quest>
         Адрес массива - это..
       </quest>
-      <answer id = "1">адрес начального элемента массива</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">количество байт, занимаемых одним элементом массива</answer>
+      <answer1>адрес начального элемента массива</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>количество байт, занимаемых одним элементом массива</answer4>
     <true>1</true>
     </question>
     <question id = "37">
       <quest>
         Имя массива - это..
       </quest>
-      <answer id = "1">адрес начального элемента массива</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">количество байт, занимаемых одним элементом массива</answer>
+      <answer1>адрес начального элемента массива</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>количество байт, занимаемых одним элементом массива</answer4>
     <true>3</true>
     </question>
     <question id = "38">
       <quest>
         Размер массива - это...
       </quest>
-      <answer id = "1">адрес начального элемента массива</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">кол-во элементов массива</answer>
+      <answer1>адрес начального элемента массива</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>кол-во элементов массива</answer4>
     <true>3</true>
     </question>
     <question id = "39">
       <quest>
         Размер элемента - это ...
       </quest>
-      <answer id = "1">количество байт, занимаемых одним элементом массива</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">кол-во элементов массива</answer>
+      <answer1>количество байт, занимаемых одним элементом массива</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>кол-во элементов массива</answer4>
     <true>1</true>
     </question>
     <question id = "40">
       <quest>
         Для объявления массива в языке Си используется следующий синтаксис:
       </quest>
-      <answer id = "1">тип имя[размерность]={инициализация};</answer>
-      <answer id = "2">тип имя[инициализация]={размерность};</answer>
-      <answer id = "3">тип имя{размерность}={инициализация};</answer>
-      <answer id = "4">ни одного верного варианта</answer>
+      <answer1>тип имя[размерность]={инициализация};</answer1>
+      <answer2>тип имя[инициализация]={размерность};</answer2>
+      <answer3>тип имя{размерность}={инициализация};</answer3>
+      <answer4>ни одного верного варианта</answer4>
     <true>1</true>
     </question>
     <question id = "41">
       <quest>
         Из скольки элементов состоит массив int a[10] = {0};?
       </quest>
-      <answer id = "1">10</answer>
-      <answer id = "2">1</answer>
-      <answer id = "3">0</answer>
-      <answer id = "4">11</answer>
+      <answer1>10</answer1>
+      <answer2>1</answer2>
+      <answer3>0</answer3>
+      <answer4>11</answer4>
     <true>1</true>
     </question>
     <question id = "42">
@@ -507,137 +508,131 @@
         Из скольких элементов состоит массив:
           int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
       </quest>
-      <answer id = "1">1</answer>
-      <answer id = "2">9</answer>
-      <answer id = "3">5</answer>
-      <answer id = "4">не определено</answer>
+      <answer1>1</answer1>
+      <answer2>9</answer2>
+      <answer3>5</answer3>
+      <answer4>не определено</answer4>
     <true>2</true>
     </question>
     <question id = "43">
       <quest>
         В каких скобках указывается индекс элемента массива?
       </quest>
-      <answer id = "1">{ }</answer>
-      <answer id = "2">[ ]</answer>
-      <answer id = "3">( )</answer>
-      <answer id = "4">ни в каких</answer>
+      <answer1>{ }</answer1>
+      <answer2>[ ]</answer2>
+      <answer3>( )</answer3>
+      <answer4>ни в каких</answer4>
     <true>2</true>
     </question>
     <question id = "44">
       <quest>
         Как заполнить массив случайными числами?
       </quest>
-      <answer id = "1">
+      <answer1>
           for ( int i = 0; i &lt; 10; i ++)
-          Arr [i] = rand ()%100;</answer>
-      <answer id = "2">
+          Arr [i] = rand ()%100;</answer1>
+      <answer2>
           for ( int i = 0; i &lt; 10; i ++)
-          Arr [i] = rand ()/100;</answer>
-      <answer id = "3">
+          Arr [i] = rand ()/100;</answer2>
+      <answer3>
           for ( int i = 0; i &lt; 10; i ++)
-          Arr [i] = rand ()*100;</answer>
-      <answer id = "4">
+          Arr [i] = rand ()*100;</answer3>
+      <answer4>
           for ( int i = 0; i &lt; 10; i ++)
-          Arr [i] = rand ()+100;</answer>
+          Arr [i] = rand ()+100;</answer4>
     <true>1</true>
     </question>
     <question id = "45">
       <quest>
         Структура - это...
       </quest>
-      <answer id = "1">это совокупность переменных, объединенных одним именем, предоставляющая общепринятый способ совместного хранения информации</answer>
-      <answer id = "2">адрес начальной ячейки памяти, в которой расположен этот элемент</answer>
-      <answer id = "3">идентификатор, используемый для обращения к элементам массива</answer>
-      <answer id = "4">кол-во элементов массива</answer>
+      <answer1>это совокупность переменных, объединенных одним именем, предоставляющая общепринятый способ 
+      совместного хранения информации</answer1>
+      <answer2>адрес начальной ячейки памяти, в которой расположен этот элемент</answer2>
+      <answer3>идентификатор, используемый для обращения к элементам массива</answer3>
+      <answer4>кол-во элементов массива</answer4>
     <true>1</true>
     </question>
     <question id = "46">
       <quest>
         Многомерные массивы - это...
       </quest>
-      <answer id = "1">это массивы, у которых есть более одного индекса</answer>
-      <answer id = "2">это массивы, у которых есть более одного индекса или 1 индекс</answer>
-      <answer id = "3">это массивы, у которых нет индекса</answer>
-      <answer id = "4">ни одного верного ответа</answer>
+      <answer1>это массивы, у которых есть более одного индекса</answer1>
+      <answer2>это массивы, у которых есть более одного индекса или 1 индекс</answer2>
+      <answer3>это массивы, у которых нет индекса</answer3>
+      <answer4>ни одного верного ответа</answer4>
     <true>1</true>
     </question>
     <question id = "47">
       <quest>
         Двумерный массив объявляется следующим образом:
       </quest>
-      <answer id = "1">тип имя_массива[размер второго измерения][размер первого измерения];</answer>
-      <answer id = "2">тип имя_массива{размер второго измерения}[размер первого измерения];</answer>
-      <answer id = "3">тип имя_массива[размер первого измерения][размер второго измерения];</answer>
-      <answer id = "4">тип имя_массива[размер второго измерения]{размер второго измерения};</answer>
+      <answer1>тип имя_массива[размер второго измерения][размер первого измерения];</answer1>
+      <answer2>тип имя_массива{размер второго измерения}[размер первого измерения];</answer2>
+      <answer3>тип имя_массива[размер первого измерения][размер второго измерения];</answer3>
+      <answer4>тип имя_массива[размер второго измерения]{размер второго измерения};</answer4>
     <true>1</true>
     </question>
     <question id = "48">
       <quest>
         Выберете неверное утверждение:
       </quest>
-      <answer id = "1">все элементы массива имеют один и тот же тип</answer>
-      <answer id = "2">массив имеет одно имя для всех элементов</answer>
-      <answer id = "3">массив бывает только одномерный</answer>
-      <answer id = "4">доступ к конкретному элементу массива осуществляется по индексу (индексам)</answer>
+      <answer1>все элементы массива имеют один и тот же тип</answer1>
+      <answer2>массив имеет одно имя для всех элементов</answer2>
+      <answer3>массив бывает только одномерный</answer3>
+      <answer4>доступ к конкретному элементу массива осуществляется по индексу (индексам)</answer4>
     <true>3</true>
     </question>
     <question id = "49">
       <quest>
         В каком из вариантов объявлен двумерный массив?
       </quest>
-      <answer id = "1">int anarray [20] [20]</answer>
-      <answer id = "2">int array [20, 20]</answer>
-      <answer id = "3">array anarray [20] [20]</answer>
-      <answer id = "4">char array [20]</answer>
+      <answer1>int anarray [20] [20]</answer1>
+      <answer2>int array [20, 20]</answer2>
+      <answer3>array anarray [20] [20]</answer3>
+      <answer4>char array [20]</answer4>
     <true>1</true>
     </question>
     <question id = "50">
       <quest>
-        В какой из следующих строк, записанных на языке С++, выполняется обращение к седьмому элементу массива, размер которого равен 10?
+        В какой из следующих строк, записанных на языке С++, выполняется обращение к седьмому элементу массива, 
+        размер которого равен 10?
       </quest>
-      <answer id = "1">mas (7)</answer>
-      <answer id = "2">mas [6]</answer>
-      <answer id = "3">mas 8</answer>
-      <answer id = "4">mas [7]</answer>
+      <answer1>mas (7)</answer1>
+      <answer2>mas [6]</answer2>
+      <answer3>mas 8</answer3>
+      <answer4>mas [7]</answer4>
     <true>2</true>
     </question>
     <question id = "51">
       <quest>
-        Значения элементов двумерного массива A[100][100] задаются с помощью следующего фрагмента программы. Чему равна сумма элементов массива после выполнения следующего фрагмента программы?
+        Значения элементов двумерного массива A[100][100] задаются с помощью следующего фрагмента программы. 
+        Чему равна сумма элементов массива после выполнения следующего фрагмента программы?
           for (i=1;i &lt; =100;i++) 
-          {
-            for (k=1;k &lt; =100;k++) 
-            {
-              if (i &gt; k)
-              {
-                A[i,k] = i;
-              }
-              else A[i,k] = -k;
-            }
-          }
+          { for (k=1;k &lt; =100;k++) 
+            { if (i &gt; k)
+              { A[i,k] = i;}
+              else A[i,k] = -k;}}
       </quest>
-      <answer id = "1">40</answer>
-      <answer id = "2">-5050</answer>
-      <answer id = "3">100</answer>
-      <answer id = "4">200</answer>
+      <answer1>40</answer1>
+      <answer2>-5050</answer2>
+      <answer3>100</answer3>
+      <answer4>200</answer4>
     <true>2</true>
     </question>
     <question id = "52">
       <quest>
-        Значения элементов двумерного массива A[100][100] задаются с помощью следующего фрагмента программы. Чему равна сумма элементов массива после выполнения следующего фрагмента программы?
+        Значения элементов двумерного массива A[100][100] задаются с помощью следующего фрагмента программы. 
+        Чему равна сумма элементов массива после выполнения следующего фрагмента программы?
           for (i=0;i &lt; 100;i++) 
-          {
-            for (k = 1; k &lt; = 100; k++) 
-            {
-              if (i == k)  A[i][k] = 1;
-              else A[i][k] = -1;
-            }
-          }
+          { for (k = 1; k &lt; = 100; k++) 
+            { if (i == k)  A[i][k] = 1;
+              else A[i][k] = -1;}}
       </quest>
-      <answer id = "1">-9800</answer>
-      <answer id = "2">100</answer>
-      <answer id = "3">-100</answer>
-      <answer id = "4">0</answer>
+      <answer1>-9800</answer1>
+      <answer2>100</answer2>
+      <answer3>-100</answer3>
+      <answer4>0</answer4>
     <true>1</true>
     </question>
     <question id = "53">
@@ -645,141 +640,106 @@
         Дан фрагмент программы, обрабатывающей двумерный массив A[5][4]. Чему будет равно значение A[3][1]?
           k = 4;
           for (m = 1; m &lt; = 4; m++) 
-          {
-            k = k + 1;
-            for (n = 1; n &lt; = 5; n++) 
-            {
-              k=m-k;
-              A[n][m]=n*n+m*m-2*k;
-            }
-          }
+          { k = k + 1; for (n = 1; n &lt; = 5; n++) 
+            { k=m-k; A[n][m]=n*n+m*m-2*k;}}
       </quest>
-      <answer id = "1">4</answer>
-      <answer id = "2">5</answer>
-      <answer id = "3">17</answer>
-      <answer id = "4">18</answer>
+      <answer1>4</answer1>
+      <answer2>5</answer2>
+      <answer3>17</answer3>
+      <answer4>18</answer4>
     <true>4</true>
     </question>
     <question id = "54">
       <quest>
-        Элементы двумерного массива A размером 10x10 первоначально были равны 1. Затем значения некоторых из них изменяют с помощью следующего фрагмента программы. Сколько элементов массива в результате будут равны 0?
+        Элементы двумерного массива A размером 10x10 первоначально были равны 1. Затем значения некоторых из них
+        изменяют с помощью следующего фрагмента программы. Сколько элементов массива в результате будут равны 0?
           for (n = 1; n &lt; = 4; n++)
-          {
-            for (k = 1; k &lt; = n+1; k++)
-            {
-              A[n][k]= A[n][k]-1;
-              A[n][k+1]= A[n][k]-1;
-            }
-          }
+          { for (k = 1; k &lt; = n+1; k++)
+            { A[n][k]= A[n][k]-1; A[n][k+1]= A[n][k]-1;}}
       </quest>
-      <answer id = "1">4</answer>
-      <answer id = "2">1</answer>
-      <answer id = "3">2</answer>
-      <answer id = "4">3</answer>
+      <answer1>4</answer1>
+      <answer2>1</answer2>
+      <answer3>2</answer3>
+      <answer4>3</answer4>
     <true>1</true>
     </question>
     <question id = "55">
       <quest>
-        В программе описан двумерный целочисленный массив A [6][6]. Ниже представлен фрагмент этой программы, в котором изменяются значения элементов массива. До выполнения данного фрагмента программы значение A[4[]3] было равно 10, а значение A[3][4] было равно 15. Чему будет равно значение A[4][3] после выполнения следующего фрагмента программы?
-          for (n = 1; n &lt; = 6; n++) 
-          {
-            for (m = 1; m &lt; = 6; m++) 
-            {
-              A[n][m]= A[m][n]+2*n-m;
-            }
-          }
+        В программе описан двумерный целочисленный массив A [6][6]. Ниже представлен фрагмент этой программы, в 
+        котором изменяются значения элементов массива. До выполнения данного фрагмента программы значение A[4[]3] 
+        было равно 10, а значение A[3][4] было равно 15. Чему будет равно значение A[4][3] после выполнения 
+        следующего фрагмента программы?
+          for (n = 1; n &lt; = 6; n++) { for (m = 1; m &lt; = 6; m++) { A[n][m]= A[m][n]+2*n-m;}}
       </quest>
-      <answer id = "1">16</answer>
-      <answer id = "2">-1</answer>
-      <answer id = "3">1</answer>
-      <answer id = "4">17</answer>
+      <answer1>16</answer1>
+      <answer2>-1</answer2>
+      <answer3>1</answer3>
+      <answer4>17</answer4>
     <true>4</true>
     </question>
     <question id = "56">
       <quest>
-        Значения двумерного массива задаются с помощью вложенного оператора цикла в представленном фрагменте программы. Чему будет равно значение B[2][4]?
+        Значения двумерного массива задаются с помощью вложенного оператора цикла в представленном фрагменте
+        программы. Чему будет равно значение B[2][4]?
           for (n = 1; n &lt; = 5; n++) 
-          {
-            for (k = 1; k &lt; = 5; k++) 
-            {
-              B[n][k]= n + k;
-            }
-          }
+          {for (k = 1; k &lt; = 5; k++) {B[n][k]= n + k;}}
       </quest>
-      <answer id = "1">2</answer>
-      <answer id = "2">6</answer>
-      <answer id = "3">4</answer>
-      <answer id = "4">5</answer>
+      <answer1>2</answer1>
+      <answer2>6</answer2>
+      <answer3>4</answer3>
+      <answer4>5</answer4>
     <true>2</true>
     </question>
     <question id = "57">
       <quest>
-        Значения элементов двумерного массива А размером 5x5 задаются с помощью вложенного цикла в представленном фрагменте программы. Сколько элементов массива будут иметь значения больше 10?
+        Значения элементов двумерного массива А размером 5x5 задаются с помощью вложенного цикла в представленном
+        фрагменте программы. Сколько элементов массива будут иметь значения больше 10?
           for (i = 1; i &lt; = 5; i++)
-          {
-            for (j = 1; j &lt; = 5; j++)
-            {
-              A[i][j]= i*j;
-            }
-          }
+          {for (j = 1; j &lt; = 5; j++) {A[i][j]= i*j;}}
       </quest>
-      <answer id = "1">8</answer>
-      <answer id = "2">4</answer>
-      <answer id = "3">6</answer>
-      <answer id = "4">7</answer>
+      <answer1>8</answer1>
+      <answer2>4</answer2>
+      <answer3>6</answer3>
+      <answer4>7</answer4>
     <true>1</true>
     </question>
     <question id = "58">
       <quest>
-        Значения элементов двумерного массива A[10][10] сначала равны 4. Затем выполняется следующий фрагмент программы. Сколько элементов массива будут равны 9?
+        Значения элементов двумерного массива A[10][10] сначала равны 4. Затем выполняется следующий фрагмент
+        программы. Сколько элементов массива будут равны 9?
           for (i = 1; i &lt; = 4; i++)
-          {
-            for (j = 1; j &lt; = 5; j++) 
-            {
-              A[i][j]=A[i][j]+4;
-              A[j][i]=A[j][i]+5;
-            }
-          }
+          {for (j = 1; j &lt; = 5; j++) {A[i][j]=A[i][j]+4; A[j][i]=A[j][i]+5;}}
       </quest>
-      <answer id = "1">0</answer>
-      <answer id = "2">2</answer>
-      <answer id = "3">4</answer>
-      <answer id = "4">6</answer>
+      <answer1>0</answer1>
+      <answer2>2</answer2>
+      <answer3>4</answer3>
+      <answer4>6</answer4>
     <true>3</true>
     </question>
     <question id = "59">
       <quest>
         Дан фрагмент программы. Сколько элементов массива С будут равны 1?
           for (n = 1; n &lt; = 5; n++)
-          {
-            for (m = 1; m &lt; = 5; m++) 
-            {
-              C[n][m] = (m – n)*(m – n);
-            }
-          }
+          {for (m = 1; m &lt; = 5; m++) {C[n][m] = (m – n)*(m – n);}}
       </quest>
-      <answer id = "1">8</answer>
-      <answer id = "2">4</answer>
-      <answer id = "3">6</answer>
-      <answer id = "4">2</answer>
+      <answer1>8</answer1>
+      <answer2>4</answer2>
+      <answer3>6</answer3>
+      <answer4>2</answer4>
     <true>1</true>
     </question>
     <question id = "60">
       <quest>
-        Все элементы двумерного массива A размером 10х10 элементов первоначально были равны 0. Затем значения элементов меняются с помощью вложенного оператора цикла в представленном фрагменте программы. Сколько элементов массива в результате будут равны 1?
+        Все элементы двумерного массива A размером 10х10 элементов первоначально были равны 0. Затем значения
+        элементов меняются с помощью вложенного оператора цикла в представленном фрагменте программы. Сколько
+        элементов массива в результате будут равны 1?
           for (n = 1; n &lt; = 4; n++) 
-          {
-            for (k = n; k &lt; = 4; k++)
-            {
-              A[n][k] = A[n][k] + 1;
-              A[k][n] = A[k][n] + 1;
-            }
-          }
+          {for (k = n; k &lt; = 4; k++) {A[n][k] = A[n][k] + 1; A[k][n] = A[k][n] + 1;}}
       </quest>
-      <answer id = "1">10</answer>
-      <answer id = "2">12</answer>
-      <answer id = "3">4</answer>
-      <answer id = "4">6</answer>
+      <answer1>10</answer1>
+      <answer2>12</answer2>
+      <answer3>4</answer3>
+      <answer4>6</answer4>
     <true>2</true>
     </question>
   </arrays>
@@ -788,300 +748,321 @@
       <quest>
         Для хранения строк в C++ применяется тип:
       </quest>
-      <answer id = "1">string</answer>
-      <answer id = "2">int</answer>
-      <answer id = "3">double</answer>
-      <answer id = "4">char</answer>
+      <answer1>string</answer1>
+      <answer2>int</answer2>
+      <answer3>double</answer3>
+      <answer4>char</answer4>
     <true>1</true>
     </question>
     <question id = "62">
       <quest>        
         Чтобы определить количество символов в строке нужно применить метод:
       </quest>
-      <answer id = "1">size()</answer>
-      <answer id = "2">int()</answer>
-      <answer id = "3">void()</answer>
-      <answer id = "4">empty()</answer>
+      <answer1>size()</answer1>
+      <answer2>int()</answer2>
+      <answer3>void()</answer3>
+      <answer4>empty()</answer4>
     <true>1</true>
     </question>
     <question id = "63">
       <quest>        
         Чтобы определить, что строка пустая, т.е. содержит 0 символов, нужно применить метод:
       </quest>
-      <answer id = "1">size()</answer>
-      <answer id = "2">int()</answer>
-      <answer id = "3">void()</answer>
-      <answer id = "4">empty()</answer>
+      <answer1>size()</answer1>
+      <answer2>int()</answer2>
+      <answer3>void()</answer3>
+      <answer4>empty()</answer4>
     <true>4</true>
     </question>
     <question id = "64">
       <quest>
         Для считывания введенной строки с консоли можно использовать объект:
       </quest>
-      <answer id = "1">std::cin</answer>
-      <answer id = "2">std::cout</answer>
-      <answer id = "3">1) и 2)</answer>
-      <answer id = "4">не 1), и не 2)</answer>
+      <answer1>std::cin</answer1>
+      <answer2>std::cout</answer2>
+      <answer3>1) и 2)</answer3>
+      <answer4>не 1), и не 2)</answer4>
     <true>1</true>
     </question>
     <question id = "65">
       <quest>
         Чтобы считать всю строку, применяется метод :
       </quest>
-      <answer id = "1">getline()</answer>
-      <answer id = "2">int()</answer>
-      <answer id = "3">void()</answer>
-      <answer id = "4">empty()</answer>
+      <answer1>getline()</answer1>
+      <answer2>int()</answer2>
+      <answer3>void()</answer3>
+      <answer4>empty()</answer4>
     <true>1</true>
     </question>
     <question id = "66">
       <quest>
         Тип string определен в стандартной библиотеке и при его использовании надо указывать пространство имен ...
       </quest>
-      <answer id = "1">int</answer>
-      <answer id = "2">std</answer>
-      <answer id = "3">cin</answer>
-      <answer id = "4">printf</answer>
+      <answer1>int</answer1>
+      <answer2>std</answer2>
+      <answer3>cin</answer3>
+      <answer4>printf</answer4>
     <true>2</true>
     </question>
     <question id = "67">
       <quest>
         Выберите правильную запись:
       </quest>
-      <answer id = "1">using std::string;</answer>
-      <answer id = "2">using string::std;</answer>
-      <answer id = "3">using std:string;</answer>
-      <answer id = "4">using string:std;</answer>
+      <answer1>using std::string;</answer1>
+      <answer2>using string::std;</answer2>
+      <answer3>using std:string;</answer3>
+      <answer4>using string:std;</answer4>
     <true>1</true>
     </question>
     <question id = "68">
       <quest>
         Символ нуль-терминатора:
       </quest>
-      <answer id = "1">/0</answer>
-      <answer id = "2">0\\</answer>
-      <answer id = "3">\0</answer>
-      <answer id = "4">0\</answer>
+      <answer1>/0</answer1>
+      <answer2>0\\</answer2>
+      <answer3>\0</answer3>
+      <answer4>0\</answer4>
     <true>3</true>
     </question>
     <question id = "69">
       <quest>
         Символьные строки состоят из набора символьных констант заключённых в ...
       </quest>
-      <answer id = "1">двойные кавычки</answer>
-      <answer id = "2">круглые скобки</answer>
-      <answer id = "3">квадратные скобки</answer>
-      <answer id = "4">фигурные скобки</answer>
+      <answer1>двойные кавычки</answer1>
+      <answer2>круглые скобки</answer2>
+      <answer3>квадратные скобки</answer3>
+      <answer4>фигурные скобки</answer4>
     <true>1</true>
     </question>
     <question id = "70">
       <quest>
-        При объявлении строкового массива необходимо учитывать наличие в конце строки ..., и отводить дополнительный байт под него(неё).
+        При объявлении строкового массива необходимо учитывать наличие в конце строки ..., и отводить
+        дополнительный байт под него(неё).
       </quest>
-      <answer id = "1">скобки</answer>
-      <answer id = "2">нуль-терминатора</answer>
-      <answer id = "3">кавычки</answer>
-      <answer id = "4">оператора</answer>
+      <answer1>скобки</answer1>
+      <answer2>нуль-терминатора</answer2>
+      <answer3>кавычки</answer3>
+      <answer4>оператора</answer4>
     <true>2</true>
     </question>
     <question id = "71">
       <quest>
-        С помощью функции … считаются все введённые символы с пробелами до тех пор, пока во вводимом потоке не встретится код клавиши enter.
+        С помощью функции … считаются все введённые символы с пробелами до тех пор, пока во вводимом 
+        потоке не встретится код клавиши enter.
       </quest>
-      <answer id = "1">cin</answer>
-      <answer id = "2">gets()</answer>
-      <answer id = "3">cout</answer>
-      <answer id = "4">void()</answer>
+      <answer1>cin</answer1>
+      <answer2>gets()</answer2>
+      <answer3>cout</answer3>
+      <answer4>void()</answer4>
     <true>2</true>
     </question>
     <question id = "72">
       <quest>
         Функция strlen(имя_строки):
       </quest>
-      <answer id = "1">определяет длину указанной строки, без учёта нуль-символа</answer>
-      <answer id = "2">выполняет побайтное копирование символов из строки s2 в строку s1</answer>
-      <answer id = "3">выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer>
-      <answer id = "4">объединяет строку s2 со строкой s1, результат сохраняется в s1</answer>
+      <answer1>определяет длину указанной строки, без учёта нуль-символа</answer1>
+      <answer2>выполняет побайтное копирование символов из строки s2 в строку s1</answer2>
+      <answer3>выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer3>
+      <answer4>объединяет строку s2 со строкой s1, результат сохраняется в s1</answer4>
     <true>1</true>
     </question>
     <question id = "73">
       <quest>
         Функция strcpy(s1,s2):
       </quest>
-      <answer id = "1">определяет длину указанной строки, без учёта нуль-символа</answer>
-      <answer id = "2">выполняет побайтное копирование символов из строки s2 в строку s1</answer>
-      <answer id = "3">выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer>
-      <answer id = "4">объединяет строку s2 со строкой s1, результат сохраняется в s1</answer>
+      <answer1>определяет длину указанной строки, без учёта нуль-символа</answer1>
+      <answer2>выполняет побайтное копирование символов из строки s2 в строку s1</answer2>
+      <answer3>выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer3>
+      <answer4>объединяет строку s2 со строкой s1, результат сохраняется в s1</answer4>
     <true>2</true>
     </question>
     <question id = "74">
       <quest>
         Функция strcmp(s1,s2):
       </quest>
-      <answer id = "1">определяет длину указанной строки, без учёта нуль-символа</answer>
-      <answer id = "2">выполняет побайтное копирование символов из строки s2 в строку s1</answer>
-      <answer id = "3">выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer>
-      <answer id = "4">объединяет строку s2 со строкой s1, результат сохраняется в s1</answer>
+      <answer1>определяет длину указанной строки, без учёта нуль-символа</answer1>
+      <answer2>выполняет побайтное копирование символов из строки s2 в строку s1</answer2>
+      <answer3>выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer3>
+      <answer4>объединяет строку s2 со строкой s1, результат сохраняется в s1</answer4>
     <true>3</true>
     </question>
     <question id = "75">
       <quest>
         Функция strcat(s1,s2):
       </quest>
-      <answer id = "1">определяет длину указанной строки, без учёта нуль-символа</answer>
-      <answer id = "2">выполняет побайтное копирование символов из строки s2 в строку s1</answer>
-      <answer id = "3">выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer>
-      <answer id = "4">объединяет строку s2 со строкой s1, результат сохраняется в s1</answer>
+      <answer1>определяет длину указанной строки, без учёта нуль-символа</answer1>
+      <answer2>выполняет побайтное копирование символов из строки s2 в строку s1</answer2>
+      <answer3>выполняет побайтное копирование n символов из строки s2 в строку s1, возвращает значения s1</answer3>
+      <answer4>объединяет строку s2 со строкой s1, результат сохраняется в s1</answer4>
     <true>4</true>
     </question>
     <question id = "76">
       <quest>
         Функция strncat(s1,s2,n):
       </quest>
-      <answer id = "1">объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer>
-      <answer id = "2">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "3">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "4">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer>
+      <answer1>объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer1>
+      <answer2>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer2>
+      <answer3>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer3>
+      <answer4>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer4>
     <true>1</true>
     </question>
     <question id = "77">
       <quest>
         Функция strcmp(s1,s2):
       </quest>
-      <answer id = "1">объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer>
-      <answer id = "2">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "3">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "4">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer>
+      <answer1>объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer1>
+      <answer2>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer2>
+      <answer3>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer3>
+      <answer4>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer4>
     <true>2</true>
     </question>
     <question id = "78">
       <quest>
         Функция strncmp(s1,s2,n):
       </quest>
-      <answer id = "1">объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer>
-      <answer id = "2">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "3">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "4">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer>
+      <answer1>объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer1>
+      <answer2>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer2>
+      <answer3>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer3>
+      <answer4>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer4>
     <true>3</true>
     </question>
     <question id = "79">
       <quest>
         Функция stricmp(s1,s2):
       </quest>
-      <answer id = "1">объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer>
-      <answer id = "2">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "3">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer>
-      <answer id = "4">сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer>
+      <answer1>объединяет n символов строки s2 со строкой s1, результат сохраняется в s1</answer1>
+      <answer2>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2, &lt; 0  — если s1 &gt; s2 с учётом регистра</answer2>
+      <answer3>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 с учётом регистра</answer3>
+      <answer4>сравнивает строку s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны,
+      &gt; 0 – если s1 &lt; s2,  &lt; 0  — если s1 &gt; s2 без учёта регистра</answer4>
     <true>4</true>
     </question>
     <question id = "80">
       <quest>
         Функция strnicmp(s1,s2,n):
       </quest>
-      <answer id = "1">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer>
-      <answer id = "2">возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer>
-      <answer id = "3">возвращает значение true, если с является буквой, и false в других случаях</answer>
-      <answer id = "4">возвращает значение true, если с является цифрой, и false в других случаях</answer>
+      <answer1>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer1>
+      <answer2>возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer2>
+      <answer3>возвращает значение true, если с является буквой, и false в других случаях</answer3>
+      <answer4>возвращает значение true, если с является цифрой, и false в других случаях</answer4>
     <true>1</true>
     </question>
     <question id = "81">
       <quest>
         Функция isalnum(c):
       </quest>
-      <answer id = "1">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer>
-      <answer id = "2">возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer>
-      <answer id = "3">возвращает значение true, если с является буквой, и false в других случаях</answer>
-      <answer id = "4">возвращает значение true, если с является цифрой, и false в других случаях</answer>
+      <answer1>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer1>
+      <answer2>возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer2>
+      <answer3>возвращает значение true, если с является буквой, и false в других случаях</answer3>
+      <answer4>возвращает значение true, если с является цифрой, и false в других случаях</answer4>
     <true>2</true>
     </question>
     <question id = "82">
       <quest>
         Функция isalpha(c):
       </quest>
-      <answer id = "1">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer>
-      <answer id = "2">возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer>
-      <answer id = "3">возвращает значение true, если с является буквой, и false в других случаях</answer>
-      <answer id = "4">возвращает значение true, если с является цифрой, и false в других случаях</answer>
+      <answer1>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer1>
+      <answer2>возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer2>
+      <answer3>возвращает значение true, если с является буквой, и false в других случаях</answer3>
+      <answer4>возвращает значение true, если с является цифрой, и false в других случаях</answer4>
     <true>3</true>
     </question>
     <question id = "83">
       <quest>
         Функция isdigit(c):
       </quest>
-      <answer id = "1">сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer>
-      <answer id = "2">возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer>
-      <answer id = "3">возвращает значение true, если с является буквой, и false в других случаях</answer>
-      <answer id = "4">возвращает значение true, если с является цифрой, и false в других случаях</answer>
+      <answer1>сравнивает n символов строки s1 со строкой s2 и возвращает результат типа int: 0 – если строки
+      эквивалентны, &gt; 0 – если s1 &lt; s2,  &lt; 0 — если s1 &gt; s2 без учёта регистра</answer1>
+      <answer2>возвращает значение true, если с является буквой или цифрой, и false в других случаях</answer2>
+      <answer3>возвращает значение true, если с является буквой, и false в других случаях</answer3>
+      <answer4>возвращает значение true, если с является цифрой, и false в других случаях</answer4>
     <true>4</true>
     </question>
     <question id = "84">
       <quest>
         Функция atof(s1):
       </quest>
-      <answer id = "1">преобразует строку s1 в тип double</answer>
-      <answer id = "2">преобразует строку s1 в тип int</answer>
-      <answer id = "3">преобразует строку s1 в тип long int</answer>
-      <answer id = "4">считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer>
+      <answer1>преобразует строку s1 в тип double</answer1>
+      <answer2>преобразует строку s1 в тип int</answer2>
+      <answer3>преобразует строку s1 в тип long int</answer3>
+      <answer4>считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer4>
     <true>1</true>
     </question>
     <question id = "85">
       <quest>
         Функция atoi(s1):
       </quest>
-      <answer id = "1">преобразует строку s1 в тип double</answer>
-      <answer id = "2">преобразует строку s1 в тип int</answer>
-      <answer id = "3">преобразует строку s1 в тип long int</answer>
-      <answer id = "4">считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer>
+      <answer1>преобразует строку s1 в тип double</answer1>
+      <answer2>преобразует строку s1 в тип int</answer2>
+      <answer3>преобразует строку s1 в тип long int</answer3>
+      <answer4>считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer4>
     <true>2</true>
     </question>
     <question id = "86">
       <quest>
         Функция atol(s1):
       </quest>
-      <answer id = "1">преобразует строку s1 в тип double</answer>
-      <answer id = "2">преобразует строку s1 в тип int</answer>
-      <answer id = "3">преобразует строку s1 в тип long int</answer>
-      <answer id = "4">считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer>
+      <answer1>преобразует строку s1 в тип double</answer1>
+      <answer2>преобразует строку s1 в тип int</answer2>
+      <answer3>преобразует строку s1 в тип long int</answer3>
+      <answer4>считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer4>
     <true>3</true>
     </question>
     <question id = "87">
       <quest>
         Функция getchar(с):
       </quest>
-      <answer id = "1">преобразует строку s1 в тип double</answer>
-      <answer id = "2">преобразует строку s1 в тип int</answer>
-      <answer id = "3">преобразует строку s1 в тип long int</answer>
-      <answer id = "4">считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer>
+      <answer1>преобразует строку s1 в тип double</answer1>
+      <answer2>преобразует строку s1 в тип int</answer2>
+      <answer3>преобразует строку s1 в тип long int</answer3>
+      <answer4>считывает символ с со стандартного потока ввода, возвращает символ в формате int</answer4>
     <true>4</true>
     </question>
     <question id = "88">
       <quest>
         Функция strchr(s,c):
       </quest>
-      <answer id = "1">поиск первого вхождения символа с в строке s. В случае удачного поиска возвращает указатель на место первого вхождения символа с. Если символ не найден, то возвращается ноль</answer>
-      <answer id = "2">определяет длину начального сегмента строки s1, содержащего те символы, которые не входят в строку s2</answer>
-      <answer id = "3">возвращает длину начального сегмента строки s1, содержащего только те символы, которые входят в строку s2</answer>
-      <answer id = "4">Возвращает указатель  первого вхождения любого символа строки s2 в строке s1</answer>
+      <answer1>поиск первого вхождения символа с в строке s. В случае удачного поиска возвращает указатель на
+      место первого вхождения символа с. Если символ не найден, то возвращается ноль</answer1>
+      <answer2>определяет длину начального сегмента строки s1, содержащего те символы, которые не входят в строку s2</answer2>
+      <answer3>возвращает длину начального сегмента строки s1, содержащего только те символы, которые входят в строку s2</answer3>
+      <answer4>Возвращает указатель  первого вхождения любого символа строки s2 в строке s1</answer4>
     <true>1</true>
     </question>
     <question id = "89">
       <quest>
         Функция strcspn(s1,s2):
       </quest>
-      <answer id = "1">поиск первого вхождения символа с в строке s. В случае удачного поиска возвращает указатель на место первого вхождения символа с. Если символ не найден, то возвращается ноль</answer>
-      <answer id = "2">определяет длину начального сегмента строки s1, содержащего те символы, которые не входят в строку s2</answer>
-      <answer id = "3">возвращает длину начального сегмента строки s1, содержащего только те символы, которые входят в строку s2</answer>
-      <answer id = "4">Возвращает указатель  первого вхождения любого символа строки s2 в строке s1</answer>
+      <answer1>поиск первого вхождения символа с в строке s. В случае удачного поиска возвращает указатель на
+      место первого вхождения символа с. Если символ не найден, то возвращается ноль</answer1>
+      <answer2>определяет длину начального сегмента строки s1, содержащего те символы, которые не входят в строку s2</answer2>
+      <answer3>возвращает длину начального сегмента строки s1, содержащего только те символы, которые входят в строку s2</answer3>
+      <answer4>Возвращает указатель  первого вхождения любого символа строки s2 в строке s1</answer4>
     <true>2</true>
     </question>
     <question id = "90">
       <quest>
         Функция strspn(s1,s2):
       </quest>
-      <answer id = "1">поиск первого вхождения символа с в строке s. В случае удачного поиска возвращает указатель на место первого вхождения символа с. Если символ не найден, то возвращается ноль</answer>
-      <answer id = "2">определяет длину начального сегмента строки s1, содержащего те символы, которые не входят в строку s2</answer>
-      <answer id = "3">возвращает длину начального сегмента строки s1, содержащего только те символы, которые входят в строку s2</answer>
-      <answer id = "4">Возвращает указатель  первого вхождения любого символа строки s2 в строке s1</answer>
+      <answer1>поиск первого вхождения символа с в строке s. В случае удачного поиска возвращает указатель на
+      место первого вхождения символа с. Если символ не найден, то возвращается ноль</answer1>
+      <answer2>определяет длину начального сегмента строки s1, содержащего те символы, которые не входят в строку s2</answer2>
+      <answer3>возвращает длину начального сегмента строки s1, содержащего только те символы, которые входят в строку s2</answer3>
+      <answer4>Возвращает указатель  первого вхождения любого символа строки s2 в строке s1</answer4>
     <true>3</true>
     </question>
   </lines>
@@ -1090,604 +1071,402 @@
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(7)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return 1;
-          }
+          {if (n &gt; 2) return F(n-1) + G(n-2); else return 1;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return 1;
-          }
+          {if (n &gt; 2) return G(n-1) + F(n-2); else return 1;}
       </quest>
-      <answer id = "1">12</answer>
-      <answer id = "2">13</answer>
-      <answer id = "3">11</answer>
-      <answer id = "4">10</answer>
+      <answer1>12</answer1>
+      <answer2>13</answer2>
+      <answer3>11</answer3>
+      <answer4>10</answer4>
     <true>2</true>
     </question>
     <question id = "92">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(8)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return 1;
-          }
+          {if (n &gt; 2) return F(n-1) + G(n-2); else return 1;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return 1;
-          }
+          {if (n &gt; 2) return G(n-1) + F(n-2); else return 1;}
       </quest>
-      <answer id = "1">21</answer>
-      <answer id = "2">18</answer>
-      <answer id = "3">24</answer>
-      <answer id = "4">4</answer>
+      <answer1>21</answer1>
+      <answer2>18</answer2>
+      <answer3>24</answer3>
+      <answer4>4</answer4>
     <true>1</true>
     </question>
     <question id = "93">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return n;
-          }
+          { if (n &gt; 2) return F(n-1) + G(n-2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return n + 1;
-          }
+          { if (n &gt; 2) return G(n-1) + F(n-2); else return n + 1;}
       </quest>
-      <answer id = "1">16</answer>
-      <answer id = "2">14</answer>
-      <answer id = "3">17</answer>
-      <answer id = "4">46</answer>
+      <answer1>16</answer1>
+      <answer2>14</answer2>
+      <answer3>17</answer3>
+      <answer4>46</answer4>
     <true>3</true>
     </question>
       <question id = "94">
         <quest>
           Чему будет равно значение, вычисленное при выполнении вызова G(6)?
             int F(int n)
-            {
-              if (n &gt; 2)
-                return F(n-1) + G(n-2);
-              else return n;
-            }
+            { if (n &gt; 2) return F(n-1) + G(n-2); else return n;}
             int G(int n)
-            {
-              if (n &gt; 2)
-                return G(n-1) + F(n-2);
-              else return n + 1;
-            }
+            { if (n &gt; 2) return G(n-1) + F(n-2); else return n + 1;}
         </quest>
-        <answer id = "1">17</answer>
-        <answer id = "2">14</answer>
-        <answer id = "3">16</answer>
-        <answer id = "4">18</answer>
+        <answer1>17</answer1>
+        <answer2>14</answer2>
+        <answer3>16</answer3>
+        <answer4>18</answer4>
     <true>1</true>
     </question>
     <question id = "95">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1)+G(n-1)+F(n-2);
-            else return n;
-          }
+          { if (n &gt; 2) return F(n-1)+G(n-1)+F(n-2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1)+F(n-1)+G(n-2);
-            else return n+1;
-          }
+          { if (n &gt; 2) return G(n-1)+F(n-1)+G(n-2); else return n+1;}
       </quest>
-      <answer id = "1">14</answer>
-      <answer id = "2">16</answer>
-      <answer id = "3">36</answer>
-      <answer id = "4">37</answer>
+      <answer1>14</answer1>
+      <answer2>16</answer2>
+      <answer3>36</answer3>
+      <answer4>37</answer4>
     <true>4</true>
     </question>
     <question id = "96">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1)+G(n-1)+F(n-2);
-            else return n;
-          }
+          { if (n &gt; 2) return F(n-1)+G(n-1)+F(n-2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1)+F(n-1)+G(n-2);
-            else return n+1;
-          }
+          { if (n &gt; 2) return G(n-1)+F(n-1)+G(n-2); else return n+1;}
        </quest>
-       <answer id = "1">33</answer>
-       <answer id = "2">37</answer>
-       <answer id = "3">10</answer>
-       <answer id = "4">16</answer>
+       <answer1>33</answer1>
+       <answer2>37</answer2>
+       <answer3>10</answer3>
+       <answer4>16</answer4>
     <true>2</true>
     </question>
     <question id = "97">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1)+G(n-1)+F(n-2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1)+G(n-1)+F(n-2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1)+F(n-1)+G(n-2);
-            else return 3-n;
-          }
+          {if (n &gt; 2) return G(n-1)+F(n-1)+G(n-2); else return 3-n;}
       </quest>
-      <answer id = "1">26</answer>
-      <answer id = "2">14</answer>
-      <answer id = "3">24</answer>
-      <answer id = "4">12</answer>
+      <answer1>26</answer1>
+      <answer2>14</answer2>
+      <answer3>24</answer3>
+      <answer4>12</answer4>
     <true>1</true>
     </question>
     <question id = "98">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1)+G(n-1)+F(n-2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1)+G(n-1)+F(n-2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1)+F(n-1)+G(n-2);
-            else return 3-n;
-          }
+          {if (n &gt; 2) return G(n-1)+F(n-1)+G(n-2); else return 3-n;}
       </quest>
-      <answer id = "1">24</answer>
-      <answer id = "2">30</answer>
-      <answer id = "3">25</answer>
-      <answer id = "4">20</answer>
+      <answer1>24</answer1>
+      <answer2>30</answer2>
+      <answer3>25</answer3>
+      <answer4>20</answer4>
     <true>3</true>
     </question>
     <question id = "99">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return 2;
-          }
+          {if (n &gt; 2) return F(n-1) + G(n-2); else return 2;}
           int G(int n) 
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return 2;
-          }
+          {if (n &gt; 2) return G(n-1) + F(n-2); else return 2;}
       </quest>
-      <answer id = "1">16</answer>
-      <answer id = "2">14</answer>
-      <answer id = "3">12</answer>
-      <answer id = "4">18</answer>
+      <answer1>16</answer1>
+      <answer2>14</answer2>
+      <answer3>12</answer3>
+      <answer4>18</answer4>
     <true>1</true>
     </question>
     <question id = "100">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(6)?
           int F(int n) 
-          {
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return 2;
-          }
+          {if (n &gt; 2) return F(n-1) + G(n-2); else return 2;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return 2;
-          }
+          {if (n &gt; 2) return G(n-1) + F(n-2); else return 2;}
       </quest>
-      <answer id = "1">14</answer>
-      <answer id = "2">16</answer>
-      <answer id = "3">18</answer>
-      <answer id = "4">20</answer>
+      <answer1>14</answer1>
+      <answer2>16</answer2>
+      <answer3>18</answer3>
+      <answer4>20</answer4>
     <true>2</true>
     </question>
     <question id = "101">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(5)?
           int F(int n)
-          {
-            if (n &gt; 1)
-              return F(n-1) + G(n-1);
-            else return n;
-          }
+          {if (n &gt; 1) return F(n-1) + G(n-1); else return n;}
           int G(int n)
-          {
-            if (n &gt; 1)
-              return G(n-1) + F(n);
-            else return n;
-          }
+          {if (n &gt; 1) return G(n-1) + F(n); else return n;}
       </quest>
-      <answer id = "1">32</answer>
-      <answer id = "2">34</answer>
-      <answer id = "3">35</answer>
-      <answer id = "4">36</answer>
+      <answer1>32</answer1>
+      <answer2>34</answer2>
+      <answer3>35</answer3>
+      <answer4>36</answer4>
     <true>2</true>
     </question>
     <question id = "102">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(5)?
           int F(int n) 
-          {
-            if (n &gt; 1)
-              return F(n-1) + G(n-1);
-            else return n;
-          }
+          {if (n &gt; 1) return F(n-1) + G(n-1); else return n;}
           int G(int n) 
-          {
-            if (n &gt; 1)
-              return G(n-1) + F(n);
-            else return n;
-          }
+          {if (n &gt; 1) return G(n-1) + F(n); else return n;}
       </quest>
-      <answer id = "1">55</answer>
-      <answer id = "2">54</answer>
-      <answer id = "3">53</answer>
-      <answer id = "4">52</answer>
+      <answer1>55</answer1>
+      <answer2>54</answer2>
+      <answer3>53</answer3>
+      <answer4>52</answer4>
     <true>1</true>
     </question>
     <question id = "103">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(6)?
-
-{
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return n;
-          }
+          int F(int n)
+          {if (n &gt; 2) return F(n-1) + G(n-2); else return n;}
           int G(int n) 
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return 3-n;
-          }
+          {if (n &gt; 2) return G(n-1) + F(n-2); else return 3-n;}
       </quest>
-      <answer id = "1">12</answer>
-      <answer id = "2">14</answer>
-      <answer id = "3">13</answer>
-      <answer id = "4">16</answer>
+      <answer1>12</answer1>
+      <answer2>14</answer2>
+      <answer3>13</answer3>
+      <answer4>16</answer4>
     <true>3</true>
     </question>
     <question id = "104">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(6)?
           int F(int n) 
-          {
-            if (n &gt; 2)
-              return F(n-1) + G(n-2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1) + G(n-2); else return n;}
           int G(int n) 
-          {
-            if (n &gt; 2)
-              return G(n-1) + F(n-2);
-            else return 3-n;
-          }
+          {if (n &gt; 2) return G(n-1) + F(n-2); else return 3-n;}
       </quest>
-      <answer id = "1">11</answer>
-      <answer id = "2">12</answer>
-      <answer id = "3">13</answer>
-      <answer id = "4">14</answer>
+      <answer1>11</answer1>
+      <answer2>12</answer2>
+      <answer3>13</answer3>
+      <answer4>14</answer4>
     <true>1</true>
     </question>
     <question id = "105">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n - 1) + G(n - 2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n - 1) + G(n - 2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n - 1) + F(n -2);
-            else return n+1;
-          }
+          {if (n &gt; 2) return G(n - 1) + F(n -2); else return n+1;}
       </quest>
-      <answer id = "1">16</answer>
-      <answer id = "2">46</answer>
-      <answer id = "3">48</answer>
-      <answer id = "4">17</answer>
+      <answer1>16</answer1>
+      <answer2>46</answer2>
+      <answer3>48</answer3>
+      <answer4>17</answer4>
     <true>4</true>
     </question>
     <question id = "106">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n - 1) + G(n - 2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n - 1) + G(n - 2); else return n;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n - 1) + F(n -2);
-            else return n+1;
-          }
+          {if (n &gt; 2) return G(n - 1) + F(n -2); else return n+1;}
       </quest>
-      <answer id = "1">14</answer>
-      <answer id = "2">17</answer>
-      <answer id = "3">16</answer>
-      <answer id = "4">18</answer>
+      <answer1>14</answer1>
+      <answer2>17</answer2>
+      <answer3>16</answer3>
+      <answer4>18</answer4>
     <true>2</true>
     </question>
     <question id = "107">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(7)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n - 1) + G(n - 2);
-            else return n+1;
-          }
+          {if (n &gt; 2) return F(n - 1) + G(n - 2); else return n+1;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n - 1) + F(n -2);
-            else return n;
-          }
+          {if (n &gt; 2) return G(n - 1) + F(n -2); else return n;}
       </quest>
-      <answer id = "1">28</answer>
-      <answer id = "2">16</answer>
-      <answer id = "3">26</answer>
-      <answer id = "4">24</answer>
+      <answer1>28</answer1>
+      <answer2>16</answer2>
+      <answer3>26</answer3>
+      <answer4>24</answer4>
     <true>1</true>
     </question>
     <question id = "108">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова G(7)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n - 1) + G(n - 2);
-            else return n+1;
-          }
+          {if (n &gt; 2) return F(n - 1) + G(n - 2); else return n+1;}
           int G(int n)
-          {
-            if (n &gt; 2)
-              return G(n - 1) + F(n -2);
-            else return n;
-          }
+          {if (n &gt; 2) return G(n - 1) + F(n -2); else return n;}
       </quest>
-      <answer id = "1">16</answer>
-      <answer id = "2">14</answer>
-      <answer id = "3">27</answer>
-      <answer id = "4">28</answer>
+      <answer1>16</answer1>
+      <answer2>14</answer2>
+      <answer3>27</answer3>
+      <answer4>28</answer4>
     <true>3</true>
     </question>
     <question id = "109">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(9)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-2) + F(n/2);
+          {if (n &gt; 2) return F(n-2) + F(n/2);
             else return n;
           }
       </quest>
-      <answer id = "1">10</answer>
-      <answer id = "2">12</answer>
-      <answer id = "3">14</answer>
-      <answer id = "4">16</answer>
+      <answer1>10</answer1>
+      <answer2>12</answer2>
+      <answer3>14</answer3>
+      <answer4>16</answer4>
     <true>1</true>
     </question>
     <question id = "110">
       <quest>
         Сколько символов «звёздочка» будет напечатано на экране при выполнении вызова F(11)?
           void F(int n)
-          {
-            if (n &gt; 0)
-              G(n - 1);
-          }
+          {if (n &gt; 0) G(n - 1);}
           void G(int n)
-          {
-            printf("*");
-            if (n &gt; 1)
-              F(n - 2);
-          }
+          {printf("*"); if (n &gt; 1) F(n - 2);}
       </quest>
-      <answer id = "1">12</answer>
-      <answer id = "2">4</answer>
-      <answer id = "3">6</answer>
-      <answer id = "4">8</answer>
+      <answer1>12</answer1>
+      <answer2>4</answer2>
+      <answer3>6</answer3>
+      <answer4>8</answer4>
     <true>2</true>
     </question>
     <question id = "111">
       <quest>
         Сколько символов «звёздочка» будет напечатано на экране при выполнении вызова F(11)?
           void F(int n)
-          {
-            if (n &gt; 0)
-              G(n - 1);
-          }
+          {if (n &gt; 0) G(n - 1);}
           void G(int n)
-          {
-            printf("*");
-            if (n &gt; 1)
-              F(n - 3);
-          }
+          {printf("*"); if (n &gt; 1) F(n - 3);}
       </quest>
-      <answer id = "1">2</answer>
-      <answer id = "2">3</answer>
-      <answer id = "3">4</answer>
-      <answer id = "4">6</answer>
+      <answer1>2</answer1>
+      <answer2>3</answer2>
+      <answer3>4</answer3>
+      <answer4>6</answer4>
     <true>2</true>
     </question>
     <question id = "112">
       <quest>
         Чему будет равно значение, вычисленное алгоритмом при выполнении вызова F(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + F(n-2);
-            else return 1;
-          }
+          {if (n &gt; 2) return F(n-1) + F(n-2); else return 1;}
       </quest>
-      <answer id = "1">5</answer>
-      <answer id = "2">4</answer>
-      <answer id = "3">6</answer>
-      <answer id = "4">8</answer>
+      <answer1>5</answer1>
+      <answer2>4</answer2>
+      <answer3>6</answer3>
+      <answer4>8</answer4>
     <true>1</true>
     </question>
     <question id = "113">
       <quest>
         Чему будет равно значение, вычисленное алгоритмом при выполнении вызова F(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + F(n-2);
-            else return 1;
-          }
+          {if (n &gt; 2) return F(n-1) + F(n-2); else return 1;}
       </quest>
-      <answer id = "1">5</answer>
-      <answer id = "2">6</answer>
-      <answer id = "3">8</answer>
-      <answer id = "4">4</answer>
+      <answer1>5</answer1>
+      <answer2>6</answer2>
+      <answer3>8</answer3>
+      <answer4>4</answer4>
     <true>3</true>
     </question>
     <question id = "114">
       <quest>
         Чему будет равно значение, вычисленное алгоритмом при выполнении вызова F(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + F(n-2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1) + F(n-2); else return n;}
       </quest>
-      <answer id = "1">8</answer>
-      <answer id = "2">6</answer>
-      <answer id = "3">4</answer>
-      <answer id = "4">2</answer>
+      <answer1>8</answer1>
+      <answer2>6</answer2>
+      <answer3>4</answer3>
+      <answer4>2</answer4>
     <true>1</true>
     </question>
     <question id = "115">
       <quest>
         Чему будет равно значение, вычисленное алгоритмом при выполнении вызова F(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1) + F(n-2);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1) + F(n-2); else return n;}
       </quest>
-      <answer id = "1">16</answer>
-      <answer id = "2">15</answer>
-      <answer id = "3">14</answer>
-      <answer id = "4">13</answer>
+      <answer1>16</answer1>
+      <answer2>15</answer2>
+      <answer3>14</answer3>
+      <answer4>13</answer4>
     <true>4</true>
     </question>
     <question id = "116">
       <quest>
         Чему будет равно значение, вычисленное алгоритмом при выполнении вызова F(5)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1)+F(n-2)+F(n-3);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1)+F(n-2)+F(n-3); else return n;}
       </quest>
-      <answer id = "1">10</answer>
-      <answer id = "2">11</answer>
-      <answer id = "3">12</answer>
-      <answer id = "4">14</answer>
+      <answer1>10</answer1>
+      <answer2>11</answer2>
+      <answer3>12</answer3>
+      <answer4>14</answer4>
     <true>2</true>
     </question>
     <question id = "117">
       <quest>
         Чему будет равно значение, вычисленное алгоритмом при выполнении вызова F(6)?
           int F(int n)
-          {
-            if (n &gt; 2)
-              return F(n-1)+F(n-2)+F(n-3);
-            else return n;
-          }
+          {if (n &gt; 2) return F(n-1)+F(n-2)+F(n-3); else return n;}
       </quest>
-      <answer id = "1">20</answer>
-      <answer id = "2">18</answer>
-      <answer id = "3">22</answer>
-      <answer id = "4">24</answer>
+      <answer1>20</answer1>
+      <answer2>18</answer2>
+      <answer3>22</answer3>
+      <answer4>24</answer4>
     <true>1</true>
     </question>
     <question id = "118">
       <quest>
         Чему будет равно значение, вычисленное при выполнении вызова F(9)?
           int F(int n)
-          {
-            if (n &gt; 3)
-              return F(n-2) + F(n/2);
-            else return n;
-          }
+          {if (n &gt; 3) return F(n-2) + F(n/2); else return n;}
       </quest>
-      <answer id = "1">14</answer>
-      <answer id = "2">16</answer>
-      <answer id = "3">12</answer>
-      <answer id = "4">18</answer>
+      <answer1>14</answer1>
+      <answer2>16</answer2>
+      <answer3>12</answer3>
+      <answer4>18</answer4>
     <true>3</true>
     </question>
     <question id = "119">
       <quest>
         Чему равна сумма всех чисел, напечатанных на экране при выполнении вызова F(1)?
           void F(int n)
-          {
-            cout &lt;&lt; n &lt;&lt; endl;
-            if (n &gt; 5)
-            {
-              F(n + 1);
-              F(n + 3);
-            }
-          }
+          {cout &lt;&lt; n &lt;&lt; endl; if (n &gt; 5) {F(n + 1); F(n + 3);}}
       </quest>
-      <answer id = "1">49</answer>
-      <answer id = "2">48</answer>
-      <answer id = "3">47</answer>
-      <answer id = "4">46</answer>
+      <answer1>49</answer1>
+      <answer2>48</answer2>
+      <answer3>47</answer3>
+      <answer4>46</answer4>
     <true>1</true>
     </question>
     <question id = "120">
       <quest>
         Чему равна сумма всех чисел, напечатанных на экране при выполнении вызова F(5)?
           void F(int n)
-          {
-            cout &lt;&lt; n;
-            if (n &gt; 0)
-            {
-              F(n - 1);
-              F(n - 3);
-            }
-          }
+          {cout &lt;&lt; n; if (n &gt; 0) {F(n - 1); F(n - 3);}}
       </quest>
-      <answer id = "1">10</answer>
-      <answer id = "2">11</answer>
-      <answer id = "3">12</answer>
-      <answer id = "4">16</answer>
+      <answer1>10</answer1>
+      <answer2>11</answer2>
+      <answer3>12</answer3>
+      <answer4>16</answer4>
     <true>2</true>
     </question>
   </recursion>   
@@ -1696,177 +1475,174 @@
       <quest>
         Укажите правильный доступ к переменной структуры.
       </quest>
-      <answer id = "1">b.var</answer>
-      <answer id = "2">b>var</answer>
-      <answer id = "3">b-var</answer>
-      <answer id = "4">b->var</answer>
+      <answer1>b.var</answer1>
+      <answer2>b>var</answer2>
+      <answer3>b-var</answer3>
+      <answer4>b->var</answer4>
     <true>1</true>
     </question>
     <question id = "122">
       <quest>
         Укажите правильное обращение к полям структуры: struct coord{int x; int z;}data; : 
       </quest>
-      <answer id = "1">data.x; data.z;</answer>
-      <answer id = "2">coord.x; coord.z;</answer>
-      <answer id = "3">coord.x; data.z;</answer>
-      <answer id = "4">data.y;</answer>
+      <answer1>data.x; data.z;</answer1>
+      <answer2>coord.x; coord.z;</answer2>
+      <answer3>coord.x; data.z;</answer3>
+      <answer4>data.y;</answer4>
     <true>1</true>
     </question>
     <question id = "123">
       <quest>
         Дано: float qwe[100]; float *p_qwe=qwe; Вопрос: на сколько увеличится p_qwe при выполнении оператора p_qwe ++ ; :
       </quest>
-      <answer id = "1">на 4</answer>
-      <answer id = "2">на 2</answer>
-      <answer id = "3">на 1</answer>
-      <answer id = "4">на 0</answer>
+      <answer1>на 4</answer1>
+      <answer2>на 2</answer2>
+      <answer3>на 1</answer3>
+      <answer4>на 0</answer4>
     <true>3</true>
     </question>
     <question id = "124">
       <quest>
         Дано: struct coord{int x; int z[];};Что означает следующая запись struct coord data[100]; : 
       </quest>
-      <answer id = "1">объявляется массив, каждый элемент которого – структура типа coord</answer>
-      <answer id = "2">объявляется структура data, каждый элемент которой – массив</answer>
-      <answer id = "3">объявляется массив coord, каждый элемент которого - структура типа data</answer>
-      <answer id = "4">ничего не объявляется</answer>
+      <answer1>объявляется массив, каждый элемент которого – структура типа coord</answer1>
+      <answer2>объявляется структура data, каждый элемент которой – массив</answer2>
+      <answer3>объявляется массив coord, каждый элемент которого - структура типа data</answer3>
+      <answer4>ничего не объявляется</answer4>
     <true>1</true>
     </question>
     <question id = "125">
       <quest>
         Укажите правильное определение структуры:
       </quest>
-      <answer id = "1">это совокупность нескольких переменных различных типов, объединенных под одним именем</answer>
-      <answer id = "2">это совокупность нескольких переменных одного типа, объединенных под одним именем</answer>
-      <answer id = "3">это одна переменная которая может быть разных типов</answer>
-      <answer id = "4">это совокупность типов переменных</answer>
+      <answer1>это совокупность нескольких переменных различных типов, объединенных под одним именем</answer1>
+      <answer2>это совокупность нескольких переменных одного типа, объединенных под одним именем</answer2>
+      <answer3>это одна переменная которая может быть разных типов</answer3>
+      <answer4>это совокупность типов переменных</answer4>
     <true>1</true>
     </question>
     <question id = "126">
       <quest>
         Как передать в функцию f указатель на структуру healt_record?
       </quest>
-      <answer id = "1">обратиться к функции как к записи структуры: healt_record.f</answer>
-      <answer id = "2">с помощью взятия адреса функции с передачей непосредственно структуры: &amp;f(healt_record)</answer>
-      <answer id = "3">передать указатель на структуру: f(&amp;healt_record)</answer>
-      <answer id = "4">передать непосредственно структуру (но только с поверхностным копированием): f (healt_record)</answer> 
+      <answer1>обратиться к функции как к записи структуры: healt_record.f</answer1>
+      <answer2>с помощью взятия адреса функции с передачей непосредственно структуры: &amp;f(healt_record)</answer2>
+      <answer3>передать указатель на структуру: f(&amp;healt_record)</answer3>
+      <answer4>передать непосредственно структуру (но только с поверхностным копированием): f (healt_record)</answer4> 
     <true>3</true>
     </question>
     <question id = "127">
       <quest>
         Может ли функция входить в структуру? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">да, но только типа void</answer> 
-      <answer id = "3">да, но только типа int</answer> 
-      <answer id = "4">нет</answer> 
+      <answer1>да</answer1>
+      <answer2>да, но только типа void</answer2>
+      <answer3>да, но только типа int</answer3>
+      <answer4>нет</answer4>
     <true>4</true>
     </question>
     <question id = "128">
       <quest>
         Какие данные объединяет структура? 
       </quest>
-      <answer id = "1">структура объединяет логически связанные данные только неотрицательных целых типов</answer>
-      <answer id = "2">структура объединяет логически связанные данные только целых типов</answer>
-      <answer id = "3">структура объединяет логически связанные данные только одинаковых типов</answer>
-      <answer id = "4">структура объединяет логически связанные данные разных типов</answer>
+      <answer1>структура объединяет логически связанные данные только неотрицательных целых типов</answer1>
+      <answer2>структура объединяет логически связанные данные только целых типов</answer2>
+      <answer3>структура объединяет логически связанные данные только одинаковых типов</answer3>
+      <answer4>структура объединяет логически связанные данные разных типов</answer4>
     <true>4</true>
     </question>
     <question id = "129">
       <quest>
         Пусть описана структура 
         struct Line 
-        {
-          int len;
-          char *str;
-        };
+        {int len;char *str;};
         и переменые 
         struct Line s1, *s2;
         int n; char c;
         Укажите все корректные выражения языка Си среди перечисленных ниже:
       </quest>
-      <answer id = "1">n = s1.len</answer>
-      <answer id = "2">s1 == *s2</answer>
-      <answer id = "3">s2 = *s1</answer>
-      <answer id = "4">c = s1>str[2]</answer>
+      <answer1>n = s1.len</answer1>
+      <answer2>s1 == *s2</answer2>
+      <answer3>s2 = *s1</answer3>
+      <answer4>c = s1>str[2]</answer4>
     <true>1</true>
     </question>
     <question id = "130">
       <quest>
         Какая структура данных обычно используется для передачи заданий драйверу операционной системы?
       </quest>
-      <answer id = "1">стек</answer>
-      <answer id = "2">очередь</answer>
-      <answer id = "3">и стек, и очередь</answer>
-      <answer id = "4">никакая</answer>
+      <answer1>стек</answer1>
+      <answer2>очередь</answer2>
+      <answer3>и стек, и очередь</answer3>
+      <answer4>никакая</answer4>
     <true>2</true>
     </question>
     <question id = "131">
       <quest>
         Какая структура данных обычно используется при передаче параметров подпрограммам и функциям?
       </quest>
-      <answer id = "1">очередь</answer>
-      <answer id = "2">стек</answer>
-      <answer id = "3">и стек, и очередь</answer>
-      <answer id = "4">никакая</answer>
+      <answer1>очередь</answer1>
+      <answer2>стек</answer2>
+      <answer3>и стек, и очередь</answer3>
+      <answer4>никакая</answer4>
     <true>2</true>
     </question>
     <question id = "132">
       <quest>
         Что такоe структура?
       </quest>
-      <answer id = "1">это объединение одного либо более объектов</answer>
-      <answer id = "2">это объединение переменных</answer>
-      <answer id = "3">это объединение массивов</answer>
-      <answer id = "4">это объединение указателей</answer>
+      <answer1>это объединение одного либо более объектов</answer1>
+      <answer2>это объединение переменных</answer2>
+      <answer3>это объединение массивов</answer3>
+      <answer4>это объединение указателей</answer4>
     <true>1</true>
     </question>
     <question id = "133">
       <quest>
         Как выглядит описание стуктуры? 
       </quest>
-      <answer id = "1">struct(описание полей структуры)</answer>
-      <answer id = "2">struct {имя структуры; описание полей структуры}</answer> 
-      <answer id = "3">struct имя_структуры {описание полей структуры};</answer>
-      <answer id = "4">struct описание полей структуры</answer>
+      <answer1>struct(описание полей структуры)</answer1>
+      <answer2>struct {имя структуры; описание полей структуры}</answer2> 
+      <answer3>struct имя_структуры {описание полей структуры};</answer3>
+      <answer4>struct описание полей структуры</answer4>
     <true>3</true>
     </question>
     <question id = "134">
       <quest>
         Какая из эти структур правильная? 
       </quest>
-      <answer id = "1">struct date {int day;};</answer>
-      <answer id = "2">struct date (int day;);</answer>
-      <answer id = "3">struct date int day;</answer>
-      <answer id = "4">struct int day;</answer>
+      <answer1>struct date {int day;};</answer1>
+      <answer2>struct date (int day;);</answer2>
+      <answer3>struct date int day;</answer3>
+      <answer4>struct int day;</answer4>
     <true>1</true>
     </question>
     <question id = "135">
       <quest>
         Какая из этих структур правильная? 
       </quest>
-      <answer id = "1">struct node {
+      <answer1>struct node {
         void* value;
-        struct node next;};</answer>
-      <answer id = "2">struct node {
+        struct node next;};</answer1>
+      <answer2>struct node {
         void* value;
-        struct node *next;};</answer>
-      <answer id = "3">struct node (
+        struct node *next;};</answer2>
+      <answer3>struct node (
         void* value;
-        struct node *next;};</answer>
-      <answer id = "4">struct node 
+        struct node *next;};</answer3>
+      <answer4>struct node 
         void* value;
-        struct node *next;</answer>
+        struct node *next;</answer4>
     <true>2</true>
     </question>
     <question id = "136">
       <quest>
         Где правильно вызванна структура?
       </quest>
-      <answer id = "1">struct Distance d1, d3;</answer>
-      <answer id = "2">struct (Distance d1, d3);</answer>
-      <answer id = "3">struct {Distance d1, d3};</answer>
-      <answer id = "4">struct (Distance) d1, d3;</answer>
+      <answer1>struct Distance d1, d3;</answer1>
+      <answer2>struct (Distance d1, d3);</answer2>
+      <answer3>struct {Distance d1, d3};</answer3>
+      <answer4>struct (Distance) d1, d3;</answer4>
     <true>1</true>
     </question>
     <question id = "137">
@@ -1876,60 +1652,60 @@
         int rooms;};
         struct home home1;
       </quest>
-      <answer id = "1">home1.rooms = 4;</answer>
-      <answer id = "2">home1_rooms = 4;</answer>
-      <answer id = "3">home1rooms = 4;</answer>
-      <answer id = "4">home1 rooms = 4;</answer>
+      <answer1>home1.rooms = 4;</answer1>
+      <answer2>home1_rooms = 4;</answer2>
+      <answer3>home1rooms = 4;</answer3>
+      <answer4>home1 rooms = 4;</answer4>
     <true>1</true>
     </question>
     <question id = "138">
       <quest>
         Как правильно записывается ключевое слово для работы со структурой? 
       </quest>
-      <answer id = "1">structura</answer>
-      <answer id = "2">struct</answer>
-      <answer id = "3">struckt</answer> 
-      <answer id = "4">strukt</answer>
+      <answer1>structura</answer1>
+      <answer2>struct</answer2>
+      <answer3>struckt</answer3> 
+      <answer4>strukt</answer4>
     <true>2</true>
     </question>
     <question id = "139">
       <quest>
         В каких скобках записывается содержимое структуры? 
       </quest>
-      <answer id = "1">квадратных</answer>
-      <answer id = "2">круглых</answer>
-      <answer id = "3">фигурных</answer>
-      <answer id = "4">без скобок</answer>
+      <answer1>квадратных</answer1>
+      <answer2>круглых</answer2>
+      <answer3>фигурных</answer3>
+      <answer4>без скобок</answer4>
     <true>3</true>
     </question>
     <question id = "140">
       <quest>
         Переменные каких типов могут быть использованны в структуре?
       </quest>
-      <answer id = "1">только int</answer>
-      <answer id = "2">только double</answer>
-      <answer id = "3">всех</answer>
-      <answer id = "4">double и float</answer> 
+      <answer1>только int</answer1>
+      <answer2>только double</answer2>
+      <answer3>всех</answer3>
+      <answer4>double и float</answer4> 
     <true>3</true>
     </question>
     <question id = "141">
       <quest>
         Каким символом необходимо заканчивать обьявление структуры?
       </quest>
-      <answer id = "1">точкой</answer>
-      <answer id = "2">пробелом</answer>
-      <answer id = "3">точкой запятой</answer>
-      <answer id = "4">двоеточием</answer>
+      <answer1>точкой</answer1>
+      <answer2>пробелом</answer2>
+      <answer3>точкой запятой</answer3>
+      <answer4>двоеточием</answer4>
     <true>3</true>
     </question>
     <question id = "142">
       <quest>
         Сколько переменных может содержать структура? 
       </quest>
-      <answer id = "1">2</answer>
-      <answer id = "2">5</answer>
-      <answer id = "3">до 100</answer>
-      <answer id = "4">не ограниченно</answer>
+      <answer1>2</answer1>
+      <answer2>5</answer2>
+      <answer3>до 100</answer3>
+      <answer4>не ограниченно</answer4>
     <true>4</true>
     </question>
     <question id = "143">
@@ -1941,10 +1717,10 @@
            type atrib2;
           } newStructName structVar; 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет</answer>
-      <answer id = "3">нет, необходимо заменить фигурные скобки на круглые</answer> 
-      <answer id = "4">нет, необходимо убрать typedef</answer>
+      <answer1>да</answer1>
+      <answer2>нет</answer2>
+      <answer3>нет, необходимо заменить фигурные скобки на круглые</answer3>
+      <answer4>нет, необходимо убрать typedef</answer4>
     <true>1</true>
     </question>
     <question id = "144">
@@ -1956,40 +1732,40 @@
             type atrib2;
           } newStructName structVar; 
       </quest>
-      <answer id = "1">typedef</answer>
-      <answer id = "2">ничего</answer>
-      <answer id = "3">скобки</answer>
-      <answer id = "4">содержимое</answer>
+      <answer1>typedef</answer1>
+      <answer2>ничего</answer2>
+      <answer3>скобки</answer3>
+      <answer4>содержимое</answer4>
     <true>2</true>
     </question>
     <question id = "145">
       <quest>
         Может ли структура входить в функцию ?
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">да, но только типа void</answer> 
-      <answer id = "3">да, но только типа int</answer>
-      <answer id = "4">нет</answer>
+      <answer1>да</answer1>
+      <answer2>да, но только типа void</answer2>
+      <answer3>да, но только типа int</answer3>
+      <answer4>нет</answer4>
     <true>1</true>
     </question>
     <question id = "146">
       <quest>
         Что должно идти после слова struct в обьявлении структуры? 
       </quest>
-      <answer id = "1">название структуры</answer>
-      <answer id = "2">переменная</answer>
-      <answer id = "3">ничего</answer>
-      <answer id = "4">еще одно слово struct</answer> 
+      <answer1>название структуры</answer1>
+      <answer2>переменная</answer2>
+      <answer3>ничего</answer3>
+      <answer4>еще одно слово struct</answer4>
     <true>1</true>
     </question>
     <question id = "147">
       <quest>
         После слова struct в объявлении структуры должна идти точка запятая? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, нужна точка</answer> 
-      <answer id = "3">нет</answer>
-      <answer id = "4">нет, нужно двоеточие</answer> 
+      <answer1>да</answer1>
+      <answer2>нет, нужна точка</answer2>
+      <answer3>нет</answer3>
+      <answer4>нет, нужно двоеточие</answer4>
     <true>3</true>
     </question>
     <question id = "148">
@@ -2000,30 +1776,30 @@
             int rooms;  
           }; struct home home1; 
       </quest>
-      <answer id = "1">нет</answer>
-      <answer id = "2">да</answer>
-      <answer id = "3">нет, должны быть круглые скобки</answer> 
-      <answer id = "4">нет, должны быть квадратные скобки</answer>
+      <answer1>нет</answer1>
+      <answer2>да</answer2>
+      <answer3>нет, должны быть круглые скобки</answer3>
+      <answer4>нет, должны быть квадратные скобки</answer4>
     <true>2</true>
     </question>
     <question id = "149">
       <quest>
         Что должно стоять после фигурных скобок в описании структуры? 
       </quest>
-      <answer id = "1">точка запятая</answer>
-      <answer id = "2">точка</answer>
-      <answer id = "3">ничего</answer>
-      <answer id = "4">двоеточие</answer>
+      <answer1>точка запятая</answer1>
+      <answer2>точка</answer2>
+      <answer3>ничего</answer3>
+      <answer4>двоеточие</answer4>
     <true>1</true>
     </question>
     <question id = "150">
       <quest>
         Описание структуры начинается со слова: 
       </quest>
-      <answer id = "1">struct</answer>
-      <answer id = "2">structura</answer>
-      <answer id = "3">srukt</answer>
-      <answer id = "4">str</answer>
+      <answer1>struct</answer1>
+      <answer2>structura</answer2>
+      <answer3>srukt</answer3>
+      <answer4>str</answer4>
     <true>1</true>
     </question>
   </struct>
@@ -2032,20 +1808,20 @@
       <quest>
         При построении целочисленной матрицы А(15х15) из какого файла берется функция clrscr( )?
       </quest>
-      <answer id = "1">всегда из заголовочного файла conio.h</answer>
-      <answer id = "2">зависит от компилятора – такой функции может не быть вообще</answer> 
-      <answer id = "3">всегда из заголовочного файла stdio.h</answer>
-      <answer id = "4">создается в данной программе</answer>
+      <answer1>всегда из заголовочного файла conio.h</answer1>
+      <answer2>зависит от компилятора – такой функции может не быть вообще</answer2>
+      <answer3>всегда из заголовочного файла stdio.h</answer3>
+      <answer4>создается в данной программе</answer4>
     <true>2</true>
     </question>
     <question id = "152">
       <quest>
         Является ли тип данных FILE частью языка Си? 
       </quest>
-      <answer id = "1">да, этот тип входит в язык и предназначен для работы с файлами</answer>
-      <answer id = "2">нет, этот тип не входит в язык; он описан в стандартной библиотеке ANSI</answer>
-      <answer id = "3">нет, этот тип не используется в языке Си</answer>
-      <answer id = "4">нет,этот тип описан в библиотеке Math</answer>
+      <answer1>да, этот тип входит в язык и предназначен для работы с файлами</answer1>
+      <answer2>нет, этот тип не входит в язык; он описан в стандартной библиотеке ANSI</answer2>
+      <answer3>нет, этот тип не используется в языке Си</answer3>
+      <answer4>нет,этот тип описан в библиотеке Math</answer4>
     <true>2</true>
     </question>
     <question id = "153">
@@ -2055,10 +1831,14 @@
           . . .
           f = fopen(&quot;tmp.dat&quot;, &quot;wb+&quot;); 
       </quest>
-      <answer id = "1">открывает файл «tmp.dat» в текущей директории как бинарный для чтения и записи, при этом старое содержимое файла теряется</answer>
-      <answer id = "2">открывает файл «tmp.dat» в текущей директории как бинарный для записи, при этом старое содержимое файла теряется</answer>
-      <answer id = "3">открывает файл «tmp.dat» в текущей директории как бинарный для чтения и записи, при этом старое содержимое файла сохраняется</answer>
-      <answer id = "4">открывает файл «wb+.dat» в текущей директории как бинарный для чтения и записи, при этом старое содержимое файла сохраняется</answer>
+      <answer1>открывает файл «tmp.dat» в текущей директории как бинарный для чтения и записи, при
+      этом старое содержимое файла теряется</answer1>
+      <answer2>открывает файл «tmp.dat» в текущей директории как бинарный для записи, при этом
+      старое содержимое файла теряется</answer2>
+      <answer3>открывает файл «tmp.dat» в текущей директории как бинарный для чтения и записи,
+      при этом старое содержимое файла сохраняется</answer3>
+      <answer4>открывает файл «wb+.dat» в текущей директории как бинарный для чтения и записи,
+      при этом старое содержимое файла сохраняется</answer4>
     <true>1</true>
     </question>
     <question id = "154">
@@ -2067,30 +1847,28 @@
           int a[4]; int i;
           FILE *f = fopen(&quot;tmp.dat&quot;, &quot;wb&quot;);
           a[0] = 1; a[1] = 2; a[2] = 10; a[3] = 20;
-          for (i = 0; i &lt; 4; ++i) {
-            fprintf(f, &quot;%d\n&quot;, a[i]);
-          }
-          fclose(f);
+          for (i = 0; i &lt; 4; ++i) {fprintf(f, &quot;%d\n&quot;, a[i]);} fclose(f);
         Чему равен размер файла «tmp.dat» в байтах? 
       </quest>
-      <answer id = "1">размер файла равен 13 байтам</answer>
-      <answer id = "2">размер файла равен 10 байтам</answer>
-      <answer id = "3">размер файла равен 9 байтам</answer>
-      <answer id = "4">размер файла равен 14 байтам</answer>
+      <answer1>размер файла равен 13 байтам</answer1>
+      <answer2>размер файла равен 10 байтам</answer2>
+      <answer3>размер файла равен 9 байтам</answer3>
+      <answer4>размер файла равен 14 байтам</answer4>
     <true>2</true>
     </question>
     <question id = "155">
       <quest>
-        Пусть в ОС Windows XP требуется открыть файл c:\Windows\system32\drivers\hosts как текстовый для чтения и записи. Для этого используется следующий фрагмент программы:
+        Пусть в ОС Windows XP требуется открыть файл c:\Windows\system32\drivers\hosts как текстовый
+        для чтения и записи. Для этого используется следующий фрагмент программы:
           FILE *f;
           . . .
           f = fopen(&quot;c:\Windows\system32\drivers\hosts&quot;,&quot;rt+&quot;);
         Содержит ли он ошибку? 
       </quest>
-      <answer id = "1">да, фрагмент кода содержит ошибку</answer>
-      <answer id = "2">нет, фрагмент кода корректный</answer>
-      <answer id = "3">нет, фрагмент кода некорректный</answer>
-      <answer id = "4">да, фрагмент кода не содержит ошибку</answer>
+      <answer1>да, фрагмент кода содержит ошибку</answer1>
+      <answer2>нет, фрагмент кода корректный</answer2>
+      <answer3>нет, фрагмент кода некорректный</answer3>
+      <answer4>да, фрагмент кода не содержит ошибку</answer4>
     <true>1</true>
     </question>
     <question id = "156">
@@ -2099,256 +1877,256 @@
           int a[3]; int i;
           FILE *f = fopen(&quot;tmp.dat&quot;, &quot;wt&quot;);
           a[0] = 1; a[1] = 10; a[2] = 100;
-          for (i = 0; i &lt; 3; ++i) {
-            fprintf(f, &quot;%d\n&quot;, a[i]);
-          }
-          fclose(f);
+          for (i = 0; i &lt; 3; ++i) {fprintf(f, &quot;%d\n&quot;, a[i]);} fclose(f);
         Чему равен размер файла «tmp.dat» в байтах? 
       </quest>
-      <answer id = "1">размер файла равен 11 байтам</answer>
-      <answer id = "2">размер файла равен 8 байтам</answer>
-      <answer id = "3">размер файла равен 12 байтам</answer>
-      <answer id = "4">размер файла равен 9 байтам</answer>
+      <answer1>размер файла равен 11 байтам</answer1>
+      <answer2>размер файла равен 8 байтам</answer2>
+      <answer3>размер файла равен 12 байтам</answer3>
+      <answer4>размер файла равен 9 байтам</answer4>
     <true>3</true>
     </question>
     <question id = "157">
       <quest>
         Какая из процедур использует полное имя файла? 
       </quest>
-      <answer id = "1">assignFile</answer> 
-      <answer id = "2">reset</answer>
-      <answer id = "3">rewrite</answer>
-      <answer id = "4">append</answer>
+      <answer1>assignFile</answer1> 
+      <answer2>reset</answer2>
+      <answer3>rewrite</answer3>
+      <answer4>append</answer4>
     <true>1</true>
     </question>
     <question id = "158">
       <quest>
         Какая из процедур используется для открытия файла для чтения из него? 
       </quest>
-      <answer id = "1">assignFile</answer>
-      <answer id = "2">reset</answer>
-      <answer id = "3">rewrite</answer>
-      <answer id = "4">append</answer>
+      <answer1>assignFile</answer1>
+      <answer2>reset</answer2>
+      <answer3>rewrite</answer3>
+      <answer4>append</answer4>
     <true>2</true>
     </question>
     <question id = "159">
       <quest>
         Какая из процедур используется только для текстовых файлов?
       </quest>
-      <answer id = "1">assignFile</answer>
-      <answer id = "2">reset</answer>
-      <answer id = "3">rewrite</answer>
-      <answer id = "4">append</answer>
+      <answer1>assignFile</answer1>
+      <answer2>reset</answer2>
+      <answer3>rewrite</answer3>
+      <answer4>append</answer4>
     <true>4</true>
     </question>
     <question id = "160">
       <quest>
         Какая из процедур стирает старый файл? 
       </quest>
-      <answer id = "1">assignFile</answer>
-      <answer id = "2">reset</answer>
-      <answer id = "3">rewrite</answer>
-      <answer id = "4">append</answer>
+      <answer1>assignFile</answer1>
+      <answer2>reset</answer2>
+      <answer3>rewrite</answer3>
+      <answer4>append</answer4>
     <true>3</true>
     </question>
     <question id = "161">
       <quest>
         Какая из команд описывает файловую переменную типизированного файла? 
       </quest>
-      <answer id = "1">F: File;</answer>
-      <answer id = "2">F: TextFile;</answer>
-      <answer id = "3">F: File of real;</answer>
-      <answer id = "4">F: FileText;</answer>
+      <answer1>F: File;</answer1>
+      <answer2>F: TextFile;</answer2>
+      <answer3>F: File of real;</answer3>
+      <answer4>F: FileText;</answer4>
     <true>3</true>
     </question>
     <question id = "162">
       <quest>
         Какая из команд описывает файловую переменную не типизированного файла? 
       </quest>
-      <answer id = "1">F: File;</answer>
-      <answer id = "2">F: TextFile;</answer>
-      <answer id = "3">F: File of real;</answer>
-      <answer id = "4">F: FileText;</answer>
+      <answer1>F: File;</answer1>
+      <answer2>F: TextFile;</answer2>
+      <answer3>F: File of real;</answer3>
+      <answer4>F: FileText;</answer4>
     <true>1</true>
     </question>
     <question id = "163">
       <quest>
         Какая из команд описывает файловую переменную текстового файла?  
       </quest>
-      <answer id = "1">F: File;</answer>
-      <answer id = "2">F: TextFile;</answer>
-      <answer id = "3">F: File of real;</answer>
-      <answer id = "4">F: FileText;</answer>
+      <answer1>F: File;</answer1>
+      <answer2>F: TextFile;</answer2>
+      <answer3>F: File of real;</answer3>
+      <answer4>F: FileText;</answer4>
     <true>2</true>
     </question>
     <question id = "164">
       <quest>
         Какая из команд описывает переменную, которая не является файловой? 
       </quest>
-      <answer id = "1">F: File;</answer>
-      <answer id = "2">F: TextFile;</answer>
-      <answer id = "3">F: File of real;</answer>
-      <answer id = "4">F: FileText;</answer>
+      <answer1>F: File;</answer1>
+      <answer2>F: TextFile;</answer2>
+      <answer3>F: File of real;</answer3>
+      <answer4>F: FileText;</answer4>
     <true>4</true>
     </question>
     <question id = "165">
       <quest>
         Что делает запись: r или rb?
       </quest>
-      <answer id = "1">открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл</answer>
-      <answer id = "2">открывает для чтения</answer>
-      <answer id = "3">открывает для чтения и записи</answer> 
-      <answer id = "4">открывает для чтения и записи (добавляет в случае существования файла)</answer>  
+      <answer1>открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл</answer1>
+      <answer2>открывает для чтения</answer2>
+      <answer3>открывает для чтения и записи</answer3> 
+      <answer4>открывает для чтения и записи (добавляет в случае существования файла)</answer4>
     <true>2</true>
     </question>
     <question id = "166">
       <quest>
         Что делает запись: w или wb?
       </quest>
-      <answer id = "1">открывает для чтения</answer>
-      <answer id = "2">открывает для добавления (создаёт файл в случае его отсутствия)</answer>  
-      <answer id = "3">открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл</answer>
-      <answer id = "4">открывает для чтения и записи; удаляет содержимое и перезаписывает файл</answer>
+      <answer1>открывает для чтения</answer1>
+      <answer2>открывает для добавления (создаёт файл в случае его отсутствия)</answer2>
+      <answer3>открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл</answer3>
+      <answer4>открывает для чтения и записи; удаляет содержимое и перезаписывает файл</answer4>
     <true>3</true>
     </question>
     <question id = "167">
       <quest>
         Что делает запись: a или ab?
       </quest>
-      <answer id = "1">открывает для чтения</answer>  
-      <answer id = "2">открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл</answer>
-      <answer id = "3">открывает для чтения и записи</answer> 
-      <answer id = "4">открывает для добавления (создаёт файл в случае его отсутствия)</answer>  
+      <answer1>открывает для чтения</answer1>  
+      <answer2>открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл</answer2>
+      <answer3>открывает для чтения и записи</answer3>
+      <answer4>открывает для добавления (создаёт файл в случае его отсутствия)</answer4>
     <true>4</true>
     </question>
     <question id = "168">
       <quest>
         Что делает запись: r+ или rb+ или r+b?
       </quest>
-      <answer id = "1">открывает для чтения и записи</answer> 
-      <answer id = "2">открывает для добавления</answer>
-      <answer id = "3">открывает для чтения</answer>
-      <answer id = "4">открывает для чтения и записи (добавляет в случае существования файла)</answer> 
+      <answer1>открывает для чтения и записи</answer1> 
+      <answer2>открывает для добавления</answer2>
+      <answer3>открывает для чтения</answer3>
+      <answer4>открывает для чтения и записи (добавляет в случае существования файла)</answer4> 
     <true>1</true>
     </question>
     <question id = "169">
       <quest>
         Что делает запись: w+ или wb+ или w+b?
       </quest>
-      <answer id = "1">открывает для чтения и записи</answer>
-      <answer id = "2">открывает для чтения и записи; удаляет содержимое и перезаписывает файл</answer>
-      <answer id = "3">открывает для чтения и записи (добавляет в случае существования файла)</answer>
-      <answer id = "4">открывает для чтения</answer>
+      <answer1>открывает для чтения и записи</answer1>
+      <answer2>открывает для чтения и записи; удаляет содержимое и перезаписывает файл</answer2>
+      <answer3>открывает для чтения и записи (добавляет в случае существования файла)</answer3>
+      <answer4>открывает для чтения</answer4>
     <true>2</true>
     </question>
     <question id = "170">
       <quest>
         Что делает запись: a+ или ab+ или a+b?
       </quest>
-      <answer id = "1">открывает для чтения и записи (добавляет в случае существования файла)</answer>
-      <answer id = "2">открывает для чтения и записи; удаляет содержимое и перезаписывает файл</answer>
-      <answer id = "3">открывает для добавления (создаёт файл в случае его отсутствия)</answer>
-      <answer id = "4">открывает для чтения</answer>
+      <answer1>открывает для чтения и записи (добавляет в случае существования файла)</answer1>
+      <answer2>открывает для чтения и записи; удаляет содержимое и перезаписывает файл</answer2>
+      <answer3>открывает для добавления (создаёт файл в случае его отсутствия)</answer3>
+      <answer4>открывает для чтения</answer4>
     <true>1</true>
     </question>
     <question id = "171">
       <quest>
         Какой режим проводит такое действие с файлом: открывает для чтения?
       </quest>
-      <answer id = "1">w; wb</answer>
-      <answer id = "2">r; rb</answer>
-      <answer id = "3">a; ab</answer>
-      <answer id = "4">r+; rb+; r+b</answer>
+      <answer1>w; wb</answer1>
+      <answer2>r; rb</answer2>
+      <answer3>a; ab</answer3>
+      <answer4>r+; rb+; r+b</answer4>
     <true>2</true>
     </question>
     <question id = "172">
       <quest>
-        Какой режим проводит такое действие с файлом: открывает для записи (создаёт файл в случае его отсутствия); удаляет содержимое и перезаписывает файл?
+        Какой режим проводит такое действие с файлом: открывает для записи (создаёт файл в случае его отсутствия);
+        удаляет содержимое и перезаписывает файл?
       </quest>
-      <answer id = "1">w; wb</answer>
-      <answer id = "2">r; rb</answer>
-      <answer id = "3">a; ab</answer>
-      <answer id = "4">w+; wb+; w+b</answer>
+      <answer1>w; wb</answer1>
+      <answer2>r; rb</answer2>
+      <answer3>a; ab</answer3>
+      <answer4>w+; wb+; w+b</answer4>
     <true>1</true>
     </question>
     <question id = "173">
       <quest>
         Какой режим проводит такое действие с файлом: открывает для добавления (создаёт файл в случае его отсутствия)?
       </quest>
-      <answer id = "1">w; wb</answer>
-      <answer id = "2">a+; ab+; a+b</answer>
-      <answer id = "3">w+; wb+; w+b</answer>
-      <answer id = "4">a; ab</answer>
+      <answer1>w; wb</answer1>
+      <answer2>a+; ab+; a+b</answer2>
+      <answer3>w+; wb+; w+b</answer3>
+      <answer4>a; ab</answer4>
     <true>4</true>
     </question>
     <question id = "174">
       <quest>
         Какой режим проводит такое действие с файлом: открывает для чтения и записи?
       </quest>
-      <answer id = "1">r+; rb+; r+b</answer>
-      <answer id = "2">a; ab</answer>
-      <answer id = "3">r; rb</answer>
-      <answer id = "4">a+; ab+; a+b</answer>
+      <answer1>r+; rb+; r+b</answer1>
+      <answer2>a; ab</answer2>
+      <answer3>r; rb</answer3>
+      <answer4>a+; ab+; a+b</answer4>
     <true>1</true>
     </question>
     <question id = "175">
       <quest>
-        Какой режим проводит такое действие с файлом: открывает для чтения и записи; даляет содержимое и перезаписывает файл?
+        Какой режим проводит такое действие с файлом: открывает для чтения и записи; даляет содержимое
+        и перезаписывает файл?
       </quest>
-      <answer id = "1">r+; rb+; r+b</answer>
-      <answer id = "2">w+; wb+; w+b</answer>
-      <answer id = "3">w; wb</answer>
-      <answer id = "4">r; rb</answer>
+      <answer1>r+; rb+; r+b</answer1>
+      <answer2>w+; wb+; w+b</answer2>
+      <answer3>w; wb</answer3>
+      <answer4>r; rb</answer4>
     <true>2</true>
     </question>
     <question id = "176">
       <quest>
-        какой режим проводит такое действие с файлом:открывает для чтения и записи (добавляет в случае существования файла)
+        какой режим проводит такое действие с файлом:открывает для чтения и записи (добавляет в случае
+        существования файла)
       </quest>
-      <answer id = "1">w+; wb+; w+b</answer>
-      <answer id = "2">r+; rb+; r+b</answer>
-      <answer id = "3">a+; ab+; a+b</answer>
-      <answer id = "4">w; wb</answer>
+      <answer1>w+; wb+; w+b</answer1>
+      <answer2>r+; rb+; r+b</answer2>
+      <answer3>a+; ab+; a+b</answer3>
+      <answer4>w; wb</answer4>
     <true>3</true>
     </question>
    <question id = "177">
       <quest>
         Функция закрытия файла имеет следующий прототип:
       </quest>
-      <answer id = "1">int fclose (FILE *stream);</answer> 
-      <answer id = "2">int ferror(FILE *stream);</answer>
-      <answer id = "3">void clearerr (FILE* stream);</answer>
-      <answer id = "4">int feof (FILE *stream);</answer>
+      <answer1>int fclose (FILE *stream);</answer1> 
+      <answer2>int ferror(FILE *stream);</answer2>
+      <answer3>void clearerr (FILE* stream);</answer3>
+      <answer4>int feof (FILE *stream);</answer4>
     <true>1</true>
     </question>
     <question id = "178">
       <quest>
         Функция проверки достижения конца файл:
       </quest>
-      <answer id = "1">int fseek(FILE *stream, long offset, int origin);</answer> 
-      <answer id = "2">int feof (FILE *stream);</answer>
-      <answer id = "3">void clearerr (FILE* stream);</answer>
-      <answer id = "4">int fsetpos (FILE*stream, const fpos_t* pposition);</answer> 
+      <answer1>int fseek(FILE *stream, long offset, int origin);</answer1> 
+      <answer2>int feof (FILE *stream);</answer2>
+      <answer3>void clearerr (FILE* stream);</answer3>
+      <answer4>int fsetpos (FILE*stream, const fpos_t* pposition);</answer4> 
     <true>2</true>
     </question>
     <question id = "179">
       <quest>
         Функция которая записывает в pposition текущую позицию курсора в файле:
       </quest>
-      <answer id = "1">void clearerr (FILE* stream);</answer> 
-      <answer id = "2">int ferror(FILE *stream);</answer>
-      <answer id = "3">int feof (FILE *stream);</answer>
-      <answer id = "4">int fgetpos(FILE* stream, fpos_t* pposition);</answer> 
+      <answer1>void clearerr (FILE* stream);</answer1> 
+      <answer2>int ferror(FILE *stream);</answer2>
+      <answer3>int feof (FILE *stream);</answer3>
+      <answer4>int fgetpos(FILE* stream, fpos_t* pposition);</answer4>
     <true>4</true>
     </question>
     <question id = "180">
       <quest>
         Функция которая устанавливает курсор в файле в позицию из pposition:
       </quest>
-      <answer id = "1">int fsetpos (FILE*stream, const fpos_t* pposition);</answer>
-      <answer id = "2">void clearerr (FILE* stream);</answer>
-      <answer id = "3">int feof (FILE *stream);</answer>
-      <answer id = "4">int fseek(FILE *stream, long offset, int origin);</answer>  
+      <answer1>int fsetpos (FILE*stream, const fpos_t* pposition);</answer1>
+      <answer2>void clearerr (FILE* stream);</answer2>
+      <answer3>int feof (FILE *stream);</answer3>
+      <answer4>int fseek(FILE *stream, long offset, int origin);</answer4>
     <true>1</true>
     </question>        
   </file>
@@ -2357,50 +2135,50 @@
       <quest>
         Как передать в функцию f указатель на структуру healt_record?
       </quest>
-      <answer id = "1">обратиться к функции как к записи структуры: healt_record.f</answer> 
-      <answer id = "2">с помощью взятия адреса функции с передачей непосредственно структуры: &amp;f(healt_record)</answer> 
-      <answer id = "3">передать указатель на структуру: f(&amp;healt_record)</answer>
-      <answer id = "4">передать непосредственно структуру (но только с поверхностным копированием): f (healt_record)</answer> 
+      <answer1>обратиться к функции как к записи структуры: healt_record.f</answer1> 
+      <answer2>с помощью взятия адреса функции с передачей непосредственно структуры: &amp;f(healt_record)</answer2>
+      <answer3>передать указатель на структуру: f(&amp;healt_record)</answer3>
+      <answer4>передать непосредственно структуру (но только с поверхностным копированием): f (healt_record)</answer4>
     <true>3</true>
     </question>
     <question id = "182">
       <quest>
         Как получить адрес переменной? 
       </quest>
-      <answer id = "1">использовать операцию #</answer>
-      <answer id = "2">использовать операцию ?</answer>
-      <answer id = "3">использовать операцию &amp;</answer>
-      <answer id = "4">использовать операцию *</answer>
+      <answer1>использовать операцию #</answer1>
+      <answer2>использовать операцию ?</answer2>
+      <answer3>использовать операцию &amp;</answer3>
+      <answer4>использовать операцию *</answer4>
     <true>3</true>
     </question>
     <question id = "183">
       <quest>
         Что является указателем на хранящуюся в памяти строковую константу?
       </quest>
-      <answer id = "1">вся фраза в кавычках является указателем на место в памяти</answer>
-      <answer id = "2">первая литера строковой константы является указателем на место в памяти</answer> 
-      <answer id = "3">последняя литера строковой константы является указателем на место в памяти</answer>
-      <answer id = "4">первая четная литера строковой константы является указателем на место в памяти</answer>
+      <answer1>вся фраза в кавычках является указателем на место в памяти</answer1>
+      <answer2>первая литера строковой константы является указателем на место в памяти</answer2>
+      <answer3>последняя литера строковой константы является указателем на место в памяти</answer3>
+      <answer4>первая четная литера строковой константы является указателем на место в памяти</answer4>
     <true>1</true>
     </question>
     <question id = "184">
       <quest>
         Как получить значение, ссылаясь на указатель?
       </quest>
-      <answer id = "1">использовать операцию ?</answer>
-      <answer id = "2">использовать операцию #</answer>
-      <answer id = "3">использовать операцию *</answer>
-      <answer id = "4">использовать операцию &amp;</answer>
+      <answer1>использовать операцию ?</answer1>
+      <answer2>использовать операцию #</answer2>
+      <answer3>использовать операцию *</answer3>
+      <answer4>использовать операцию &amp;</answer4>
     <true>3</true>
     </question>
     <question id = "185">
       <quest>
         Что означает описание «char *a[10]«?
       </quest>
-      <answer id = "1">a — массив из 10 элементов типа указатель на char</answer>
-      <answer id = "2">a — указатель на массив из 10 элементов типа int</answer>
-      <answer id = "3">a — указатель на массив из 10 элементов типа double</answer>
-      <answer id = "4">a — указатель на массив из 10 элементов типа float</answer>
+      <answer1>a — массив из 10 элементов типа указатель на char</answer1>
+      <answer2>a — указатель на массив из 10 элементов типа int</answer2>
+      <answer3>a — указатель на массив из 10 элементов типа double</answer3>
+      <answer4>a — указатель на массив из 10 элементов типа float</answer4>
     <true>1</true>
     </question>
     <question id = "186">
@@ -2410,10 +2188,10 @@
           float *p_qwe=qwe; 
         Вопрос: на сколько увеличится p_qwe при выполнении оператора p_qwe ++;?
       </quest>
-      <answer id = "1">на 4</answer> 
-      <answer id = "2">на 2</answer>
-      <answer id = "3">на 1</answer>
-      <answer id = "4">на 0</answer>
+      <answer1>на 4</answer1> 
+      <answer2>на 2</answer2>
+      <answer3>на 1</answer3>
+      <answer4>на 0</answer4>
     <true>3</true>
     </question>
     <question id = "187">
@@ -2422,10 +2200,10 @@
           int *p_fcp =fcp;
         Вопрос: что обозначают fcp и *p_fcp: 
       </quest>
-      <answer id = "1">обозначают значение переменной fcp</answer>
-      <answer id = "2">обозначают адрес переменной fcp в памяти</answer>
-      <answer id = "3">обозначают значение переменной p_fcp</answer>
-      <answer id = "4">обозначают адрес переменной p_fcp</answer>
+      <answer1>обозначают значение переменной fcp</answer1>
+      <answer2>обозначают адрес переменной fcp в памяти</answer2>
+      <answer3>обозначают значение переменной p_fcp</answer3>
+      <answer4>обозначают адрес переменной p_fcp</answer4>
     <true>2</true>
     </question>
     <question id = "188">
@@ -2435,20 +2213,20 @@
           float *p_ = arr[3];
         Вопрос: на какой элемент массива arrбудет указывать p_ при выполнении оператора p_ += 5;?
       </quest>
-      <answer id = "1">на 9</answer>
-      <answer id = "2">на 5</answer>
-      <answer id = "3">на 8</answer>
-      <answer id = "4">на 7</answer>
+      <answer1>на 9</answer1>
+      <answer2>на 5</answer2>
+      <answer3>на 8</answer3>
+      <answer4>на 7</answer4>
     <true>3</true>
     </question>
     <question id = "189">
       <quest>
         Укажите пример объявления указателя: 
       </quest>
-      <answer id = "1">char *ch;</answer>
-      <answer id = "2">char ch;</answer>
-      <answer id = "3">char _ch;</answer>
-      <answer id = "4">char #ch;</answer>
+      <answer1>char *ch;</answer1>
+      <answer2>char ch;</answer2>
+      <answer3>char _ch;</answer3>
+      <answer4>char #ch;</answer4>
     <true>1</true>
     </question>
     <question id = "190">
@@ -2458,10 +2236,10 @@
           double *d;
           void *v; 
       </quest>
-      <answer id = "1">a = b;</answer>
-      <answer id = "2">b = v;</answer>
-      <answer id = "3">d = a;</answer>
-      <answer id = "4">v = b;</answer>
+      <answer1>a = b;</answer1>
+      <answer2>b = v;</answer2>
+      <answer3>d = a;</answer3>
+      <answer4>v = b;</answer4>
     <true>1</true>
     </question>
     <question id = "191">
@@ -2471,502 +2249,506 @@
           double *d;
           void *v; 
       </quest>
-      <answer id = "1">a = b;</answer>
-      <answer id = "2">b = v;</answer>
-      <answer id = "3">v = a;</answer>
-      <answer id = "4">v = d;</answer>
+      <answer1>a = b;</answer1>
+      <answer2>b = v;</answer2>
+      <answer3>v = a;</answer3>
+      <answer4>v = d;</answer4>
     <true>2</true>
     </question>
     <question id = "192">
       <quest>
         Каких типов может быть указатель? 
       </quest>
-      <answer id = "1">только int</answer> 
-      <answer id = "2">только float</answer>
-      <answer id = "3">int и double</answer>
-      <answer id = "4">всеми</answer>
+      <answer1>только int</answer1> 
+      <answer2>только float</answer2>
+      <answer3>int и double</answer3>
+      <answer4>всеми</answer4>
     <true>4</true>
     </question>
     <question id = "193">
       <quest>
         В какой из следующих записей используется операция разименования? 
       </quest>
-      <answer id = "1">*a</answer>
-      <answer id = "2">address(a)</answer>
-      <answer id = "3">a</answer>
-      <answer id = "4">&amp;a</answer>
+      <answer1>*a</answer1>
+      <answer2>address(a)</answer2>
+      <answer3>a</answer3>
+      <answer4>&amp;a</answer4>
     <true>1</true>
     </question>
     <question id = "194">
       <quest>
         В какой из следующих записей используется операция взятия адреса? 
       </quest>
-      <answer id = "1">*a</answer>
-      <answer id = "2">&amp;a</answer>
-      <answer id = "3">a</answer>
-      <answer id = "4">address(a)</answer>
+      <answer1>*a</answer1>
+      <answer2>&amp;a</answer2>
+      <answer3>a</answer3>
+      <answer4>address(a)</answer4>
     <true>2</true>
     </question>
     <question id = "195">
       <quest>
         Что означает описание «double (*a)[10]«? 
       </quest>
-      <answer id = "1">a — указатель на массив из 10 элементов типа double</answer>
-      <answer id = "2">a — массив из 10 элементов типа указатель на int</answer>
-      <answer id = "3">a — массив из 10 элементов типа указатель на char</answer>
-      <answer id = "4">a — массив из 10 элементов типа указатель на double</answer>
+      <answer1>a — указатель на массив из 10 элементов типа double</answer1>
+      <answer2>a — массив из 10 элементов типа указатель на int</answer2>
+      <answer3>a — массив из 10 элементов типа указатель на char</answer3>
+      <answer4>a — массив из 10 элементов типа указатель на double</answer4>
     <true>1</true>
     </question>
     <question id = "196">
       <quest>
         Что означает описание «char *a[10]«?
       </quest>
-      <answer id = "1">a — массив из 10 элементов типа указатель на char</answer>
-      <answer id = "2">a — указатель на массив из 10 элементов типа char</answer>
-      <answer id = "3">a — указатель на массив из 10 элементов типа int</answer>
-      <answer id = "4">a — указатель на массив из 10 элементов типа float</answer>
+      <answer1>a — массив из 10 элементов типа указатель на char</answer1>
+      <answer2>a — указатель на массив из 10 элементов типа char</answer2>
+      <answer3>a — указатель на массив из 10 элементов типа int</answer3>
+      <answer4>a — указатель на массив из 10 элементов типа float</answer4>
     <true>1</true>
     </question>
     <question id = "197">
       <quest>
         Какую библиотеку нужно использовать чтобы работать с указателями? 
       </quest>
-      <answer id = "1">math</answer>
-      <answer id = "2">stdlib</answer> 
-      <answer id = "3">stdio</answer>
-      <answer id = "4">никакую</answer> 
+      <answer1>math</answer1>
+      <answer2>stdlib</answer2> 
+      <answer3>stdio</answer3>
+      <answer4>никакую</answer4> 
     <true>4</true>
     </question>
     <question id = "198">
       <quest>
         Операция разименования это символ: 
       </quest>
-      <answer id = "1">:</answer>
-      <answer id = "2">?</answer>
-      <answer id = "3">*</answer>
-      <answer id = "4">&amp;</answer> 
+      <answer1>:</answer1>
+      <answer2>?</answer2>
+      <answer3>*</answer3>
+      <answer4>&amp;</answer4> 
     <true>3</true>
     </question>
     <question id = "199">
       <quest>
         Операция взятия адреса это символ: 
       </quest>
-      <answer id = "1">&amp;</answer>
-      <answer id = "2">:</answer>
-      <answer id = "3">*</answer>
-      <answer id = "4">?</answer>
+      <answer1>&amp;</answer1>
+      <answer2>:</answer2>
+      <answer3>*</answer3>
+      <answer4>?</answer4>
     <true>1</true>
     </question>
     <question id = "200">
       <quest>
         Может ли указатель быть типа int? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только float</answer> 
-      <answer id = "3">нет, только char</answer>
-      <answer id = "4">нет, только double</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только float</answer2> 
+      <answer3>нет, только char</answer3>
+      <answer4>нет, только double</answer4>
     <true>1</true>
     </question>
     <question id = "201">
       <quest>
         Может ли указатель быть типа float? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только int</answer> 
-      <answer id = "3">нет, только char</answer>
-      <answer id = "4">нет, только double</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только int</answer2>
+      <answer3>нет, только char</answer3>
+      <answer4>нет, только double</answer4>
     <true>1</true>
     </question>
     <question id = "202">
       <quest>
         Может ли указатель быть типа char? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только float</answer> 
-      <answer id = "3">нет, только int</answer>
-      <answer id = "4">нет, только double</answer> 
+      <answer1>да</answer1>
+      <answer2>нет, только float</answer2> 
+      <answer3>нет, только int</answer3>
+      <answer4>нет, только double</answer4> 
     <true>1</true>
     </question>
     <question id = "203">
       <quest>
         Может ли указатель быть типа double? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только float</answer> 
-      <answer id = "3">нет, только char</answer>
-      <answer id = "4">нет, только int</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только float</answer2> 
+      <answer3>нет, только char</answer3>
+      <answer4>нет, только int</answer4>
     <true>1</true>
     </question>
     <question id = "204">
       <quest>
         Переменные каких типов можно вызвать по адресу? 
       </quest>
-      <answer id = "1">всех</answer>
-      <answer id = "2">только int</answer>
-      <answer id = "3">только char</answer>
-      <answer id = "4">только float</answer>
+      <answer1>всех</answer1>
+      <answer2>только int</answer2>
+      <answer3>только char</answer3>
+      <answer4>только float</answer4>
     <true>1</true>
     </question>
     <question id = "205">
       <quest>
         Можно ли вызвать переменную типа int по адресу? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только float</answer> 
-      <answer id = "3">нет, только char</answer>
-      <answer id = "4">нет, только double</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только float</answer2> 
+      <answer3>нет, только char</answer3>
+      <answer4>нет, только double</answer4>
     <true>1</true>
     </question>
     <question id = "206">
       <quest>
         Можно ли вызвать переменную типа float по адресу? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только double</answer> 
-      <answer id = "3">нет, только char</answer>
-      <answer id = "4">нет, только int</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только double</answer2> 
+      <answer3>нет, только char</answer3>
+      <answer4>нет, только int</answer4>
     <true>1</true>
     </question>
     <question id = "207">
       <quest>
         Можно ли вызвать переменную типа char по адресу? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только double</answer> 
-      <answer id = "3">нет, только float</answer>
-      <answer id = "4">нет, только int</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только double</answer2> 
+      <answer3>нет, только float</answer3>
+      <answer4>нет, только int</answer4>
     <true>1</true>
     </question>
     <question id = "208">
       <quest>
         Можно ли вызвать переменную типа double по адресу? 
       </quest>
-      <answer id = "1">да</answer>
-      <answer id = "2">нет, только char</answer> 
-      <answer id = "3">нет, только float</answer>
-      <answer id = "4">нет, только int</answer>
+      <answer1>да</answer1>
+      <answer2>нет, только char</answer2> 
+      <answer3>нет, только float</answer3>
+      <answer4>нет, только int</answer4>
     <true>1</true>
     </question>
     <question id = "209">
       <quest>
         Указатель - это 
       </quest>
-      <answer id = "1">переменная, содержащая объект</answer>
-      <answer id = "2">переменная, содержащая адрес объекта</answer>
-      <answer id = "3">адрес, содержащая объект</answer>
-      <answer id = "4">переменная</answer>
+      <answer1>переменная, содержащая объект</answer1>
+      <answer2>переменная, содержащая адрес объекта</answer2>
+      <answer3>адрес, содержащая объект</answer3>
+      <answer4>переменная</answer4>
     <true>2</true>
     </question>
     <question id = "210">
       <quest>
         Тип указателя - это 
       </quest>
-      <answer id = "1">это тип переменной</answer>
-      <answer id = "2">это тип адреса</answer>
-      <answer id = "3">это адрес которой он содержит</answer> 
-      <answer id = "4">это тип переменной, адрес которой он содержит</answer> 
+      <answer1>это тип переменной</answer1>
+      <answer2>это тип адреса</answer2>
+      <answer3>это адрес которой он содержит</answer3> 
+      <answer4>это тип переменной, адрес которой он содержит</answer4> 
     <true>4</true>
     </question>
   </addresses_and_pointers>      
 <dynamic_memory>
     <question id = "211">
       <quest>
-        Динамическая процедура, которая отводит место в определенное количество байт, присваивая адрес его начала указателю Р
+        Динамическая процедура, которая отводит место в определенное количество байт, присваивая адрес
+        его начала указателю Р...
       </quest>
-      <answer id = "1">New(var P: Pointer);</answer>
-      <answer id = "2">Dispose(var P: Pointer);</answer>
-      <answer id = "3">GetMem(var P: Pointer; Size: Word);</answer> 
-      <answer id = "4">FreeMem(var P: Pointer; Size: Word);</answer>
+      <answer1>New(var P: Pointer);</answer1>
+      <answer2>Dispose(var P: Pointer);</answer2>
+      <answer3>GetMem(var P: Pointer; Size: Word);</answer3>
+      <answer4>FreeMem(var P: Pointer; Size: Word);</answer4>
     <true>3</true>
     </question>
     <question id = "212">
       <quest>
         Динамическая процедура, которая уничтожает связь между ссылкой Р и значением, на которое она ссылалась
       </quest>
-      <answer id = "1">New(var P: Pointer);</answer>
-      <answer id = "2">Dispose(var P: Pointer);</answer>
-      <answer id = "3">GetMem(var P: Pointer; Size: Word);</answer> 
-      <answer id = "4">FreeMem(var P: Pointer; Size: Word);</answer>
+      <answer1>New(var P: Pointer);</answer1>
+      <answer2>Dispose(var P: Pointer);</answer2>
+      <answer3>GetMem(var P: Pointer; Size: Word);</answer3>
+      <answer4>FreeMem(var P: Pointer; Size: Word);</answer4>
     <true>2</true>
     </question>
     <question id = "213">
       <quest>
-        Динамическая процедура, которая отводит место для хранения динамической переменной P^ присваивает её адрес ссылке Р
+        Динамическая процедура, которая отводит место для хранения динамической переменной P^
+        присваивает её адрес ссылке Р
       </quest>
-      <answer id = "1">New(var P: Pointer);</answer>
-      <answer id = "2">Dispose(var P: Pointer);</answer>
-      <answer id = "3">GetMem(var P: Pointer; Size: Word);</answer> 
-      <answer id = "4">FreeMem(var P: Pointer; Size: Word);</answer>
+      <answer1>New(var P: Pointer);</answer1>
+      <answer2>Dispose(var P: Pointer);</answer2>
+      <answer3>GetMem(var P: Pointer; Size: Word);</answer3>
+      <answer4>FreeMem(var P: Pointer; Size: Word);</answer4>
     <true>1</true>
     </question>
     <question id = "214">
       <quest>
-        Упорядоченная динамическая структура, каждый элемент которой содержит ссылку, связывающую его со следующим элементом, называется ...
+        Упорядоченная динамическая структура, каждый элемент которой содержит ссылку, связывающую
+        его со следующим элементом, называется ...
       </quest>
-      <answer id = "1">очередью</answer>
-      <answer id = "2">стеком</answer>
-      <answer id = "3">списком</answer>
-      <answer id = "4">файлом</answer>
+      <answer1>очередью</answer1>
+      <answer2>стеком</answer2>
+      <answer3>списком</answer3>
+      <answer4>файлом</answer4>
     <true>3</true>
     </question>
     <question id = "215">
       <quest>
         Динамическая структура, которая имеет одну точку доступа к его элементам («голова»), называется ...
       </quest>
-      <answer id = "1">очередью</answer>
-      <answer id = "2">стеком</answer>
-      <answer id = "3">списком</answer>
-      <answer id = "4">файлом</answer>
+      <answer1>очередью</answer1>
+      <answer2>стеком</answer2>
+      <answer3>списком</answer3>
+      <answer4>файлом</answer4>
     <true>2</true>
     </question>
     <question id = "216">
       <quest>
-        Динамическая структура, которая имеет две основные операции: добавление в «хвост» и извлечение из «головы» является ...
+        Динамическая структура, которая имеет две основные операции: добавление в «хвост» и извлечение
+        из «головы» является ...
       </quest>
-      <answer id = "1">очередью</answer>
-      <answer id = "2">стеком</answer>
-      <answer id = "3">списком</answer>
-      <answer id = "4">файлом</answer>
+      <answer1>очередью</answer1>
+      <answer2>стеком</answer2>
+      <answer3>списком</answer3>
+      <answer4>файлом</answer4>
     <true>1</true>
     </question>
     <question id = "217">
       <quest>
         Какая функция не выделяет память? 
       </quest>
-      <answer id = "1">malloc</answer>
-      <answer id = "2">realloc</answer>
-      <answer id = "3">free</answer>
-      <answer id = "4">calloc</answer>
+      <answer1>malloc</answer1>
+      <answer2>realloc</answer2>
+      <answer3>free</answer3>
+      <answer4>calloc</answer4>
     <true>3</true>
     </question>
     <question id = "218">
       <quest>
         Какая функция выполняет чистое выделение памяти?
       </quest>
-      <answer id = "1">malloc</answer>
-      <answer id = "2">new</answer>
-      <answer id = "3">free</answer>
-      <answer id = "4">calloc</answer>
+      <answer1>malloc</answer1>
+      <answer2>new</answer2>
+      <answer3>free</answer3>
+      <answer4>calloc</answer4>
     <true>4</true>
     </question>
     <question id = "219">
       <quest>
         Какая функция выполняет перераспределение памяти? 
       </quest>
-      <answer id = "1">malloc</answer>
-      <answer id = "2">realloc</answer>
-      <answer id = "3">free</answer>
-      <answer id = "4">calloc</answer>
+      <answer1>malloc</answer1>
+      <answer2>realloc</answer2>
+      <answer3>free</answer3>
+      <answer4>calloc</answer4>
     <true>2</true>
     </question>
     <question id = "220">
       <quest>
         Какая функция выполняет освобождение памяти?
       </quest>
-      <answer id = "1">malloc</answer>
-      <answer id = "2">realloc</answer>
-      <answer id = "3">free</answer>
-      <answer id = "4">calloc</answer>
+      <answer1>malloc</answer1>
+      <answer2>realloc</answer2>
+      <answer3>free</answer3>
+      <answer4>calloc</answer4>
     <true>3</true>
     </question>
     <question id = "221">
       <quest>
         Для использования функций динамического распределения памяти необходимо подключение библиотеки:
       </quest>
-      <answer id = "1">malloc.h</answer>
-      <answer id = "2">math.h</answer>
-      <answer id = "3">stdio.h</answer>
-      <answer id = "4">stdlib.h</answer>
+      <answer1>malloc.h</answer1>
+      <answer2>math.h</answer2>
+      <answer3>stdio.h</answer3>
+      <answer4>stdlib.h</answer4>
     <true>1</true>
     </question>
     <question id = "222">
       <quest>
         Куча – это ...
       </quest>
-      <answer id = "1">объекты памяти</answer>
-      <answer id = "2">страница памяти</answer>
-      <answer id = "3">динамическая область памяти</answer> 
-      <answer id = "4">указатель блока памяти</answer>
+      <answer1>объекты памяти</answer1>
+      <answer2>страница памяти</answer2>
+      <answer3>динамическая область памяти</answer3> 
+      <answer4>указатель блока памяти</answer4>
     <true>3</true>
     </question>
     <question id = "223">
       <quest>
         Куча – это ...
       </quest>
-      <answer id = "1">блок памяти</answer>
-      <answer id = "2">указатель строки</answer>
-      <answer id = "3">указатель функции</answer>
-      <answer id = "4">страница памяти</answer>
+      <answer1>блок памяти</answer1>
+      <answer2>указатель строки</answer2>
+      <answer3>указатель функции</answer3>
+      <answer4>страница памяти</answer4>
     <true>1</true>
     </question>
     <question id = "224">
       <quest>
         Куча – это ...
       </quest>
-      <answer id = "1">указатель функции</answer>
-      <answer id = "2">мелкие фрагменты памяти</answer>
-      <answer id = "3">указатель строки</answer>
-      <answer id = "4">объекты памяти</answer>
+      <answer1>указатель функции</answer1>
+      <answer2>мелкие фрагменты памяти</answer2>
+      <answer3>указатель строки</answer3>
+      <answer4>объекты памяти</answer4>
     <true>2</true>
     </question>
     <question id = "225">
       <quest>
         Функция для управления памятью кучи: 
       </quest>
-      <answer id = "1">HeapDestroy()</answer>
-      <answer id = "2">HeapAlloc()</answer>
-      <answer id = "3">HeapSize()</answer>
-      <answer id = "4">MapViewOfFile()</answer>
+      <answer1>HeapDestroy()</answer1>
+      <answer2>HeapAlloc()</answer2>
+      <answer3>HeapSize()</answer3>
+      <answer4>MapViewOfFile()</answer4>
     <true>2</true>
     </question>
     <question id = "226">
       <quest>
         Функция для управления памятью кучи: 
       </quest>
-      <answer id = "1">HeapReAlloc()</answer>
-      <answer id = "2">HeapSize()</answer>
-      <answer id = "3">HeapDestroy()</answer>
-      <answer id = "4">HeapCreate()</answer>
+      <answer1>HeapReAlloc()</answer1>
+      <answer2>HeapSize()</answer2>
+      <answer3>HeapDestroy()</answer3>
+      <answer4>HeapCreate()</answer4>
     <true>1</true>
     </question>
     <question id = "227">
       <quest>
         Функция для управления памятью кучи: 
       </quest>
-      <answer id = "1">HeapFree()</answer>
-      <answer id = "2">HeapDestroy()</answer>
-      <answer id = "3">HeapCreate()</answer>
-      <answer id = "4">HeapFree()</answer>
+      <answer1>HeapFree()</answer1>
+      <answer2>HeapDestroy()</answer2>
+      <answer3>HeapCreate()</answer3>
+      <answer4>HeapFree()</answer4>
     <true>4</true>
     </question>
     <question id = "228">
       <quest>
         Прототип функции LoadLibraryEx, для загрузки динамически подключаемых библиотек:  
       </quest>
-      <answer id = "1">LPCTSTR</answer>
-      <answer id = "2">HINSTANCE</answer>
-      <answer id = "3">DWORD_В</answer>
-      <answer id = "4">LPVOID</answer>
+      <answer1>LPCTSTR</answer1>
+      <answer2>HINSTANCE</answer2>
+      <answer3>DWORD_В</answer3>
+      <answer4>LPVOID</answer4>
     <true>1</true>
     </question>
     <question id = "229">
       <quest>
         Задачи динамической локальной памяти потока: 
       </quest>
-      <answer id = "1">поместить библиотеку в каталог</answer>
-      <answer id = "2">хранить указатели на захваченную память</answer> 
-      <answer id = "3">поместить  файл импорта этой библиотеки в каталог</answer> 
-      <answer id = "4">ввести имя используемой библиотеки импорта</answer>
+      <answer1>поместить библиотеку в каталог</answer1>
+      <answer2>хранить указатели на захваченную память</answer2> 
+      <answer3>поместить  файл импорта этой библиотеки в каталог</answer3>
+      <answer4>ввести имя используемой библиотеки импорта</answer4>
     <true>2</true>
     </question>
     <question id = "230">
       <quest>
         Статическая локальная память: 
       </quest>
-      <answer id = "1">оповещает параллельные потоки</answer> 
-      <answer id = "2">устанавливает соединения между потоками данных</answer> 
-      <answer id = "3">определяет локальные переменные</answer>
-      <answer id = "4">обслуживает очередь пакетов</answer>
+      <answer1>оповещает параллельные потоки</answer1> 
+      <answer2>устанавливает соединения между потоками данных</answer2>
+      <answer3>определяет локальные переменные</answer3>
+      <answer4>обслуживает очередь пакетов</answer4>
     <true>3</true>
     </question>
     <question id = "231">
       <quest>
         Функция для работы локальной памятью потока: 
       </quest>
-      <answer id = "1">LpBuffer</answer>
-      <answer id = "2">TlsAlloc</answer>
-      <answer id = "3">NumberOfBytes</answer>
-      <answer id = "4">ReadFile</answer>
+      <answer1>LpBuffer</answer1>
+      <answer2>TlsAlloc</answer2>
+      <answer3>NumberOfBytes</answer3>
+      <answer4>ReadFile</answer4>
     <true>2</true>
     </question>
     <question id = "232">
       <quest>
         Функция для работы локальной памятью потока: 
       </quest>
-      <answer id = "1">TlsGetValue</answer>
-      <answer id = "2">CompletionKey</answer>
-      <answer id = "3">NumberOfBytes</answer>
-      <answer id = "4">LpBuffer</answer>
+      <answer1>TlsGetValue</answer1>
+      <answer2>CompletionKey</answer2>
+      <answer3>NumberOfBytes</answer3>
+      <answer4>LpBuffer</answer4>
     <true>1</true>
     </question>
     <question id = "233">
       <quest>
         Динамические подключаемые библиотеки предназначены ...
       </quest>
-      <answer id = "1">для разработки функционально-замкнутых библиотек функций</answer>
-      <answer id = "2">для открытия файла, который будет отображаться в динамической памяти</answer> 
-      <answer id = "3">для загрузки в адресное пространство процесса</answer>
-      <answer id = "4">для сохранения файла и каталога</answer>
+      <answer1>для разработки функционально-замкнутых библиотек функций</answer1>
+      <answer2>для открытия файла, который будет отображаться в динамической памяти</answer2> 
+      <answer3>для загрузки в адресное пространство процесса</answer3>
+      <answer4>для сохранения файла и каталога</answer4>
     <true>1</true>
     </question>
     <question id = "234">
       <quest>
         Функция для работы локальной памятью потока:
       </quest>
-      <answer id = "1">TlsSetValue</answer>
-      <answer id = "2">CompletionKey</answer>
-      <answer id = "3">NumberOfBytes</answer>
-      <answer id = "4">lpAttributes</answer>
+      <answer1>TlsSetValue</answer1>
+      <answer2>CompletionKey</answer2>
+      <answer3>NumberOfBytes</answer3>
+      <answer4>lpAttributes</answer4>
     <true>1</true>
     </question>
     <question id = "235">
       <quest>
         Динамические подключаемые библиотеки предназначены ...
       </quest>
-      <answer id = "1">для завершения нового потока в процессе</answer> 
-      <answer id = "2">для сохранения файла и каталога</answer>
-      <answer id = "3">для перехода в адресную строку</answer>
-      <answer id = "4">для снижения затрат на разработку ПО</answer>
+      <answer1>для завершения нового потока в процессе</answer1> 
+      <answer2>для сохранения файла и каталога</answer2>
+      <answer3>для перехода в адресную строку</answer3>
+      <answer4>для снижения затрат на разработку ПО</answer4>
     <true>4</true>
     </question>
     <question id = "236">
       <quest>
         Динамические подключаемые библиотеки предназначены ...
       </quest>
-      <answer id = "1">для завершения нового потока в процессе</answer>
-      <answer id = "2">для открытия файла, который будет отображаться в динамической памяти</answer>   
-      <answer id = "3">для уменьшения физической памяти</answer>
-      <answer id = "4">для перехода в адресную строку</answer>
+      <answer1>для завершения нового потока в процессе</answer1>
+      <answer2>для открытия файла, который будет отображаться в динамической памяти</answer2>
+      <answer3>для уменьшения физической памяти</answer3>
+      <answer4>для перехода в адресную строку</answer4>
     <true>3</true>
     </question>
     <question id = "237">
       <quest>
         Задачи динамической локальной памяти потока: 
       </quest>
-      <answer id = "1">узнать какой поток ее вызывает</answer>
-      <answer id = "2">поместить  файл импорта этой библиотеки в каталог</answer> 
-      <answer id = "3">ввести имя используемой библиотеки импорта</answer>
-      <answer id = "4">описать импортируемые из DLL имена в приложении</answer>
+      <answer1>узнать какой поток ее вызывает</answer1>
+      <answer2>поместить  файл импорта этой библиотеки в каталог</answer2>
+      <answer3>ввести имя используемой библиотеки импорта</answer3>
+      <answer4>описать импортируемые из DLL имена в приложении</answer4>
     <true>1</true>
     </question>
     <question id = "238">
       <quest>
         Задачи динамической локальной памяти потока: 
       </quest>
-      <answer id = "1">создать DLL</answer>
-      <answer id = "2">поместить библиотеку в каталог</answer> 
-      <answer id = "3">ввести имя используемой библиотеки импорта</answer> 
-      <answer id = "4">сопоставить каждому потоку свой указатель</answer>
+      <answer1>создать DLL</answer1>
+      <answer2>поместить библиотеку в каталог</answer2>
+      <answer3>ввести имя используемой библиотеки импорта</answer3>
+      <answer4>сопоставить каждому потоку свой указатель</answer4>
     <true>4</true>
     </question>
     <question id = "239">
       <quest>
         Распределение локальной памяти потока в DLL:
       </quest>
-      <answer id = "1">dwPrewTlsIndex = dwNextTlsIndex</answer>
-      <answer id = "2">case DLL_PROCESS_ATTACH</answer>
-      <answer id = "3">return 0;</answer>
-      <answer id = "4">returnGetLastError();</answer> 
+      <answer1>dwPrewTlsIndex = dwNextTlsIndex</answer1>
+      <answer2>case DLL_PROCESS_ATTACH</answer2>
+      <answer3>return 0;</answer3>
+      <answer4>returnGetLastError();</answer4> 
     <true>2</true>
     </question>
     <question id = "240">
       <quest>
         Статическая локальная память:
       </quest>
-      <answer id = "1">использует спецификатор памяти declspec(thread)</answer>
-      <answer id = "2">устанавливает соединения между потоками данных</answer>
-      <answer id = "3">принимает записи</answer>
-      <answer id = "4">обслуживает очередь пакетов</answer>  
+      <answer1>использует спецификатор памяти declspec(thread)</answer1>
+      <answer2>устанавливает соединения между потоками данных</answer2>
+      <answer3>принимает записи</answer3>
+      <answer4>обслуживает очередь пакетов</answer4>  
     <true>1</true>
     </question>
   </dynamic_memory>

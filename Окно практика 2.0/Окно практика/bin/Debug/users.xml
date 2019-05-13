@@ -20,17 +20,17 @@
       <password>1</password>
       <name>Тестовый тест</name>
       <test>
-        <cycles>3</cycles>
-        <arrays>нет</arrays>
+        <cycles>4</cycles>
+        <arrays>1</arrays>
         <strings>1</strings>
-        <recursion>2</recursion>
-        <structures>3</structures>
-        <dynamic>нет</dynamic>
-        <files>1</files>
-        <pointers>5</pointers>
+        <recursion>3</recursion>
+        <structures>2</structures>
+        <dynamic>1</dynamic>
+        <files>2</files>
+        <pointers>3</pointers>
       </test>
-      <total>0</total>
-      <grade>7</grade>
+      <total>2</total>
+      <grade>5</grade>
     </user>
     <user id="1">
       <login>Berkut</login>
