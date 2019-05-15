@@ -128,39 +128,29 @@ namespace Окно_практика
 						{
 							cur_answer = questionNode.InnerText;
 						}
-						else if (questionNode.Name == "answer")
+						else if (questionNode.Name == "answer1")
 						{
-							XmlNode answerID = questionNode.Attributes.GetNamedItem("id");
-							switch (Convert.ToInt32(answerID.Value))
-							{
-								case 1:
-
-									Answer1.Show();
-									Answer1.Text = questionNode.InnerText;
-									break;
-
-								case 2:
-
-									Answer2.Show();
-									Answer2.Text = questionNode.InnerText;
-									break;
-
-								case 3:
-
-									Answer3.Show();
-									Answer3.Text = questionNode.InnerText;
-									break;
-
-								case 4:
-
-									Answer4.Show();
-									Answer4.Text = questionNode.InnerText;
-									break;
-							}
-
-							button2.Show();
+							Answer1.Show();
+							Answer1.Text = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer2")
+						{
+							Answer2.Show();
+							Answer2.Text = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer3")
+						{
+							Answer3.Show();
+							Answer3.Text = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer4")
+						{
+							Answer4.Show();
+							Answer4.Text = questionNode.InnerText;
 						}
 					}
+
+					button2.Show();
 				}
 			}
 
@@ -319,6 +309,11 @@ namespace Окно_практика
 		}
 
 		private void Answer1_CheckedChanged_1(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Answer1_CheckedChanged_2(object sender, EventArgs e)
 		{
 
 		}
