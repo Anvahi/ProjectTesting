@@ -19,6 +19,9 @@ namespace Окно_практика
         int tru;
         int anser;
         int summ_tru;
+        int[] mas;
+        int l = 0;
+        int replace;
 
         public FinalTest()
         {
@@ -48,471 +51,700 @@ namespace Окно_практика
 
         private void button2_Click(object sender, EventArgs e)
         {
-            while(flag_3==1)
+            button2.Visible = false;
+            button2.Enabled = false;
+            Answer1.Visible = true;
+            Answer1.Enabled = true;
+            Answer2.Visible = true;
+            Answer2.Enabled = true;
+            Answer3.Visible = true;
+            Answer3.Enabled = true;
+            Answer4.Visible = true;
+            Answer4.Enabled = true;
+            button1.Visible = true;
+            button1.Enabled = true;
+            while (flag_3==1)
             {
                 Rate.Text = "0";
                 CountMistake.Text = "0";
 
-            int[] rrand = new int[10];
-            int flag_1 = 0;
-            int j, k;
-            int prov;
-            kaunt = 0;
-            
+                int[] rrand = new int[10];
+                int flag_1 = 0;
+                int j, k;
+                int prov;
+                kaunt = 0;
+                summ_tru = 0;
 
-            Random rnd = new Random();
-            int arra_1;
-            int arra_2;
 
-            int[] array = new int[8];
-            int count = 0;
+                Random rnd = new Random();
+                int arra_1;
+                int arra_2;
 
-            XmlDocument xDooc = new XmlDocument();
-            xDooc.Load("testing.xml");
-            XmlElement xRooot = xDooc.DocumentElement;
-            
+                int[] array = new int[8];
+                int count = 0;
 
-            foreach (XmlNode xnode in xRooot)
-            {
-                if (xnode.Name == "cycles")
+                XmlDocument xDooc = new XmlDocument();
+                xDooc.Load("testing.xml");
+                XmlElement xRooot = xDooc.DocumentElement;
+                
+
+                foreach (XmlNode xnode in xRooot)
                 {
-                    foreach (XmlNode childcycles in xnode.ChildNodes)
-                        count++;
-                    array[0] = count;
-                }
-                else if (xnode.Name == "arrays")
-                {
-                    foreach (XmlNode childarrays in xnode.ChildNodes)
-                        count++;
-                    array[1] = count;
-                }
-                else if (xnode.Name == "lines")
-                {
-                    foreach (XmlNode childlines in xnode.ChildNodes)
-                        count++;
-                    array[2] = count;
-                }
-                else if (xnode.Name == "recursion")
-                {
-                    foreach (XmlNode childrecursion in xnode.ChildNodes)
-                        count++;
-                    array[3] = count;
-                }
-                else if (xnode.Name == "struct")
-                {
-                    foreach (XmlNode childstruct in xnode.ChildNodes)
-                        count++;
-                    array[4] = count;
-                }
-                else if (xnode.Name == "file")
-                {
-                    foreach (XmlNode childfile in xnode.ChildNodes)
-                        count++;
-                    array[5] = count;
+                    if (xnode.Name == "cycles")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                            count++;
+                        array[0] = count;
+                    }
+                    else if (xnode.Name == "arrays")
+                    {
+                        foreach (XmlNode childarrays in xnode.ChildNodes)
+                            count++;
+                        array[1] = count;
+                    }
+                    else if (xnode.Name == "lines")
+                    {
+                        foreach (XmlNode childlines in xnode.ChildNodes)
+                            count++;
+                        array[2] = count;
+                    }
+                    else if (xnode.Name == "recursion")
+                    {
+                        foreach (XmlNode childrecursion in xnode.ChildNodes)
+                            count++;
+                        array[3] = count;
+                    }
+                    else if (xnode.Name == "struct")
+                    {
+                        foreach (XmlNode childstruct in xnode.ChildNodes)
+                            count++;
+                        array[4] = count;
+                    }
+                    else if (xnode.Name == "file")
+                    {
+                        foreach (XmlNode childfile in xnode.ChildNodes)
+                            count++;
+                        array[5] = count;
+                    }
+
+                    else if (xnode.Name == "addresses_and_pointers")
+                    {
+                        foreach (XmlNode childaddresses_and_pointers in xnode.ChildNodes)
+                            count++;
+                        array[6] = count;
+                    }
+                    else
+                    {
+                        foreach (XmlNode childdynamic_memory in xnode.ChildNodes)
+                            count++;
+                        array[7] = count;
+                    }
+                    count = 0;
                 }
 
-                else if (xnode.Name == "addresses_and_pointers")
-                {
-                    foreach (XmlNode childaddresses_and_pointers in xnode.ChildNodes)
-                        count++;
-                    array[6] = count;
-                }
-                else
-                {
-                    foreach (XmlNode childdynamic_memory in xnode.ChildNodes)
-                        count++;
-                    array[7] = count;
-                }
-                count = 0;
-            }
-
-            arra_1 = 1;
-            arra_2 = array[0];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                arra_1 = 1;
+                arra_2 = array[0];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[0]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "cycles")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 0; i <= 32; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0];
-            arra_2 = array[0] + array[1];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 0; i <= 32; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[1];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[1]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "arrays")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 1; i <= 33; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0] + array[1];
-            arra_2 = array[0] + array[1] + array[2];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 1; i <= 33; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[2];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[2]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "lines")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 2; i <= 34; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0] + array[1] + array[2];
-            arra_2 = array[0] + array[1] + array[2] + array[3];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 2; i <= 34; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[3];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[3]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "recursion")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 3; i <= 35; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0] + array[1] + array[2] + array[3];
-            arra_2 = array[0] + array[1] + array[2] + array[3] + array[4];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 3; i <= 35; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[4];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[4]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "struct")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 4; i <= 36; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0] + array[1] + array[2] + array[3] + array[4];
-            arra_2 = array[0] + array[1] + array[2] + array[3] + array[4] + array[5];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 4; i <= 36; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[5];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[5]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "file")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 5; i <= 37; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0] + array[1] + array[2] + array[3] + array[4] + array[5];
-            arra_2 = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 5; i <= 37; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[6];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[6]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "addresses_and_pointers")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 6; i <= 38; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            arra_1 = 1 + array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6];
-            arra_2 = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7];
-            flag_1 = 0;
-            for (int i = 0; i < 5; i++)
-            {
-                rrand[i] = rnd.Next(arra_1, arra_2);
-            }
-            do
-            {
-                j = 1; k = 0;
-                prov = 0;
+                j = 0;
+                for (int i = 6; i <= 38; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                arra_1 = 1;
+                arra_2 = array[7];
+                flag_1 = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
+                    rrand[i] = rnd.Next(arra_1, arra_2);
+                }
+                do
+                {
+                    j = 1; k = 0;
+                    prov = 0;
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (rrand[i] == rrand[j])
+                        j = 1 + k;
+                        while (j < 5)
                         {
-                            rrand[i] = rnd.Next(arra_1, arra_2);
+                            if (rrand[i] == rrand[j])
+                            {
+                                rrand[i] = rnd.Next(arra_1, arra_2);
+                            }
+                            j++;
                         }
-                        j++;
+                        k++;
                     }
-                    k++;
+
+                    j = 1; k = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        j = 1 + k;
+                        while (j < 5)
+                        {
+                            if (rrand[i] != rrand[j])
+                            {
+                                prov++;
+                            }
+                            j++;
+                        }
+                        k++;
+                    }
+                    if (prov == 10) flag_1 = 1;
+                } while (flag_1 != 1);
+
+                mas = new int[array[7]];
+                l = 0;
+                foreach (XmlNode xnode in xRooot)
+                {
+                    if (xnode.Name == "dynamic_memory")
+                    {
+                        foreach (XmlNode childcycles in xnode.ChildNodes)
+                        {
+                            if (childcycles.Attributes.Count > 0)
+                            {
+                                XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                int atrib;
+                                atrib = Convert.ToInt32(attr.Value);
+                                mas[l] = atrib;
+                                l++;
+                            }
+                        }
+                    }
                 }
 
-                j = 1; k = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    j = 1 + k;
-                    while (j < 5)
-                    {
-                        if (rrand[i] != rrand[j])
-                        {
-                            prov++;
-                        }
-                        j++;
-                    }
-                    k++;
+                    replace = rrand[i];
+                    rrand[i] = mas[replace];
                 }
-                if (prov == 10) flag_1 = 1;
-            } while (flag_1 != 1);
-            j = 0;
-            for (int i = 7; i <= 39; i += 8)
-            {
-                generation[i] = rrand[j];
-                j++;
-            }
 
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("testing.xml");
-            XmlElement xRoot = xDoc.DocumentElement;
+                j = 0;
+                for (int i = 7; i <= 39; i += 8)
+                {
+                    generation[i] = rrand[j];
+                    j++;
+                }
+
+                XmlDocument xDoc = new XmlDocument();
+                xDoc.Load("testing.xml");
+                XmlElement xRoot = xDoc.DocumentElement;
 
                 for (kaunt = 0; kaunt < 1; kaunt++)
                 {
@@ -537,6 +769,22 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
                                                 }
                                             }
                                         }
@@ -591,6 +839,22 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
+                                                }
                                                 if (childquestion.Name == "true")
                                                 {
                                                     tru = Convert.ToInt32(childquestion.InnerText);
@@ -632,6 +896,22 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
+                                                }
                                                 if (childquestion.Name == "true")
                                                 {
                                                     tru = Convert.ToInt32(childquestion.InnerText);
@@ -671,6 +951,22 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
                                                 }
                                                 if (childquestion.Name == "true")
                                                 {
@@ -712,6 +1008,22 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
+                                                }
                                                 if (childquestion.Name == "true")
                                                 {
                                                     tru = Convert.ToInt32(childquestion.InnerText);
@@ -751,6 +1063,22 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
                                                 }
                                                 if (childquestion.Name == "true")
                                                 {
@@ -792,6 +1120,22 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
+                                                }
                                                 if (childquestion.Name == "true")
                                                 {
                                                     tru = Convert.ToInt32(childquestion.InnerText);
@@ -831,6 +1175,22 @@ namespace Окно_практика
                                                 if (childquestion.Name == "quest")
                                                 {
                                                     Question1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
                                                 }
                                                 if (childquestion.Name == "true")
                                                 {
@@ -872,6 +1232,22 @@ namespace Окно_практика
                                                 {
                                                     Question1.Text = childquestion.InnerText;
                                                 }
+                                                if (childquestion.Name == "answer1")
+                                                {
+                                                    Answer1.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer2")
+                                                {
+                                                    Answer2.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer3")
+                                                {
+                                                    Answer3.Text = childquestion.InnerText;
+                                                }
+                                                if (childquestion.Name == "answer4")
+                                                {
+                                                    Answer4.Text = childquestion.InnerText;
+                                                }
                                                 if (childquestion.Name == "true")
                                                 {
                                                     tru = Convert.ToInt32(childquestion.InnerText);
@@ -896,6 +1272,21 @@ namespace Окно_практика
                 Rate_Click(sender, e);
                 CountMistake_Click(sender, e);
                 Question1_Click(sender, e);
+                label2.Visible = true;
+                Rate.Visible = true;
+                label1.Visible = true;
+                CountMistake.Visible = true;
+                Question1.Text = "";
+                Answer1.Visible = false;
+                Answer1.Enabled = false;
+                Answer2.Visible = false;
+                Answer2.Enabled = false;
+                Answer3.Visible = false;
+                Answer3.Enabled = false;
+                Answer4.Visible = false;
+                Answer4.Enabled = false;
+                button1.Visible = false;
+                button1.Enabled = false;
             }
         }
 
@@ -932,7 +1323,6 @@ namespace Окно_практика
 
         private void Question1_Click(object sender, EventArgs e)
         {
-            Question1.Text = "Вы прошли тест";
         }
     }
 }

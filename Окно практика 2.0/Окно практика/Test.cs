@@ -21,6 +21,9 @@ namespace Окно_практика
         int p = 1;
         int[] summ_false = new int[10];
         int flag_3=1;
+        int[] mas;
+        int l = 0;    
+        int replace;
 
         public Test()
         {
@@ -45,7 +48,7 @@ namespace Окно_практика
             {
                 if (summ_false[i]>0)
                 {
-                    Numbers.Text = Numbers.Text + "," + Convert.ToString(summ_false[i]);
+                    Numbers.Text = Numbers.Text + " " + Convert.ToString(summ_false[i]);
                 }
             }           
         }
@@ -98,7 +101,7 @@ namespace Окно_практика
         private void button2_Click(object sender, EventArgs e)
         {
             while (flag_3 == 1)
-            {            
+            {           
                 if (Cycles.Checked)
                     choice = 1;
                 if (Arrays.Checked)
@@ -115,8 +118,30 @@ namespace Окно_практика
                     choice = 7;
                 if (Dynamic.Checked)
                     choice = 8;
-            
-            if (choice > 0)
+
+                Answer1.Visible = true;
+                Answer2.Visible = true;
+                Answer3.Visible = true;
+                Answer4.Visible = true;
+                AnswerIt.Visible = true;
+                label3.Visible = false;
+                Cycles.Visible = false;
+                Arrays.Visible = false;
+                Strings.Visible = false;
+                Recursion.Visible = false;
+                Structs.Visible = false;
+                Files.Visible = false;
+                Pointers.Visible = false;
+                Dynamic.Visible = false;
+                button2.Visible = false;
+                label2.Visible = false;
+                label1.Visible = false;
+                label5.Visible = false;
+                Rate.Visible = false;
+                CountMistake.Visible = false;
+                Numbers.Visible = false;
+
+                if (choice > 0)
                 {
                     int flag_1 = 0;
                     int j, k;
@@ -252,6 +277,33 @@ namespace Окно_практика
                                     Console.WriteLine(rrand[i]);
                                 }*/
                             }
+                            
+                            mas = new int[array[0]];
+                            
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "cycles")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");                                           
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            for(int i=0;i<10;i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
+                            }
+
 
                             foreach (XmlNode xnode in xRoot)
                             {
@@ -276,6 +328,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -287,8 +355,8 @@ namespace Окно_практика
                             break;
                         case 2:
                             {
-                                arra_1 = 1 + array[0];
-                                arra_2 = array[0] + array[1];
+                                arra_1 = 1;
+                                arra_2 = array[1];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -336,6 +404,32 @@ namespace Окно_практика
                                 }*/
                             }
 
+                            l = 0;
+                            mas = new int[array[1]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "arrays")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
+                            }
+
                             foreach (XmlNode xnode in xRoot)
                             {
                                 if (xnode.Name == "arrays")
@@ -359,6 +453,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -370,8 +480,8 @@ namespace Окно_практика
                             break;
                         case 3:
                             {
-                                arra_1 = 1 + array[0] + array[1];
-                                arra_2 = array[0] + array[1] + array[2];
+                                arra_1 = 1;
+                                arra_2 = array[2];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -417,6 +527,32 @@ namespace Окно_практика
                                 {
                                     Console.WriteLine(rrand[i]);
                                 }*/
+                            }
+
+                            l = 0;
+                            mas = new int[array[2]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "lines")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
                             }
 
                             foreach (XmlNode xnode in xRoot)
@@ -442,6 +578,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -453,8 +605,8 @@ namespace Окно_практика
                             break;
                         case 4:
                             {
-                                arra_1 = 1 + array[0] + array[1] + array[2];
-                                arra_2 = array[0] + array[1] + array[2] + array[3];
+                                arra_1 = 1;
+                                arra_2 = array[3];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -500,6 +652,32 @@ namespace Окно_практика
                                 {
                                     Console.WriteLine(rrand[i]);
                                 }*/
+                            }
+
+                            l = 0;
+                            mas = new int[array[3]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "recursion")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
                             }
 
                             foreach (XmlNode xnode in xRoot)
@@ -525,6 +703,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -536,8 +730,8 @@ namespace Окно_практика
                             break;
                         case 5:
                             {
-                                arra_1 = 1 + array[0] + array[1] + array[2] + array[3];
-                                arra_2 = array[0] + array[1] + array[2] + array[3] + array[4];
+                                arra_1 = 1;
+                                arra_2 = array[4];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -583,6 +777,32 @@ namespace Окно_практика
                                 {
                                     Console.WriteLine(rrand[i]);
                                 }*/
+                            }
+
+                            l = 0;
+                            mas = new int[array[4]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "struct")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
                             }
 
                             foreach (XmlNode xnode in xRoot)
@@ -608,6 +828,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -619,8 +855,8 @@ namespace Окно_практика
                             break;
                         case 6:
                             {
-                                arra_1 = 1 + array[0] + array[1] + array[2] + array[3] + array[4];
-                                arra_2 = array[0] + array[1] + array[2] + array[3] + array[4] + array[5];
+                                arra_1 = 1;
+                                arra_2 = array[5];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -666,6 +902,32 @@ namespace Окно_практика
                                 {
                                     Console.WriteLine(rrand[i]);
                                 }*/
+                            }
+
+                            l = 0;
+                            mas = new int[array[5]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "file")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
                             }
 
                             foreach (XmlNode xnode in xRoot)
@@ -691,6 +953,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -702,8 +980,8 @@ namespace Окно_практика
                             break;
                         case 7:
                             {
-                                arra_1 = 1 + array[0] + array[1] + array[2] + array[3] + array[4] + array[5];
-                                arra_2 = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6];
+                                arra_1 = 1;
+                                arra_2 = array[6];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -749,6 +1027,32 @@ namespace Окно_практика
                                 {
                                     Console.WriteLine(rrand[i]);
                                 }*/
+                            }
+
+                            l = 0;
+                            mas = new int[array[6]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "addresses_and_pointers")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
                             }
 
                             foreach (XmlNode xnode in xRoot)
@@ -774,6 +1078,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -785,8 +1105,8 @@ namespace Окно_практика
                             break;
                         case 8:
                             {
-                                arra_1 = 1 + array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6];
-                                arra_2 = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7];
+                                arra_1 = 1;
+                                arra_2 = array[7];
                                 flag_1 = 0;
                                 for (int i = 0; i < 10; i++)
                                 {
@@ -834,6 +1154,32 @@ namespace Окно_практика
                                 }*/
                             }
 
+                            l = 0;
+                            mas = new int[array[7]];
+                            foreach (XmlNode xnode in xRoot)
+                            {
+                                if (xnode.Name == "dynamic_memory")
+                                {
+                                    foreach (XmlNode childcycles in xnode.ChildNodes)
+                                    {
+                                        if (childcycles.Attributes.Count > 0)
+                                        {
+                                            XmlNode attr = childcycles.Attributes.GetNamedItem("id");
+                                            int atrib;
+                                            atrib = Convert.ToInt32(attr.Value);
+                                            mas[l] = atrib;
+                                            l++;
+                                        }
+                                    }
+                                }
+                            }
+
+                            for (int i = 0; i < 10; i++)
+                            {
+                                replace = rrand[i];
+                                rrand[i] = mas[replace];
+                            }
+
                             foreach (XmlNode xnode in xRoot)
                             {
                                 if (xnode.Name == "dynamic_memory")
@@ -856,6 +1202,22 @@ namespace Окно_практика
                                                             if (childquestion.Name == "quest")
                                                             {
                                                                 Question.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
                                                             }
                                                         }
                                                     }
@@ -931,7 +1293,7 @@ namespace Окно_практика
                                                                 {
                                                                     summ_false[p - 1] = p;
                                                                 }
-                                                            }
+                                                            }                                                            
                                                         }
                                                     }
                                                 }
@@ -1268,6 +1630,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1306,6 +1684,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1340,6 +1734,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1372,6 +1782,22 @@ namespace Окно_практика
                                                             if (childquestion.Name == "quest")
                                                             {
                                                                 Question.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
                                                             }
                                                         }
                                                     }
@@ -1406,6 +1832,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1438,6 +1880,22 @@ namespace Окно_практика
                                                             if (childquestion.Name == "quest")
                                                             {
                                                                 Question.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
                                                             }
                                                         }
                                                     }
@@ -1472,6 +1930,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1505,6 +1979,22 @@ namespace Окно_практика
                                                             {
                                                                 Question.Text = childquestion.InnerText;
                                                             }
+                                                            if (childquestion.Name == "answer1")
+                                                            {
+                                                                Answer1.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer2")
+                                                            {
+                                                                Answer2.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer3")
+                                                            {
+                                                                Answer3.Text = childquestion.InnerText;
+                                                            }
+                                                            if (childquestion.Name == "answer4")
+                                                            {
+                                                                Answer4.Text = childquestion.InnerText;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1520,11 +2010,34 @@ namespace Окно_практика
                 }
                 else if (p == 10)
                 {
+                    label2.Visible = true;
+                    label1.Visible = true;
+                    label5.Visible = true;
+                    Rate.Visible = true;
+                    CountMistake.Visible = true;
+                    Numbers.Visible = true;
                     Rate_Click(sender, e);
                     CountMistake_Click(sender, e);
                     Numbers_Click(sender, e);
                     p += 1;
                     flag_3 = 1;
+                    Cycles.Checked = true;
+                    Question.Text = "";
+                    AnswerIt.Visible = false;
+                    Answer1.Visible = false;
+                    Answer2.Visible = false;
+                    Answer3.Visible = false;
+                    Answer4.Visible = false;
+                    label3.Visible = true;
+                    Cycles.Visible = true;
+                    Arrays.Visible = true;
+                    Strings.Visible = true;
+                    Recursion.Visible = true;
+                    Structs.Visible = true;
+                    Files.Visible = true;
+                    Pointers.Visible = true;
+                    Dynamic.Visible = true;
+                    button2.Visible = true;
                 }
             }
         }
@@ -1665,6 +2178,11 @@ namespace Окно_практика
         private void Answer1_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
