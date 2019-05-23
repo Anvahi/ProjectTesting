@@ -168,25 +168,6 @@ C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практ
 C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
 C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
 C:\Users\anvahi\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
-<<<<<<< HEAD
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csprojAssemblyReference.cache
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.EditingQuestion.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.FinalTest.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.MainForm.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Properties.Resources.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.StudentsList.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.TeacherMenu.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Test.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Training.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно_практика.Меню_для_студента.resources
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.GenerateResource.cache
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
-C:\Users\Марина\Desktop\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
-=======
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe.config
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.exe
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\bin\Debug\Окно практика.pdb
@@ -204,4 +185,3 @@ D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно 
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.csproj.CoreCompileInputs.cache
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.exe
 D:\Projects\Visual Studio\ProjectTesting\Окно практика 2.0\Окно практика\obj\Debug\Окно практика.pdb
->>>>>>> 2aab895fe47c4c27d092f22718fd5737cc54c772
