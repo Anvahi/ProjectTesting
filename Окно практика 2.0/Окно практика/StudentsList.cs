@@ -13,6 +13,8 @@ namespace Окно_практика
 {
     public partial class StudentsList : Form
     {
+        
+
         public StudentsList()
         {
             InitializeComponent();
@@ -106,6 +108,45 @@ namespace Окно_практика
 
         }
 
+        private void Filtration (string a)
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load("users.xml");
+            XmlElement xRoot = xDoc.DocumentElement;
+            string student_marks = "";
+            listBox1.Items.Clear();
+            foreach (XmlNode xnode in xRoot)
+            {
+                if (xnode.Name == "students")
+                {
+                    foreach (XmlNode childstudents in xnode.ChildNodes)
+                    {
+                        if (childstudents.Name == "user")
+                        {
+                            foreach (XmlNode childuser in childstudents.ChildNodes)
+                            {
+                                if (childuser.Name == "name")
+                                {
+                                    student_marks = childuser.InnerText + ": ";
+                                }
+                                if (childuser.Name == "test")
+                                {
+                                    foreach (XmlNode childtest in childuser.ChildNodes)
+                                    {
+                                        if (childtest.Name == a)
+                                        {
+                                            student_marks += childtest.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
+                                            listBox1.Items.Add(student_marks);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         private void DisplayList_Click(object sender, EventArgs e)
         {
             XmlDocument xDoc = new XmlDocument();
@@ -151,71 +192,73 @@ namespace Окно_практика
                             }
                         }
                     }
-                    if (radioButton2.Checked == true && comboBox1.Items[0].ToString() == "По теме циклы")
+                }
+                if (radioButton2.Checked == true)
+                {
+                    radioButton1.Visible = false;
+                    radioButton2.Visible = false;
+                    radioButton3.Visible = false;
+                    radioButton4.Visible = false;
+                    DisplayList.Visible = false;
+
+                    radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
+                    radioButton8.Visible = true;
+                    radioButton9.Visible = true;
+                    radioButton10.Visible = true;
+                    radioButton11.Visible = true;
+                    radioButton12.Visible = true;
+                }
+                if (radioButton3.Checked == true)
+                {
+                    listBox1.Items.Clear();
+                    foreach (XmlNode xnode in xRoot)
                     {
-                        //if ()
-                        //{
-                            listBox1.Items.Clear();
-                            foreach (XmlNode xnode in xRoot)
+                        if (xnode.Name == "students")
+                        {
+                            foreach (XmlNode childstudents in xnode.ChildNodes)
                             {
-                                if (xnode.Name == "students")
+                                if (childstudents.Name == "user")
                                 {
-                                    foreach (XmlNode childstudents in xnode.ChildNodes)
+                                    foreach (XmlNode childuser in childstudents.ChildNodes)
                                     {
-                                        if (childstudents.Name == "user")
+                                        if (childuser.Name == "name")
                                         {
-                                            foreach (XmlNode childuser in childstudents.ChildNodes)
-                                            {
-                                                if (childuser.Name == "name")
-                                                {
-                                                    student_marks = childuser.InnerText + ": ";
-                                                }
-                                                if (childuser.Name == "test")
-                                                {
-                                                    foreach (XmlNode childtest in childuser.ChildNodes)
-                                                    {
-                                                        if (childtest.Name == "cycles")
-                                                        {
-                                                            student_marks += childtest.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
-                                                            listBox1.Items.Add(student_marks);
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            student_marks = childuser.InnerText + ": ";
+                                        }
+                                        if (childuser.Name == "total")
+                                        {
+                                            student_marks += childuser.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
+                                            listBox1.Items.Add(student_marks);
                                         }
                                     }
                                 }
                             }
-                        //}
-                        if (comboBox1.SelectedItem.ToString() == "По теме массивы")
+                        }
+                    }
+                }
+                if (radioButton4.Checked == true)
+                {
+                    listBox1.Items.Clear();
+                    foreach (XmlNode xnode in xRoot)
+                    {
+                        if (xnode.Name == "students")
                         {
-                            listBox1.Items.Clear();
-                            foreach (XmlNode xnode in xRoot)
+                            foreach (XmlNode childstudents in xnode.ChildNodes)
                             {
-                                if (xnode.Name == "students")
+                                if (childstudents.Name == "user")
                                 {
-                                    foreach (XmlNode childstudents in xnode.ChildNodes)
+                                    foreach (XmlNode childuser in childstudents.ChildNodes)
                                     {
-                                        if (childstudents.Name == "user")
+                                        if (childuser.Name == "name")
                                         {
-                                            foreach (XmlNode childuser in childstudents.ChildNodes)
-                                            {
-                                                if (childuser.Name == "name")
-                                                {
-                                                    student_marks = childuser.InnerText + ": ";
-                                                }
-                                                if (childuser.Name == "test")
-                                                {
-                                                    foreach (XmlNode childtest in childuser.ChildNodes)
-                                                    {
-                                                        if (childtest.Name == "arrays")
-                                                        {
-                                                            student_marks += childtest.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
-                                                            listBox1.Items.Add(student_marks);
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            student_marks = childuser.InnerText + ": ";
+                                        }
+                                        if (childuser.Name == "grade")
+                                        {
+                                            student_marks += childuser.InnerText/* +" (" + childtest.Name + ")"*/ + ".";
+                                            listBox1.Items.Add(student_marks);
                                         }
                                     }
                                 }
@@ -224,6 +267,11 @@ namespace Окно_практика
                     }
                 }
             }
+        }
+
+        private void DisplayList2_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void BackToMenu_Click(object sender, EventArgs e)
@@ -238,6 +286,23 @@ namespace Окно_практика
             newProgress.Visible = true;
             ProgressOk.Visible = true;
             ProgressNo.Visible = true;
+            label2.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+            label10.Visible = true;
+            label11.Visible = true;
+            textBox1.Visible = true;
+            textBox2.Visible = true;
+            textBox3.Visible = true;
+            textBox4.Visible = true;
+            textBox5.Visible = true;
+            textBox6.Visible = true;
+            textBox7.Visible = true;
+            textBox8.Visible = true;
 
             SekondNameStudent.Visible = false;
             NameStudent.Visible = false;
@@ -250,8 +315,6 @@ namespace Окно_практика
             radioButton2.Visible = false;
             radioButton3.Visible = false;
             radioButton4.Visible = false;
-            numericUpDown1.Visible = false;
-            comboBox1.Visible = false;
             DisplayList.Visible = false;
         }
 
@@ -290,6 +353,32 @@ namespace Окно_практика
             newProgress.Visible = false;
             ProgressOk.Visible = false;
             ProgressNo.Visible = false;
+            label2.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton10.Visible = false;
+            radioButton11.Visible = false;
+            radioButton12.Visible = false;
 
             SekondNameStudent.Visible = false;
             NameStudent.Visible = false;
@@ -302,11 +391,7 @@ namespace Окно_практика
             radioButton2.Visible = false;
             radioButton3.Visible = false;
             radioButton4.Visible = false;
-            numericUpDown1.Visible = false;
-            comboBox1.Visible = false;
             DisplayList.Visible = false;
-
-
         }
 
         private void buttonStList_Click(object sender, EventArgs e)
@@ -345,13 +430,37 @@ namespace Окно_практика
             radioButton2.Visible = true;
             radioButton3.Visible = true;
             radioButton4.Visible = true;
-            numericUpDown1.Visible = true;
-            comboBox1.Visible = true;
             DisplayList.Visible = true;
+
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton10.Visible = false;
+            radioButton11.Visible = false;
+            radioButton12.Visible = false;
 
             newProgress.Visible = false;
             ProgressOk.Visible = false;
             ProgressNo.Visible = false;
+            label2.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
 
             SekondNameStudent.Visible = false;
             NameStudent.Visible = false;
@@ -370,17 +479,116 @@ namespace Окно_практика
             SignNo.Visible = true;
             SignOk.Visible = true;
 
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton10.Visible = false;
+            radioButton11.Visible = false;
+            radioButton12.Visible = false;
+
             radioButton1.Visible = false;
             radioButton2.Visible = false;
             radioButton3.Visible = false;
             radioButton4.Visible = false;
-            numericUpDown1.Visible = false;
-            comboBox1.Visible = false;
             DisplayList.Visible = false;
 
             newProgress.Visible = false;
             ProgressOk.Visible = false;
             ProgressNo.Visible = false;
+            label2.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "cycles";
+            Filtration(Choice);
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "arrays";
+            Filtration(Choice);
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "strings";
+            Filtration(Choice);
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "recursion";
+            Filtration(Choice);
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "structures";
+            Filtration(Choice);
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "files";
+            Filtration(Choice);
+        }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "pointers";
+            Filtration(Choice);
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+            string Choice;
+            Choice = "dynamic";
+            Filtration(Choice);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
 
         }
     }
