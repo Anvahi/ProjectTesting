@@ -94,6 +94,11 @@ namespace Окно_практика
             Application.Exit();
         }
 
+        private void Login_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
 

@@ -375,7 +375,6 @@ namespace Окно_практика
             CH_TextBoxAnswer3.Text = answer3;
             CH_TextBoxAnswer4.Text = answer4;
             CH_TextBoxAnswerTrue.Text = answerTrue;
-
         }
 
         private void ButtonAdd_Click(object sender, EventArgs e)
@@ -463,8 +462,6 @@ namespace Окно_практика
                 "5) Нажмите 'Добавить';\n\n" +
                 "Примечание:\n" +
                 "Кнопка 'Добавить' не появится, пока все поля не будут заполнены корректно.";
-
-
         }
 
         private void ButtonChange_Enter(object sender, EventArgs e)
@@ -542,12 +539,8 @@ namespace Окно_практика
 
             CH_LabelQuest.Text = "Вопрос с вариантами ответа:";
             LabelQuest.Text = "Выберите тему и номер вопроса.";
-
-
         }
-
         
-
         private void LabelQuest_Click(object sender, EventArgs e)
         {
 

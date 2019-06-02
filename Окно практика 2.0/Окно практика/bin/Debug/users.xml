@@ -15,23 +15,6 @@
     </user>
   </teachers>
   <students>
-    <user id="0">
-      <login>1</login>
-      <password>1</password>
-      <name>Тестовый тест</name>
-      <test>
-        <cycles>нет</cycles>
-        <arrays>нет</arrays>
-        <strings>2</strings>
-        <recursion>2</recursion>
-        <structures>3</structures>
-        <dynamic>нет</dynamic>
-        <files>1</files>
-        <pointers>5</pointers>
-      </test>
-      <total>0</total>
-      <grade>5</grade>
-    </user>
     <user id="1">
       <login>Berkut</login>
       <password>bva18RhP</password>
@@ -47,7 +30,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="2">
       <login>Goncharik</login>
@@ -64,7 +46,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="3">
       <login>Griminov</login>
@@ -81,7 +62,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="4">
       <login>Dudlin</login>
@@ -98,7 +78,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="5">
       <login>Zharkov</login>
@@ -115,7 +94,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="6">
       <login>Zhukov</login>
@@ -132,7 +110,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="7">
       <login>Kapcherina</login>
@@ -149,7 +126,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="8">
       <login>Korzh</login>
@@ -166,7 +142,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="9">
       <login>Krylova</login>
@@ -183,7 +158,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="10">
       <login>Kurguz</login>
@@ -200,7 +174,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="11">
       <login>Lebedev</login>
@@ -217,7 +190,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="12">
       <login>Lyadov</login>
@@ -234,7 +206,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="13">
       <login>Nikonov</login>
@@ -251,7 +222,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="14">
       <login>Pavlov</login>
@@ -268,7 +238,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="15">
       <login>Pavlovskiy</login>
@@ -285,7 +254,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="16">
       <login>Peskova</login>
@@ -302,7 +270,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="17">
       <login>Podgornyak</login>
@@ -319,7 +286,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="18">
       <login>Rakitin</login>
@@ -336,7 +302,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="19">
       <login>Semenov</login>
@@ -353,7 +318,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="20">
       <login>Khomenkova</login>
@@ -370,7 +334,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="21">
       <login>Tsarukyan</login>
@@ -387,7 +350,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="22">
       <login>Shatrov</login>
@@ -404,7 +366,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="23">
       <login>Shirokov</login>
@@ -421,7 +382,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="24">
       <login>Yaroslavtseva</login>
@@ -438,7 +398,6 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
     </user>
     <user id="25">
       <login>Trusov</login>
@@ -455,7 +414,22 @@
         <dynamic>нет</dynamic>
       </test>
       <total>нет</total>
-      <grade>нет</grade>
+    </user>
+    <user id="26">
+      <login>Breus</login>
+      <password>Br18PriA</password>
+      <name>Бреус Александр</name>
+      <test>
+        <cycles>нет</cycles>
+        <arrays>нет</arrays>
+        <strings>нет</strings>
+        <recursion>нет</recursion>
+        <structures>нет</structures>
+        <files>нет</files>
+        <pointers>нет</pointers>
+        <dynamic>нет</dynamic>
+      </test>
+      <total>нет</total>
     </user>
   </students>
 </users>

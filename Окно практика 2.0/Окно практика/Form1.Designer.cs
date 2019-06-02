@@ -60,6 +60,7 @@
             this.Login.Size = new System.Drawing.Size(188, 26);
             this.Login.TabIndex = 1;
             this.Login.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Login.TextChanged += new System.EventHandler(this.Login_TextChanged);
             // 
             // Parol
             // 

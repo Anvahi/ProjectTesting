@@ -16,27 +16,64 @@ namespace Окно_практика
 		public Training()
 		{
 			InitializeComponent();
+
+			Answer1.Hide();
+			Answer2.Hide();
+			Answer3.Hide();
+			Answer4.Hide();
+
+			button2.Hide();
+
+			Question.Text = "";
 		}
 
 		public const int MAX_QUESTIONS_TRAIN = 10;
 
-		public static int amount = 0;
-		public static int[] isOpened = new int[MAX_QUESTIONS_TRAIN];
+		public int amount = 0;
+		public int[] isOpened = new int[MAX_QUESTIONS_TRAIN];
 
-		private static int cur_theme = 0;
-		private static string cur_answer;
-		private static string cur_question;
-		private static bool cur_isAnswered = true;
-		private static int answered = -1;
+		private int cur_theme = 0;
+		private string cur_answer;
+		private string cur_question;
+		private bool cur_isAnswered = true;
+		private int answered = -1;
 
 		// get (Number of theme - 1)
 		// return Number of question
 		// or -1 if question list is empty
-		private static void GetQuestion(int theme)
+		private void GetQuestion(int theme)
 		{
-			if (theme == -1)
+			string questNodeName = "";
+
+			switch (theme)
 			{
-				return;
+				case 0:
+					questNodeName = "cycles";
+					break;
+				case 1:
+					questNodeName = "arrays";
+					break;
+				case 2:
+					questNodeName = "lines";
+					break;
+				case 3:
+					questNodeName = "recursion";
+					break;
+				case 4:
+					questNodeName = "struct";
+					break;
+				case 5:
+					questNodeName = "file";
+					break;
+				case 6:
+					questNodeName = "addresses_and_pointers";
+					break;
+				case 7:
+					questNodeName = "dynamic_memory";
+					break;
+
+				default:
+					return;
 			}
 
 			if (amount == 0)
@@ -49,38 +86,78 @@ namespace Окно_практика
 
 			XmlDocument doc = new XmlDocument();
 			doc.Load("testing.xml");
-			XmlNode root = doc.DocumentElement;
+			XmlNode rootNode = doc.DocumentElement; // <testing>
 
-			Random rnd = new Random();
-			int question = rnd.Next() % root.ChildNodes[theme].ChildNodes.Count; // вне безопасного программирования
 
-			bool exit = false;
-			while (!exit)
+			foreach (XmlNode themeNode in rootNode)
 			{
-				int i;
-				for (i = 0; i < amount; i++)
+				if (themeNode.Name == questNodeName)
 				{
-					if (isOpened[i] == question)
-					{
-						question = rnd.Next() % root.ChildNodes[theme].ChildNodes.Count; // вне безопасного программирования
-						break;
-					}
-				}
+					Random rnd = new Random();
+					int question = rnd.Next() % themeNode.ChildNodes.Count;
 
-				if (i == amount)
-				{
-					exit = true;
+					bool exit = false;
+					while (!exit)
+					{
+						int i;
+						for (i = 0; i < amount; i++)
+						{
+							if (isOpened[i] == question)
+							{
+								question = rnd.Next() % themeNode.ChildNodes.Count;
+								break;
+							}
+						}
+
+						if (i == amount)
+						{
+							exit = true;
+						}
+					}
+
+					isOpened[amount] = question;
+					amount++;
+
+					foreach (XmlNode questionNode in themeNode.ChildNodes[question])
+					{
+						if (questionNode.Name == "quest")
+						{
+							cur_question = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "true")
+						{
+							cur_answer = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer1")
+						{
+							Answer1.Show();
+							Answer1.Text = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer2")
+						{
+							Answer2.Show();
+							Answer2.Text = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer3")
+						{
+							Answer3.Show();
+							Answer3.Text = questionNode.InnerText;
+						}
+						else if (questionNode.Name == "answer4")
+						{
+							Answer4.Show();
+							Answer4.Text = questionNode.InnerText;
+						}
+					}
+
+					button2.Show();
 				}
 			}
 
-			isOpened[amount] = question;
-			amount++;
-
-			cur_question = root.ChildNodes[theme].ChildNodes[question].ChildNodes[0].InnerText; // вне безопасного программирования
-			cur_answer = root.ChildNodes[theme].ChildNodes[question].ChildNodes[1].InnerText; // вне безопасного программирования
+			
 		}
 
-		private static void ClearRecord()
+		private void ClearRecord()
 		{
 			amount = 0;
 			for (int i = 0; i < MAX_QUESTIONS_TRAIN; i++)
@@ -100,6 +177,18 @@ namespace Окно_практика
 			if (answered >= 10 - 1)
 			{
 				Question.Text = "Вы справились с темой!";
+				/*Answer1.Text = "Ответ 1";
+				Answer2.Text = "Ответ 2";
+				Answer3.Text = "Ответ 3";
+				Answer4.Text = "Ответ 4";*/
+
+				Answer1.Hide();
+				Answer2.Hide();
+				Answer3.Hide();
+				Answer4.Hide();
+
+				button2.Hide();
+
 				ClearRecord();
 
 				return;
@@ -212,6 +301,21 @@ namespace Окно_практика
 			{
 				NextQuestion();
 			}
+		}
+
+		private void Answer1_CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void Answer1_CheckedChanged_1(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Answer1_CheckedChanged_2(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

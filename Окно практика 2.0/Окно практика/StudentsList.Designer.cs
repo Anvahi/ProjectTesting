@@ -28,23 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listofStudents = new System.Windows.Forms.ListBox();
             this.DeleteStudent = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.NameStudent = new System.Windows.Forms.TextBox();
-            this.SekondNameStudent = new System.Windows.Forms.TextBox();
+            this.SecondNameStudent = new System.Windows.Forms.TextBox();
             this.NewLogin = new System.Windows.Forms.TextBox();
             this.newPassword = new System.Windows.Forms.TextBox();
             this.Registration = new System.Windows.Forms.Button();
-            this.DisplayList = new System.Windows.Forms.Button();
+            this.Filtr = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.ChangeProgress = new System.Windows.Forms.Button();
             this.Filter = new System.Windows.Forms.Button();
             this.BackToMenu = new System.Windows.Forms.Button();
-            this.newProgress = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ProgressOk = new System.Windows.Forms.Button();
             this.ProgressNo = new System.Windows.Forms.Button();
@@ -75,20 +74,21 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listofStudents
             // 
-            this.listBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(13, 55);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(683, 580);
-            this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_2);
+            this.listofStudents.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.listofStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listofStudents.FormattingEnabled = true;
+            this.listofStudents.ItemHeight = 18;
+            this.listofStudents.Location = new System.Drawing.Point(13, 55);
+            this.listofStudents.Name = "listofStudents";
+            this.listofStudents.ScrollAlwaysVisible = true;
+            this.listofStudents.Size = new System.Drawing.Size(683, 580);
+            this.listofStudents.TabIndex = 1;
+            this.listofStudents.SelectedIndexChanged += new System.EventHandler(this.listofStudents_SelectedIndexChanged);
             // 
             // DeleteStudent
             // 
@@ -125,17 +125,17 @@
             this.NameStudent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NameStudent.Visible = false;
             // 
-            // SekondNameStudent
+            // SecondNameStudent
             // 
-            this.SekondNameStudent.BackColor = System.Drawing.SystemColors.Control;
-            this.SekondNameStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SekondNameStudent.Location = new System.Drawing.Point(938, 203);
-            this.SekondNameStudent.Name = "SekondNameStudent";
-            this.SekondNameStudent.Size = new System.Drawing.Size(236, 22);
-            this.SekondNameStudent.TabIndex = 6;
-            this.SekondNameStudent.Text = "Фамилия";
-            this.SekondNameStudent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.SekondNameStudent.Visible = false;
+            this.SecondNameStudent.BackColor = System.Drawing.SystemColors.Control;
+            this.SecondNameStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SecondNameStudent.Location = new System.Drawing.Point(938, 203);
+            this.SecondNameStudent.Name = "SecondNameStudent";
+            this.SecondNameStudent.Size = new System.Drawing.Size(236, 22);
+            this.SecondNameStudent.TabIndex = 6;
+            this.SecondNameStudent.Text = "Фамилия";
+            this.SecondNameStudent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SecondNameStudent.Visible = false;
             // 
             // NewLogin
             // 
@@ -148,7 +148,6 @@
             this.NewLogin.Text = "Логин";
             this.NewLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NewLogin.Visible = false;
-            this.NewLogin.TextChanged += new System.EventHandler(this.NewLogin_TextChanged);
             // 
             // newPassword
             // 
@@ -174,18 +173,18 @@
             this.Registration.UseVisualStyleBackColor = false;
             this.Registration.Click += new System.EventHandler(this.Registration_Click);
             // 
-            // DisplayList
+            // Filtr
             // 
-            this.DisplayList.BackColor = System.Drawing.Color.LawnGreen;
-            this.DisplayList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DisplayList.Location = new System.Drawing.Point(1201, 174);
-            this.DisplayList.Name = "DisplayList";
-            this.DisplayList.Size = new System.Drawing.Size(119, 37);
-            this.DisplayList.TabIndex = 10;
-            this.DisplayList.Text = "Ок";
-            this.DisplayList.UseVisualStyleBackColor = false;
-            this.DisplayList.Visible = false;
-            this.DisplayList.Click += new System.EventHandler(this.DisplayList_Click);
+            this.Filtr.BackColor = System.Drawing.Color.LawnGreen;
+            this.Filtr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Filtr.Location = new System.Drawing.Point(1181, 138);
+            this.Filtr.Name = "Filtr";
+            this.Filtr.Size = new System.Drawing.Size(119, 37);
+            this.Filtr.TabIndex = 10;
+            this.Filtr.Text = "Ок";
+            this.Filtr.UseVisualStyleBackColor = false;
+            this.Filtr.Visible = false;
+            this.Filtr.Click += new System.EventHandler(this.DisplayList_Click);
             // 
             // radioButton1
             // 
@@ -199,6 +198,7 @@
             this.radioButton1.Text = "по всем темам";
             this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.Visible = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -226,19 +226,7 @@
             this.radioButton3.Text = "только итоговый тест";
             this.radioButton3.UseVisualStyleBackColor = false;
             this.radioButton3.Visible = false;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.PaleGreen;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(979, 144);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(191, 24);
-            this.radioButton4.TabIndex = 15;
-            this.radioButton4.Text = "только средний балл";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            this.radioButton4.Visible = false;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // ChangeProgress
             // 
@@ -276,15 +264,15 @@
             this.BackToMenu.UseVisualStyleBackColor = false;
             this.BackToMenu.Click += new System.EventHandler(this.BackToMenu_Click);
             // 
-            // newProgress
+            // textBox9
             // 
-            this.newProgress.BackColor = System.Drawing.SystemColors.Control;
-            this.newProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.newProgress.Location = new System.Drawing.Point(1130, 371);
-            this.newProgress.Name = "newProgress";
-            this.newProgress.Size = new System.Drawing.Size(208, 26);
-            this.newProgress.TabIndex = 24;
-            this.newProgress.Visible = false;
+            this.textBox9.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox9.Location = new System.Drawing.Point(1130, 636);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(208, 26);
+            this.textBox9.TabIndex = 24;
+            this.textBox9.Visible = false;
             // 
             // label3
             // 
@@ -295,7 +283,6 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 23;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // ProgressOk
             // 
@@ -308,6 +295,7 @@
             this.ProgressOk.Text = "Ок";
             this.ProgressOk.UseVisualStyleBackColor = false;
             this.ProgressOk.Visible = false;
+            this.ProgressOk.Click += new System.EventHandler(this.ProgressOk_Click);
             // 
             // ProgressNo
             // 
@@ -320,7 +308,7 @@
             this.ProgressNo.Text = "Отмена";
             this.ProgressNo.UseVisualStyleBackColor = false;
             this.ProgressNo.Visible = false;
-            this.ProgressNo.Click += new System.EventHandler(this.button2_Click);
+            this.ProgressNo.Click += new System.EventHandler(this.ProgressNo_Click);
             // 
             // SignOk
             // 
@@ -333,6 +321,7 @@
             this.SignOk.Text = "Ок";
             this.SignOk.UseVisualStyleBackColor = false;
             this.SignOk.Visible = false;
+            this.SignOk.Click += new System.EventHandler(this.SignOk_Click);
             // 
             // SignNo
             // 
@@ -345,6 +334,7 @@
             this.SignNo.Text = "Отмена";
             this.SignNo.UseVisualStyleBackColor = false;
             this.SignNo.Visible = false;
+            this.SignNo.Click += new System.EventHandler(this.SignNo_Click);
             // 
             // radioButton5
             // 
@@ -493,7 +483,6 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Рекурсия";
             this.label6.Visible = false;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -538,7 +527,6 @@
             this.label10.TabIndex = 36;
             this.label10.Text = "Динамическая память";
             this.label10.Visible = false;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -555,18 +543,17 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(1130, 402);
+            this.textBox1.Location = new System.Drawing.Point(1130, 369);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(208, 26);
             this.textBox1.TabIndex = 38;
             this.textBox1.Visible = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(1130, 498);
+            this.textBox2.Location = new System.Drawing.Point(1130, 402);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(208, 26);
             this.textBox2.TabIndex = 39;
@@ -586,7 +573,7 @@
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.Control;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(1130, 565);
+            this.textBox4.Location = new System.Drawing.Point(1130, 465);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(208, 26);
             this.textBox4.TabIndex = 41;
@@ -596,7 +583,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Control;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(1130, 465);
+            this.textBox5.Location = new System.Drawing.Point(1130, 498);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(208, 26);
             this.textBox5.TabIndex = 42;
@@ -606,7 +593,7 @@
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.Control;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(1130, 636);
+            this.textBox6.Location = new System.Drawing.Point(1130, 533);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(208, 26);
             this.textBox6.TabIndex = 43;
@@ -616,7 +603,7 @@
             // 
             this.textBox7.BackColor = System.Drawing.SystemColors.Control;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(1130, 533);
+            this.textBox7.Location = new System.Drawing.Point(1130, 568);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(208, 26);
             this.textBox7.TabIndex = 44;
@@ -632,12 +619,26 @@
             this.textBox8.TabIndex = 45;
             this.textBox8.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LawnGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(1181, 181);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 37);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // StudentsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -656,7 +657,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButton12);
-            this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton11);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton10);
@@ -671,26 +671,25 @@
             this.Controls.Add(this.SignOk);
             this.Controls.Add(this.ProgressNo);
             this.Controls.Add(this.ProgressOk);
-            this.Controls.Add(this.newProgress);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BackToMenu);
             this.Controls.Add(this.Filter);
             this.Controls.Add(this.ChangeProgress);
-            this.Controls.Add(this.DisplayList);
+            this.Controls.Add(this.Filtr);
             this.Controls.Add(this.Registration);
             this.Controls.Add(this.newPassword);
             this.Controls.Add(this.NewLogin);
-            this.Controls.Add(this.SekondNameStudent);
+            this.Controls.Add(this.SecondNameStudent);
             this.Controls.Add(this.NameStudent);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DeleteStudent);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listofStudents);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StudentsList";
             this.Text = "Работа со списком студентов";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StudentsList_FormClosed);
-            this.Load += new System.EventHandler(this.StudentsList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -698,23 +697,22 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listofStudents;
         private System.Windows.Forms.Button DeleteStudent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox NameStudent;
-        private System.Windows.Forms.TextBox SekondNameStudent;
+        private System.Windows.Forms.TextBox SecondNameStudent;
         private System.Windows.Forms.TextBox NewLogin;
         private System.Windows.Forms.TextBox newPassword;
         private System.Windows.Forms.Button Registration;
-        private System.Windows.Forms.Button DisplayList;
+        private System.Windows.Forms.Button Filtr;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Button ChangeProgress;
         private System.Windows.Forms.Button Filter;
         private System.Windows.Forms.Button BackToMenu;
-        private System.Windows.Forms.TextBox newProgress;
+        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button ProgressOk;
         private System.Windows.Forms.Button ProgressNo;
@@ -745,5 +743,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button1;
     }
 }
